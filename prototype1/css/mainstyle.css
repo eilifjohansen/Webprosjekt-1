@@ -56,7 +56,7 @@ button {
 /*side menu*/
 #side_menu {
 	float: left;
-	width: 10%; 
+	width: 13%; 
 	height: 2000px;
 	overflow: hidden;
 	background-color: #2D5A8C;
@@ -64,7 +64,7 @@ button {
 	box-sizing: border-box;
 	margin: 0px;
 	padding:0px;
-	overflow: scroll;
+	overflow: hidden;
 	
 }
 
@@ -78,7 +78,7 @@ button {
 section {
 	background-color: #5B97D9;
 	height: 2000px;
-	width: 90%;
+	width: 87%;
 	float: left;
 	box-sizing: border-box;
 	padding: 20px;
