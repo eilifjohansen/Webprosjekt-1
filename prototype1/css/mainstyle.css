@@ -86,6 +86,13 @@ section {
 	
 }
 
+
+#contentWrapper { /*trying to centre. can sette section og side_menu height til auto? da fortsetter det å ekspandere? eller overflow: scroll?*/ 
+	
+
+}
+
+
 #slides {
 	float: left;
 	width: 49%;
@@ -108,12 +115,6 @@ iframe {
 
 }
 
-#contentWrapper { /*trying to centre. can sette section og side_menu height til auto? da fortsetter det å ekspandere? eller overflow: scroll?*/ 
-	margin: auto;
-	width: 100%;
-	overflow: hidden;
-	
-}
 
 /*footer*/
 footer {
