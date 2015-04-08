@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>IMP</title>
+	<link rel="stylesheet" href="css/mainstyle.css">
+</head>
+<body> 
+
+
+<div id="top_menu">
+
+	<button type="button" id="home_button"><a href="index.html">Home</a></button>
+	<button type="button" id="menu_button">Menu</button>
+
+</div>
+
+
+<nav id="side_menu">
+	<ul class="subjectList">
+		<li rel="sub1" class="active"><a href="#">Subject</a></li>
+		<li rel="sub2"><a href="#">Subject</a>
+			<ul class="lectureList">
+				<li><a href="#">Lecture</a></li>
+				<li><a href="#">Lecture</a></li>
+			</ul>
+		</li>
+		<li rel="sub3"><a href="#">Subject</a></li>
+		<li rel="sub4"><a href="#">Subject</a></li>
+		<li rel="sub5"><a href="#">Subject</a>
+			<ul class="lectureList">
+				<li class="lecture"><a href="#">Lecture</a>
+					<ul class="topicList">
+						<li><a href="#">Topic</a></li>
+						<li><a href="#">Topic</a></li>
+						<li><a href="#">Topic</a></li>
+						<li><a href="#">Topic</a></li>
+					</ul>
+				</li>
+					<li><a href="#">Lecture</a></li>
+			</ul>
+		</li>
+		<li rel="sub6"><a href="#">Subject</a>
+			<ul class="lectureList">
+				<li><a href="#">Lecture</a></li>
+				<li><a href="#">Lecture</a></li>
+			</ul>
+		</li>
+		<li rel="sub7"><a href="#">Subject</a></li>
+		<li rel="sub8"><a href="#">Subject</a>
+		
+	</ul>
+</nav>
+
+
+<!-- all the media content inside here -->
+<section>
+	<div id="contentWrapper"> 
+		<video width="320" height="240" controls>
+			<source src="movie.mp4" type="video/mp4">
+			<source src="movie.ogg" type="video/ogg">
+			Your browser does not support the video tag.	
+		</video>
+		<img id="slides" src="img/slide.jpg" />
+		<iframe src="http://en.wikipedia.org/wiki/Adolf_Hitler"></iframe>
+		
+		
+		<form action="display.php?id=2" method="post">
+				<p>
+					<input type="text" class="text" placeholder="name" name="alias" value="" /> <!-- prefilled with the user name? -->
+				
+				</p>
+				<textarea name="body"></textarea>
+				<p><input class="submit" type="submit" name="submit" value="submit" /></p>
+				<div style="clear: both;"></div>
+				
+			</form>
+
+	</div>
+	
+</section>
+
+
+
+
+
+<footer>
+	<nav id="footerList">
+		<ul>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Feedback</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+	</nav>
+</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/mainscript.js"></script>
+	
+</body>
+</html>

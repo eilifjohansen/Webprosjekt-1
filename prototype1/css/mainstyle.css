@@ -1,0 +1,152 @@
+/*general/global*/
+body {
+	margin: 0px;  /*removes white edges around the page */
+	padding: 0px;
+
+}
+
+html {
+	margin:0px;
+	padding:0px;
+}
+
+li {
+	list-style: none;
+	font-size: 20px;	
+	/*border: 1px solid gray;*/
+	margin: 0px;
+	padding:0px;
+}
+
+a {
+	text-decoration: none;
+	color: wheat;
+}
+
+/*top menu*/
+#top_menu {
+	width: 100%;
+	color: wheat;
+	background-color: #0E2640;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	overflow: hiddden;
+	height: 50px;
+}
+
+button {
+	width: 100px;
+	height: 50px;
+	background-color: #2D5A8C;
+	color: wheat;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#menu_button {
+	float: right;
+}
+#home_button {
+	float: left;
+}
+
+
+/*side menu*/
+#side_menu {
+	float: left;
+	width: 10%; 
+	height: 2000px;
+	overflow: hidden;
+	background-color: #2D5A8C;
+	color: wheat;
+	box-sizing: border-box;
+	margin: 0px;
+	padding:0px;
+	overflow: scroll;
+	
+}
+
+.subjectList {
+	margin: 10px;
+	padding:0px;	
+}
+
+
+/*section and content of section*/
+section {
+	background-color: #5B97D9;
+	height: 2000px;
+	width: 90%;
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+	
+	
+}
+
+#slides {
+	float: left;
+	width: 49%;
+	height: 500px;
+	margin-left: 10px;
+}
+
+video {
+	float: left;
+	width: 49%;
+	height: 500px;
+	margin-right: 10px;
+
+}
+
+iframe {
+	height: 500px;
+	width: 50%;
+	margin-top: 30px;
+
+}
+
+#contentWrapper { /*trying to centre. can sette section og side_menu height til auto? da fortsetter det å ekspandere? eller overflow: scroll?*/ 
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+/*footer*/
+footer {
+	clear: both;
+	background-color: #2D5A8C;
+	color: wheat;
+	height: 40px;
+	overflow: hidden;	
+}
+
+footer ul {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+footer ul li {
+	float: left;
+	width: 33.2%;
+	height: 20px;
+	margin: auto;
+	padding:auto;
+	display: block;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
