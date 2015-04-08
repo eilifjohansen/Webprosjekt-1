@@ -10,23 +10,5 @@ $(function(){
 	});
 	
 	
-	
-	
-	
-	
-//dropdown button
-	$("menu_button").on("click", function(){
-		
-	
-	
-	});
+//.this to expand only the one clicked
 
-
-	
-
-});
-
-
-//this to expand only the one clicked
-
-//space is in, komma er og
