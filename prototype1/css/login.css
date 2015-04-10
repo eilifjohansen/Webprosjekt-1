@@ -1,0 +1,92 @@
+/*css for the loginpage*/
+
+/*general/global*/
+body {
+	margin: 0px;  /*removes white edges around the page */
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+
+}
+
+html {
+	margin:0px;
+	padding:0px;
+}
+
+li {
+	list-style: none;
+	font-size: 20px;	
+	margin: 0px;
+	padding:0px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+input {
+	height: 20px;
+	width: 250px;
+}
+
+
+
+/*footer*/
+footer {
+	clear: both;
+	background-color: #2D5A8C;
+	color: #fff;
+	height: 40px;
+	overflow: hidden;	
+}
+
+footer ul {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+footer ul li {
+	float: left;
+	width: 33.2%;
+	height: 20px;
+	margin: auto;
+	padding:auto;
+	display: block;
+	text-align: center;
+}
+
+
+section {
+	background-color: #5B97D9;
+	height: 100%;
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+/*top menu*/
+#top_menu {
+	width: 100%;
+	height: 70px;
+	color: #fff;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	background-color: black;
+
+}
+
+button {
+	width: 150px;
+	height: 100%;
+	background-color: gray;
+	color: #fff;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
