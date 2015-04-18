@@ -3,12 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>IMP</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css">
 </head>
 <body background="lined_paper.png"> <!-- midlertidig løsning -->
 
 
 <div id="top_menu">
+	<div id="home_button">
+		<a href="index.html">Home</a>
+	</div>
+	
+	<div id="current_topic">
+		<a href="#">Arrays</a>
+	</div>
+	
 	<div id="menu_button">
 		<ul>
 			<li class="top">
@@ -33,19 +42,29 @@
 				<li><a href="#">Lecture</a></li>
 			</ul>
 		</li>
-		<li rel="sub3"><a href="#">Subject</a></li>
-		<li rel="sub4"><a href="#">Subject</a></li>
-		<li rel="sub5"><a href="#">Subject</a>
+		<li rel="sub3"><a href="#">Media rights</a></li>
+		<li rel="sub4"><a href="#">Web design</a></li>
+		<li rel="sub5"><a href="#">Web programming</a>
 			<ul class="lectureList">
-				<li class="lecture"><a href="#">Lecture</a>
+				<li class="lecture"><a href="#">Data types</a>
 					<ul class="topicList">
-						<li><a href="#">Trigonometric Interpolation</a></li>
-						<li><a href="#">Topic</a></li>
-						<li><a href="#">Topic</a></li>
-						<li><a href="#">Topic</a></li>
+						<li><a href="#">Integers</a></li>
+						<li><a href="#">Strings</a></li>
+						<li><a href="#">Arrays</a></li>
+						<li><a href="#">Objects</a></li>
 					</ul>
 				</li>
-					<li><a href="#">Lecture</a></li>
+					<li><a href="#">Functions</a></li>
+					<li><a href="#">DOM</a></li>
+					<li><a href="#">Event Handling</a></li>
+					<li><a href="#">Frameworks</a>
+						<ul class="topicList">
+							<li><a href="#">Bootstrap</a></li>
+							<li><a href="#">Jquery</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
 			</ul>
 		</li>
 		<li rel="sub6"><a href="#">Subject</a>
@@ -68,6 +87,7 @@
 		<video  controls>
 			<source src="movie.mp4" type="video/mp4">
 			<source src="movie.ogg" type="video/ogg">
+			<!-- need one more video format at least -->
 			Your browser does not support the video tag.	
 		</video>
 		</div>
@@ -80,6 +100,13 @@
 		<iframe src="http://en.wikipedia.org/wiki/Adolf_Hitler"></iframe>
 		</div>
 		
+		<div class="element">
+		<!-- audio transcript -->
+		</div>
+		
+		<div class="element">
+		<!-- rating, comment(text area? what input field?) etc -->
+		</div>
 	
 	</div>
 </section>
@@ -101,7 +128,7 @@
 	</nav>
 </footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
 	<script src="js/mainscript.js"></script>
 	
 </body>

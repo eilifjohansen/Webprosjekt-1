@@ -1,14 +1,12 @@
-/*general/global*/
+/* general/global */
 body {
 	margin: 0px;  /*removes white edges around the page */
-	padding: 0px;
-	
+	padding: 0px;	
 }
 
 html {
-	margin:0px;
-	padding:0px;
-	
+	margin: 0px;
+	padding: 0px;
 }
 
 li {
@@ -18,9 +16,10 @@ li {
 	padding:0px;
 }
 
-a {
+a {	
 	text-decoration: none;
 	color: #fff;
+	display: block; /* make the entire div clickable. not quite the entire, why?.. ul, li, noe i det? */
 }
 
 /*top menu*/
@@ -34,23 +33,141 @@ a {
 	background-color: #4388CC;
 }
 
-button {
+#home_button {
 	width: 150px;
-	height: 100%;
-	background-color: #333032;
+	height: ;
+	float: left;
+    background-color: #FF8136;
+	border-radius: 7px; 
+    -moz-border-radius: 7px; 
+	-webkit-border-radius: 7px; 
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	text-align: center;
+	padding:;
+	font: bold 12px/18px sans-serif;
+	display: inline-block;
+	margin-right: -4px;
+	position: relative;
+	padding: 15px 20px;
+	background: #FF8136;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#home_button:hover {
+	background: #333032;
 	color: #fff;
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+}
+
+#current_topic {
+	float: left;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 20px;
 }
 
 
 #menu_button {
+
 	float: right;
 	box-sizing: border-box;
 	
+	margin: auto;
+	padding: auto;
 }
 
+/*dropdown menu button*/
+#menu_button ul {
+
+
+	  
+	  text-align: center;
+	  display: inline;
+	  margin: 0;
+	 
+	  list-style: none;
+	  
+}
+
+#menu_button ul li {
+		 
+	  font: bold 12px/18px sans-serif;
+	  display: inline-block;
+	  margin-right: -4px;
+	  position: relative;
+	  padding: 15px 20px;
+	  background: #FF8136;
+	  cursor: pointer;
+	  -webkit-transition: all 0.2s;
+	  -moz-transition: all 0.2s;
+	  -ms-transition: all 0.2s;
+	  -o-transition: all 0.2s;
+	  transition: all 0.2s;
+	  
+}
+
+#menu_button ul li.top {
+    background-color: #FF8136;
+	border-radius: 7px; 
+    -moz-border-radius: 7px; 
+	-webkit-border-radius: 7px; 
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	margin-top: 10px;
+	margin-right: 10px;
+	padding:;
+}
+
+#menu_button ul li:hover {
+	  background: #333032;
+	  color: #fff;
+}
+
+#menu_button ul li ul {
+	  padding: 0px;
+	  position: absolute;
+	  top: 48px;
+	  right: 10%;
+	  width: 150px;
+	  -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  display: none;
+	  opacity: 0;
+	  visibility: hidden;
+	  -webkit-transiton: opacity 0.2s;
+	  -moz-transition: opacity 0.2s;
+	  -ms-transition: opacity 0.2s;
+	  -o-transition: opacity 0.2s;
+	  -transition: opacity 0.2s;
+}
+
+#menu_button ul li ul li { 
+	  background: #FF8136; 
+	  display: block; 
+	  color: #fff;
+	  
+}
+
+#menu_button ul li ul li:hover {
+		background: #333032; 
+}
+
+#menu_button ul li:hover ul {
+	display: block;
+    opacity: 1;
+	visibility: visible;
+}
 
 
 /*side menu*/
@@ -60,7 +177,7 @@ button {
 	width: 13%; 
 	height: 2000px;
 	overflow: hidden;
-	background-color: #f1f1f1;
+	background-color: #333032;
 	color: #000;
 	box-sizing: border-box;
 	margin: 0px;
@@ -70,9 +187,13 @@ button {
 }
 
 #side_menu a { /*midlertidlig løsning*/
-	color: #000;
-
+	color: #fff;
+	
 } 
+
+#side_menu li:hover {
+	font-weight: bold; /* funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle */
+}
 
 .subjectList {
 	margin: 10px;
@@ -89,7 +210,6 @@ section {
 	box-sizing: border-box;
 	padding: 25px;
 	
-	
 	/*each line needed to accommodate several web browsers. inset instead of default outset, this way only needed on the section div*/
 	-webkit-box-shadow: inset 6px 6px 12px -2px rgba(136,136,136,1);
 	-moz-box-shadow: inset 6px 6px 12px -2px rgba(136,136,136,1);
@@ -98,24 +218,26 @@ section {
 
 
 
+
 #slides {
 	float: left;
-	width: 49%;
+	width: 47%;
 	height: 500px;
-	margin-left: 10px;
+	margin-left: 20px;
+	
 }
 
 video {
 	float: left;
-	width: 49%;
+	width: 47%;
 	height: 500px;
-	margin-right: 10px;
+	margin-right: 20px;
 
 }
 
 iframe {
 	height: 500px;
-	width: 50%;
+	width: 47%;
 	margin-top: 30px;
 
 }
@@ -146,76 +268,6 @@ footer ul li {
 	text-align: center;
 }
 
-/*dropdown menu button*/
-
-#menu_button ul {
-background-color: #F6EBEB;
-  text-align: center;
-  display: inline;
-  margin: 0;
-  padding: 15px 4px 17px 0;
-  list-style: none;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-
-#menu_button ul li {
-  font: bold 12px/18px sans-serif;
-  display: inline-block;
-  margin-right: -4px;
-  position: relative;
-  padding: 15px 20px;
-  background: #333032;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  
-}
-
-#menu_button ul li:hover {
-  background: #555;
-  color: #fff;
-}
-
-#menu_button ul li ul {
-  padding: 0;
-  position: absolute;
-  top: 48px;
-  right: 0%;
-  width: 150px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-}
-
-#menu_button ul li ul li { 
-  background: #555; 
-  display: block; 
-  color: #fff;
-  text-shadow: 0 -1px 0 #000;
-}
-
-#menu_button ul li ul li:hover {
-	background: #666; 
-}
-
-#menu_button ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
 
 
  
