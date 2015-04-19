@@ -195,6 +195,7 @@ a {
 	font-weight: bold; /* funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle */
 }
 
+
 .subjectList {
 	margin: 10px;
 	padding: 0px;	
