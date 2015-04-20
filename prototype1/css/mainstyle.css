@@ -282,10 +282,80 @@ iframe {
 .subject {
 	float: left;
 	margin-left: 100px;
+	margin-bottom: 100px;
+}
+
+.subject2 {
+	position: relative;
+	float: right;
+	margin-right: 200px;
 }
 
 .caption {
 	width: 300px;
+}
+
+.read_button {
+	width: 70px;
+	height: ;
+    background-color: #4388CC;
+	border-radius: 7px; 
+    -moz-border-radius: 7px; 
+	-webkit-border-radius: 7px; 
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	text-align: center;
+	padding:;
+	font: bold 12px/18px sans-serif;
+	display: inline-block;
+	position: absolute;
+	padding: 15px 20px;
+	background: #4388CC;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	margin-left: 30px;
+}
+
+.sub_button {
+	width: 70px;
+	height: ;
+    background-color: #4388CC;
+	border-radius: 7px; 
+    -moz-border-radius: 7px; 
+	-webkit-border-radius: 7px; 
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	text-align: center;
+	padding:;
+	font: bold 12px/18px sans-serif;
+	display: inline-block;
+	position: absolute;
+	padding: 15px 20px;
+	background: #FF8136;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	margin-left: 160px;
+}
+
+.subjectText {
+	width: 50%;
+}
+
+#contentWrapper {
+	width: 50%;
+	position: relative;
+	float: left;
+	margin-left: 100px;
 }
 
 /*footer*/
