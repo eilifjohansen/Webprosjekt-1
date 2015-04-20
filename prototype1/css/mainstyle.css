@@ -279,6 +279,15 @@ iframe {
 
 }
 
+.subject {
+	float: left;
+	margin-left: 100px;
+}
+
+.caption {
+	width: 300px;
+}
+
 /*footer*/
 footer {
 	clear: both;
