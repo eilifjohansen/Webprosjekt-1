@@ -3,66 +3,46 @@
 <head>
     <meta charset="utf-8">
     <title>IMP</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="css/registerpagestyle.css">
 </head>
-<body> 
+<body> <!-- midlertidig løsning -->
 
 
 <div id="top_menu">
-	<img id="logo" src="img/logo.jpg"/> 
+	<div id="home_button">
+		<a href="index.html">Home</a>
+	</div>
+	
+	<div id="current_topic">
+		<a href="#">Arrays</a>
+	</div>
 	
 
 </div>
 
-<!-- Sku gitt .class til ul isteden eller lage div for hver sub category/list? -->
-<nav id="side_menu">
-	<ul class="subjectList" class="active">
-		<li rel="sub1"><a href="#">Subject</a></li>
-		<li rel="sub2"><a href="#">Subject</a>
-			<ul class="lectureList">
-				<li><a href="#">Lecture</a></li>
-				<li><a href="#">Lecture</a></li>
-			</ul>
-		</li>
-		<li rel="sub3"><a href="#">Subject</a></li>
-		<li rel="sub4"><a href="#">Subject</a></li>
-		<li rel="sub5"><a href="#">Subject</a>
-			<ul>
-				<li><a href="#">Lecture</a>
-					<ul class="topicList">
-						<li><a href="#">Topic</a></li>
-						<li><a href="#">Topic</a></li>
-						<li><a href="#">Topic</a></li>
-						<li><a href="#">Topic</a></li>
-					</ul>
-				</li>
-					<li><a href="#">Lecture</a></li>
-			</ul>
-		</li>
-		<li rel="sub6"><a href="#">Subject</a>
-			<ul>
-				<li><a href="#">Lecture</a></li>
-				<li><a href="#">Lecture</a></li>
-			</ul>
-		</li>
-		<li rel="sub7"><a href="#">Subject</a></li>
-		<li rel="sub8"><a href="#">Subject</a>
-		
-	</ul>
-</nav>
-
 
 <!-- all the media content inside here -->
 <section>
-	<video width="320" height="240" controls>
-		<source src="movie.mp4" type="video/mp4">
-		<source src="movie.ogg" type="video/ogg">
-		Your browser does not support the video tag.	
-	</video>
-	<img id="slides" src="img/slide.png" />
-	
+	<form action="loginpage.html" method="POST">
+		<div id="top">
+			<label>Enter Username:</label>
+			<input type="username" name="" value=""></input>
+		</div>
+		<div>
+			<label>Enter Password:</label>
+			<input type="text" name="pass1" value=""></input>
+		</div>
+		<div>
+			<label>Confirm Password:</label>
+			<input type="text" name="pass2" value=""></input>	
+		</div>
+		<div>
+			<input type="submit" name="" value="Register" />
+		</div>
+	</form>
 </section>
-
 
 
 
@@ -71,20 +51,19 @@
 	<nav id="footerList">
 		<ul>
 			<li>
-				<a href="#">About</a>
+				<a href="infopage.html">About</a>
 			</li>
 			<li>
-				<a href="#">Feedback</a>
+				<a href="infopage.html">Feedback</a>
 			</li>
 			<li>
-				<a href="#">Contact</a>
+				<a href="infopage.html">Contact</a>
 			</li>
 		</ul>
 	</nav>
 </footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+
 	
 </body>
 </html>
