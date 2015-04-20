@@ -1,3 +1,6 @@
+/* NOT FUNCTIONING. copy paste for now. look into it in detail. */
+
+
 var imageNum=0;
 var count=0;
 var imageArray = [];
