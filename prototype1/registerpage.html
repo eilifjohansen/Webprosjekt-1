@@ -5,46 +5,70 @@
     <title>IMP</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css">
-	<link rel="stylesheet" href="css/registerpagestyle.css">
 </head>
-<body> <!-- midlertidig løsning -->
+<body background="lined_paper.png"> <!-- midlertidig løsning -->
 
 
 <div id="top_menu">
 	<div id="home_button">
-		<a href="index.html">Home</a>
+		<a href="index.html">ISP Logo</a>
 	</div>
 	
 	<div id="current_topic">
-		<a href="#">Arrays</a>
+		<a href="#">Register</a>
 	</div>
 	
-
+	<div id="menu_button">
+		<ul>
+			<li class="top">
+				<a href="loginpage.html">Sign in</a>
+			</li>
+			<li class="top">
+				Menu
+				<ul>
+				  <li><a href="index.html">Home page</a></li>
+				  <li><a href="infopage.html">About us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>	
 </div>
+
+
+<nav id="side_menu">
+	<ul class="subjectList">
+		<li rel="sub7"><a href="loginpage.html">Sign in</a></li>
+		<li rel="sub7"><a href="infopage.html">About us</a></li>
+	</ul>
+</nav>
 
 
 <!-- all the media content inside here -->
 <section>
+	<div id="contentWrapper"> 
+		
+
 	<form action="loginpage.html" method="POST">
 		<div id="top">
-			<label>Enter Username:</label>
-			<input type="username" name="" value=""></input>
+			<label>Enter email:</label>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="username" name="" value=""></input>
 		</div>
 		<div>
 			<label>Enter Password:</label>
-			<input type="text" name="pass1" value=""></input>
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pass1" value=""></input>
 		</div>
 		<div>
 			<label>Confirm Password:</label>
 			<input type="text" name="pass2" value=""></input>	
 		</div>
 		<div>
-			<input type="submit" name="" value="Register" />
+			<br><input type="submit" name="" value="Register" />
 		</div>
 	</form>
+
+	
+	</div>
 </section>
-
-
 
 
 <footer>
@@ -63,7 +87,8 @@
 	</nav>
 </footer>
 
-
+	
+	<script src="js/mainscript.js"></script>
 	
 </body>
 </html>
