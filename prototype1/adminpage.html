@@ -2,89 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>IMP Admin</title>
+    <title>IMP</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css">
 </head>
-<body> 
+<body background="lined_paper.png"> <!-- midlertidig løsning -->
 
 
 <div id="top_menu">
-	<img id="logo" src="img/logo.jpg"/> 
+	<div id="home_button">
+		<a href="index.html">Home</a>	
+	</div>
 	
-
+	<div id="current_topic">
+		<a href="#">Adminpage</a>
+	</div>
+	
+	<div id="menu_button">
+		<ul>
+			<li class="top">
+				Menu
+				<ul>
+				  <li><a>Profile</a></li>
+				  <li><a href="studentsettingpage.html">Settings</a></li>
+				  <li><a>Sub/unsub lecture</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>	
 </div>
 
 
 <nav id="side_menu">
-	<ul class="subjectList" class="active">
-		<li rel="sub1"><a href="#">Subject</a></li>
-		<li rel="sub2"><a href="#">Subject</a>
+	<ul class="subjectList">
+		<li rel="sub1" class="active"><a href="#">Subject 1</a></li>
+		<li rel="sub2"><a href="#">Subject 2</a>
 			<ul class="lectureList">
-				<li><a href="#">Lecture</a></li>
-				<li><a href="#">Lecture</a></li>
-			</ul>
-		</li>
-		<li rel="sub3"><a href="#">Subject</a></li>
-		<li rel="sub4"><a href="#">Subject</a></li>
-		<li rel="sub5"><a href="#">Subject</a>
-			<ul>
-				<li><a href="#">Lecture</a>
+				<li><a href="#">Lecture 1</a></li>
 					<ul class="topicList">
-						<li><a href="#">Topic</a></li>
-						<li><a href="#">Topic</a></li>
-						<li><a href="#">Topic</a></li>
-						<li><a href="#">Topic</a></li>
+						<li><a href="#">Topic 1.1</a></li>
+						<li><a href="#">Topic 1.2</a></li>
+						<li><a href="#">Topic 1.3</a></li>
+						<li><a href="#">Topic 1.4</a></li>
+						<li><a href="#">Topic 1.5</a></li>
+						<li><a href="#">Topic 1.6</a></li>
 					</ul>
-				</li>
-					<li><a href="#">Lecture</a></li>
+				<li><a href="#">Lecture 2</a></li>
+				<li><a href="#">Lecture 3</a></li>
+				<li><a href="#">Lecture 4</a></li>
+				<li><a href="#">Lecture 5</a></li>
 			</ul>
 		</li>
-		<li rel="sub6"><a href="#">Subject</a>
-			<ul>
-				<li><a href="#">Lecture</a></li>
-				<li><a href="#">Lecture</a></li>
-			</ul>
-		</li>
-		<li rel="sub7"><a href="#">Subject</a></li>
-		<li rel="sub8"><a href="#">Subject</a>
-		
+		<li rel="sub3"><a href="#">Subject 3</a></li>
+		<li rel="sub4"><a href="#">Subject 4</a></li>
+		<li rel="sub5"><a href="#">Subject 5</a></li>
 	</ul>
+	<div id="add_lecture">
+		<a href="index.html">Add Lecture</a>	
+	</div>
 </nav>
 
 
 <!-- all the media content inside here -->
 <section>
-	<video width="320" height="240" controls>
-		<source src="movie.mp4" type="video/mp4">
-		<source src="movie.ogg" type="video/ogg">
-		Your browser does not support the video tag.	
-	</video>
-	<img id="slides" src="img/slide.png" />
+	<div id="contentWrapper"> 
+		
+		<div class="element">
+			
+		</div>
+		
+		
+		<div class="element">
+			
+		</div>
+		
+		<div class="element">
+		
+		</div>
+		
+		<div class="element">
+		<!-- audio transcript -->
+		</div>
+		
+		<div class="element">
+		<!-- rating, comment(text area? what input field?) etc -->
+		</div>
 	
+	</div>
 </section>
-
-
-
 
 
 <footer>
 	<nav id="footerList">
 		<ul>
 			<li>
-				<a href="#">About</a>
+				<a href="infopage.html">About</a>
 			</li>
 			<li>
-				<a href="#">Feedback</a>
+				<a href="infopage.html">Feedback</a>
 			</li>
 			<li>
-				<a href="#">Contact</a>
+				<a href="infopage.html">Contact</a>
 			</li>
 		</ul>
 	</nav>
 </footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	
+	<script src="js/mainscript.js"></script>
 	
 </body>
 </html>

@@ -1,20 +1,135 @@
-<!-- This is the homepage, landingpage -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Homepage</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body> 
-
-
-HOMEPAGE
-	
+    <title>IMP</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/mainstyle.css">
+</head>
+<body background="lined_paper.png"> <!-- midlertidig løsning -->
+
+
+<div id="top_menu">
+	<div id="home_button">
+		<a href="index.html">Home</a>
+	</div>
+	
+	<div id="current_topic">
+		<a href="#">Arrays</a>
+	</div>
+	
+	<div id="menu_button">
+		<ul>
+			<li class="top">
+				Menu
+				<ul>
+				  <li><a>Profile</a></li>
+				  <li><a href="studentsettingpage.html">Settings</a></li>
+				  <li><a>Sub/unsub lecture</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>	
+</div>
+
+
+<nav id="side_menu">
+	<ul class="subjectList">
+		<li rel="sub1" class="active"><a href="#">Subject</a></li>
+		<li rel="sub2"><a href="#">Subject</a>
+			<ul class="lectureList">
+				<li><a href="#">Lecture</a></li>
+				<li><a href="#">Lecture</a></li>
+			</ul>
+		</li>
+		<li rel="sub3"><a href="#">Media rights</a></li>
+		<li rel="sub4"><a href="#">Web design</a></li>
+		<li rel="sub5"><a href="#">Web programming</a>
+			<ul class="lectureList">
+				<li class="lecture"><a href="#">Data types</a>
+					<ul class="topicList">
+						<li><a href="#">Integers</a></li>
+						<li><a href="#">Strings</a></li>
+						<li><a href="#">Arrays</a></li>
+						<li><a href="#">Objects</a></li>
+					</ul>
+				</li>
+					<li><a href="#">Functions</a></li>
+					<li><a href="#">DOM</a></li>
+					<li><a href="#">Event Handling</a></li>
+					<li><a href="#">Frameworks</a>
+						<ul class="topicList">
+							<li><a href="#">Bootstrap</a></li>
+							<li><a href="#">Jquery</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
+			</ul>
+		</li>
+		<li rel="sub6"><a href="#">Subject</a>
+			<ul class="lectureList">
+				<li><a href="#">Lecture</a></li>
+				<li><a href="#">Lecture</a></li>
+			</ul>
+		</li>
+		<li rel="sub7"><a href="#">Subject</a></li>
+		<li rel="sub8"><a href="#">Subject</a>
+	</ul>
+</nav>
+
+
+<!-- all the media content inside here -->
+<section>
+	<div id="contentWrapper"> 
+		
+		<div class="element">
+		<video  controls>
+			<source src="movie.mp4" type="video/mp4">
+			<source src="movie.ogg" type="video/ogg">
+			<!-- need one more video format at least -->
+			Your browser does not support the video tag.	
+		</video>
+		</div>
+		
+		<div class="element">
+		<img id="slides" src="img/slide.jpg" />
+		</div>
+		
+		<div class="element">
+		<iframe src="http://en.wikipedia.org/wiki/Adolf_Hitler"></iframe>
+		</div>
+		
+		<div class="element">
+		<!-- audio transcript -->
+		</div>
+		
+		<div class="element">
+		<!-- rating, comment(text area? what input field?) etc -->
+		</div>
+	
+	</div>
+</section>
+
+
+<footer>
+	<nav id="footerList">
+		<ul>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Feedback</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+	</nav>
+</footer>
 
 	
-
+	<script src="js/mainscript.js"></script>
 	
 </body>
 </html>
