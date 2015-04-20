@@ -191,8 +191,9 @@ a {
 	
 } 
 
-#side_menu li:hover {
-	font-weight: bold; /* funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle */
+#side_menu li:hover {	/* funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle */
+	font-weight: bold;
+	background-color: orange;	
 }
 
 
@@ -217,15 +218,11 @@ section {
 	box-shadow: inset 6px 6px 12px -2px rgba(136,136,136,1);
 }
 
-
-
-
-#slides {
+#defaultSlide {
 	float: left;
 	width: 47%;
 	height: 500px;
-	margin-left: 20px;
-	
+	margin-left: 20px;	
 }
 
 video {
@@ -242,7 +239,6 @@ iframe {
 	margin-top: 30px;
 
 }
-
 
 /*footer*/
 footer {
