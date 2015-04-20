@@ -18,7 +18,7 @@ videoArray[5]= 780;
 videoArray[6]= 1061;
 
 //arrays for more of out media content. f. ex wikipages, audio transcript. synced the same way as the video to powerpoint?
-wikiArray[0] = "http://en.wikipedia.org/wiki/Adolf_Hitler"; //path 
+wikiArray[0] = "https://no.wikipedia.org/wiki/JavaScript"; //path 
 wikiArray[1] = "https://no.wikipedia.org/wiki/Vegard";
 //etc, etc	
 	

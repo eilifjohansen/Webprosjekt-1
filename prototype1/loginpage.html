@@ -3,48 +3,79 @@
 <head>
     <meta charset="utf-8">
     <title>IMP</title>
-	<link rel="stylesheet" href="css/login.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/mainstyle.css">
 </head>
-<body> 
+<body background="lined_paper.png"> <!-- midlertidig løsning -->
 
 
 <div id="top_menu">
+	<div id="home_button">
+		<a href="index.html">ISP Logo</a>
+	</div>
 	
+	<div id="current_topic">
+		<a href="#">Sign in</a>
+	</div>
 	
-
+	<div id="menu_button">
+		<ul>
+			<li class="top">
+				<a href="registerpage.html">Register</a>
+			</li>
+			<li class="top">
+				Menu
+				<ul>
+				  <li><a href="index.html">Home page</a></li>
+				  <li><a href="infopage.html">About us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>	
 </div>
 
 
+<nav id="side_menu">
+	<ul class="subjectList">
+		<li rel="sub7"><a href="registerpage.html">Register</a></li>
+		<li rel="sub7"><a href="infopage.html">About us</a></li>
+	</ul>
+</nav>
+
+
+<!-- all the media content inside here -->
 <section>
-	<form action="demo_form.asp" method="get">
-		Email/accountname: <input type="text" name="fname"><br>
-		Password: <input type="text" name="lname"><br>
-	    <input type="submit" value="Submit">
+	<div id="contentWrapper"> 
+		
+
+	<form action="studentpage.html" method="get">
+		Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fname"><br>
+		Password: <input type="text" name="lname"><br><br>
+	    <input type="submit" value="Sign in">
 	</form>
+
 	
+	</div>
 </section>
-
-
-
 
 
 <footer>
 	<nav id="footerList">
 		<ul>
 			<li>
-				<a href="#">About</a>
+				<a href="infopage.html">About</a>
 			</li>
 			<li>
-				<a href="#">Feedback</a>
+				<a href="infopage.html">Feedback</a>
 			</li>
 			<li>
-				<a href="#">Contact</a>
+				<a href="infopage.html">Contact</a>
 			</li>
 		</ul>
 	</nav>
 </footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
 	<script src="js/mainscript.js"></script>
 	
 </body>
