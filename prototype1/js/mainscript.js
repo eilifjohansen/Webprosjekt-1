@@ -9,6 +9,6 @@ $(function(){
 		
 	});
 	
-	
+});	
 //.this to expand only the one clicked
 
