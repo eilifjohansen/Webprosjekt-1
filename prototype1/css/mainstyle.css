@@ -19,7 +19,7 @@ li {
 a {	
 	text-decoration: none;
 	color: #fff;
-	display: block; /* make the entire div clickable. not quite the entire, why?.. ul, li, noe i det? */
+	display: block; /* make the entire div clickable. not quite the entire, why?.. ul, li, noe i det? fixed, <a> rundt li eller div etc */ 
 }
 
 
@@ -77,7 +77,6 @@ a {
 	margin-top: 20px;
 }
 
-
 #menu_button {
 
 	float: right;
@@ -86,6 +85,9 @@ a {
 	margin: auto;
 	padding: auto;
 }
+
+
+
 
 /*dropdown menu button*/
 #menu_button ul {
@@ -262,6 +264,20 @@ section {
 	width: 47%;
 	height: 500px;
 	margin-left: 20px;	
+	position: relative;
+}
+
+
+#leftArrow {
+	
+	 position: absolute;
+	  bottom: 260px;
+	  right: 27%;
+}
+#rightArrow {
+	position: absolute;
+    bottom: 260px;
+	right: 23%;
 }
 
 video {

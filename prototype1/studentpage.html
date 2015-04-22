@@ -10,9 +10,9 @@
 
 
 <div id="top_menu">
-	<div id="home_button">
-		<a href="index.html">Home</a>
-	</div>
+	<a href="index.html"><div id="home_button">
+		Home
+	</div></a>
 	
 	<div id="current_topic">
 		<a href="#">Arrays</a>
@@ -23,9 +23,9 @@
 			<li class="top">
 				Menu
 				<ul>
-				  <li><a>Profile</a></li>
-				  <li><a href="studentsettingpage.html">Settings</a></li>
-				  <li><a href="loginpage.html">Sign out</a></li>
+				  <a> <li> Profile </li> </a>
+				 <a href="studentsettingpage.html"> <li> Settings </li> </a>
+				  <a href="loginpage.html"> <li> Sign out </li> </a>
 				</ul>
 			</li>
 		</ul>
@@ -91,10 +91,12 @@
 		
 		
 		<div class="element">
-			<a href="#" onClick="prevImage();prev_event();"><img src="img/arrow_left.png" width="15" height="15"/></a>
+			
 			<img id="defaultSlide" src="img/slide.jpg" />
-			<a href="#" onClick="switchImage();next_event();"><img src="img/arrow_right.png" width="15" height="15"/></a>
+			<a href="#" onClick="prevImage();prev_event();"><img class="arrow" id="leftArrow" src="img/arrow_left.png" width="25" height="25"/></a>
+			<a href="#" onClick="switchImage();next_event();"><img class="arrow" id="rightArrow" src="img/arrow_right.png" width="25" height="25"/></a>
 		</div>
+		
 		
 	<!--	<div class="element">
 			<iframe src="https://no.wikipedia.org/wiki/JavaScript"></iframe>
