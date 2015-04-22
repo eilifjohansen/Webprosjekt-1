@@ -46,45 +46,13 @@
 <!-- all the media content inside here -->
 <section>
 	
-		
+		<script src="js/loginprocess.js"></script>
 
-<form name="login">
+<form name="login" action="" method="">
 Username: <input type="text" name="userid"/><br>
 Password:&nbsp; <input type="password" name="pswrd"/><br><br>
 <input type="button" onclick="check(this.form)" value="Login"/>
-</form>
-<script language="javascript">
-function check(form)/*function to check userid & password*/
-{
- /*the following code checkes whether the entered userid and password are matching*/
- if(form.userid.value == "student" && form.pswrd.value == "111")
-  {
-    window.open("studentpage.html", "_self")/*opens the target page while Id & password matches*/
-  }
-
-  else {
- 
-  if(form.userid.value == "admin" && form.pswrd.value == "222")
-  {
-    window.open("adminpage.html", "_self")/*opens the target page while Id & password matches*/
-  }
-
-    else {
- 
-  if(form.userid.value == "teacher" && form.pswrd.value == "333")
-  {
-    window.open("teacherpage.html", "_self")/*opens the target page while Id & password matches*/
-  }
-
- else
- {
-   alert("Error wrong password or username")/*displays error message*/
-  }
-}
-}
-}
-</script>
-	
+</form>	
 	
 </section>
 
@@ -106,7 +74,7 @@ function check(form)/*function to check userid & password*/
 </footer>
 
 	
-	<script src="js/loginprocess.js"></script>
+	
 	
 </body>
 </html>
