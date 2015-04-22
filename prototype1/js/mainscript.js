@@ -7,17 +7,20 @@ var VideoArray=new Array();
 
 //Image array
 
-imageArray[0] = "img/slide.PNG"
-imageArray[1] = "img/slide.JPG"
-imageArray[2] = "img/gamedev.PNG"
-
+imageArray[0] = "img/slide1.PNG"
+imageArray[1] = "img/slide2.PNG"
+imageArray[2] = "img/slide3.PNG"
+imageArray[3] = "img/slide4.PNG"
+imageArray[4] = "img/slide5.PNG"
 
 
 
 //Video array
 VideoArray[0]= 0;
-VideoArray[1]= 2;
-VideoArray[2]= 4;
+VideoArray[1]= 5;
+VideoArray[2]= 16;
+VideoArray[3]= 33;
+VideoArray[4]= 40;
 
 
 
