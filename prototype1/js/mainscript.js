@@ -1,32 +1,31 @@
-$(function(){
+
 
 
 var imageNum=0;
 var count=0;
-var imageArray = [];
-var videoArray = [];
-var wikiArray = [];
+var imageArray=new Array();
+var VideoArray=new Array();
+
 
 //Image array
+
 imageArray[0] = "img/slide.jpg"
-imageArray[1] = "img/slide.PNG"
-	
-//Video Array
-videoArray[0]= 0;
-videoArray[1]= 110;
-videoArray[2]= 422;
-videoArray[3]= 710;
-videoArray[4]= 763;
-videoArray[5]= 780;
-videoArray[6]= 1061;
+imageArray[1] = "img/slide.png"
+imageArray[2] = "img/human.jpg"
 
-//arrays for more of out media content. f. ex wikipages, audio transcript. synced the same way as the video to powerpoint?
-wikiArray[0] = "https://no.wikipedia.org/wiki/JavaScript"; //path 
-wikiArray[1] = "https://no.wikipedia.org/wiki/Vegard";
-//etc, etc	
-	
 
-	
+
+
+//Video array
+//Example
+//http://people.dsv.su.se/~jcoll/bot/seekhypercaster.php?videoId=3769&seek
+VideoArray[0]= 0;
+VideoArray[1]= 15;
+VideoArray[2]= 78;
+VideoArray[3]= 253;
+VideoArray[4]= 300;
+
+
 //for seeking to a particular location in video
 function loadXMLDoc(slideNo, seekValue)
 
@@ -49,125 +48,196 @@ xmlhttp.onreadystatechange=function()
     //document.getElementById("hipWIKI").innerHTML=xmlhttp.responseText;
     }
   }
+  
+  //seek to particular location in video
+	var video = parent.video.document.getElementById("video1");
+ 	//video.currentTime = seekValue;
+	video.currentTime = seekValue;
+	//parent.video.document.getElementById("video1").play();
+	video.play();
 	
+ 	//load particular slide
+	parent.powerpoint.document.getElementById('slideImg').src= imageArray[slideNo];
 	
+<<<<<<< HEAD
 //seek to particular location in video
 var video = document.getElementById("defaultVideo");
 var isSeeking = video.seeking; //checks if the user is currently seeking
 
 video.currentTime = seekValue;
 video.play();
+=======
+>>>>>>> 6e4b02daf0071c00ee2f291088af5594086f4901
 	
+	////////////////////////////////////////////////////////////////
+		////////////////////////////////////////////////////////////////
+  //if(str == "1")
+  //{
+	//load wiki page
+		//xmlhttp.open("GET","./BST.txt",true);
+	//display slide image
+		//document.slideImage.src = "./PPT/presentation1/Slide2.GIF";
 	
-//load particular slide
-document.getElementById("defaultSlide").src = imageArray[slideNo];
-
+	//var seekToTime = video.currentTime + seekValue;
+	
+	//	if(seekToTime < 0 || seekToTime > video.length)
+	//	{
+	//		return;
+	//	}
+	//	else{	
+	//		video.currentTime = seekValue;
+			
+			//chat question
+			
+			
+		//	  document.getElementById("hipBotMiddle").innerHTML += "<br>Q> What is Direct Binary Search? <br> A> It is a half-interval search algorithm that finds the position of a specified value. <br>";
+			  
+			  
+	//	}
+	//}
+	//else 
+	//{
+		//load page info
+			//xmlhttp.open("GET","./framework.php",true);
+		
+		//display slide image
+		//document.slideImage.src = "./PPT/presentation1/Slide3.GIF";
+	
+	//	video.currentTime = seekValue;
+		
+		//chat question
+		//document.getElementById("hipBotMiddle").innerHTML += "<br>Q> What is a framework? <br> A> A basic structure underlying a system, concept, or text: 'the theoretical framework of political sociology'. <br>"
+	//}
 xmlhttp.send();
 }
 
+//chatbox only input message
+//function askQuestion()
+//{
+//	if(document.getElementById("question").value !== ""){
+
+//	var quest = "<br><br> Q>";
+//	quest += document.getElementById("question").value;
+//	quest += "<br>";
+//	alert(quest);
 	
-//SLIDE SWITCHING	---------------------------------
+//		document.getElementById("hipBotMiddle").innerHTML += quest;
+//		document.getElementById("hipBotMiddle").innerHTML += "A> Sorry! I am not yet trained to answer such questions :(";
+//	}
+//}
+
+
+/**************************************************************************************/
+//Functions for switching slide and video
+
 //Switches to the next image in the array
-function switchImage() //the actual replacing on the page (html) next
+function switchImage()
 {
-	if(imageNum < imageArray.length-1)
+	if(imageNum<imageArray.length-1)
 	{
 		imageNum=imageNum+1;
-		if(imageNum < imageArray.length)
-			document.getElementById("").src = imageArray[imageNum];
+		if(imageNum<imageArray.length)
+		parent.powerpoint.document.getElementById('slideImg').src=imageArray[imageNum];
 		
 	}
 }
 
-//Switches to the previous image in the array
-function prevImage()  //actual switching on page, previous
+
+//Switches to the previouse image in the array
+function prevImage()
 {
-	if(imageNum > 0)
+	if(imageNum>0)
 	{
-		imageNum = imageNum-1;
-		if(imageNum >= 0)
-		document.getElementById("defaultSlide").src = imageArray[imageNum];
+		imageNum=imageNum-1;
+		if(imageNum>=0)
+		parent.powerpoint.document.getElementById('slideImg').src=imageArray[imageNum];
 	}
 }
 
-//VIDEO SWITCHING	----------------------------------
+
 //Switches to the next video in the array
 function next_event()
 {
-	if(count < videoArray.length-1)
+	if(count<VideoArray.length-1)
 	{
 		count+=1;
+<<<<<<< HEAD
 		var video = parent.video.document.getElementById("defaultVideo");
  		video.currentTime = videoArray[count];
+=======
+		//parent.video.location.href = VideoArray[count];
+		var video = parent.video.document.getElementById("video1");
+ 		video.currentTime = VideoArray[count];
+>>>>>>> 6e4b02daf0071c00ee2f291088af5594086f4901
 	}
 }
 
 
-//Switch to the previous video in the array
+//Switch to the previouse video in the array
 function prev_event()
 {
-	if(count > 0)
+	if(count>0)
 	{
 		count-=1;
-		var video = document.getElementById("defaultVideo");
- 		video.currentTime = videoArray[count];
+		//parent.video.location.href = VideoArray[count];
+		var video = parent.video.document.getElementById("video1");
+ 		video.currentTime = VideoArray[count];
 		
 	}
 }
+
 
 //NEED TO IMPROVE
 //video to power point synchronization
 function process()
 {
-	var video = document.getElementById("defaultVideo");
+	var video = parent.video.document.getElementById("video1");
 	//while(1)
 	{
 		//var time = parent.video.document.getElementById("video1").currentTime;
 		
-		if(video.currentTime < 3)
+		if(video.currentTime < 15)
 		{
-			document.getElementById("defaultSlide").src=imageArray[0];
-			//add line here for all the other media content? similar to line above?
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[0];
 		}
-		else if(video.currentTime < 6)
+		else if(video.currentTime < 184)
 		{
-			document.getElementById("defaultSlide").src=imageArray[1];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[1];		
 		}
 		else if(video.currentTime < 538)
 		{
-			document.getElementById("defaultSlide").src=imageArray[2];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[2];		
 		}
 		else if(video.currentTime < 578)
 		{
-			document.getElementById("defaultSlide").src=imageArray[3];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[3];		
 		}
 		else if(video.currentTime < 930)
 		{
-			document.getElementById("defaultSlide").src=imageArray[4];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[4];		
 		}
 		else if(video.currentTime < 1193)
 		{
-			document.getElementById("defaultSlide").src=imageArray[5];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[5];		
 		}
 		else if(video.currentTime < 1295)
 		{
-			document.getElementById("defaultSlide").src=imageArray[6];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[6];		
 		}
 		else if(video.currentTime < 2080)
 		{
-			document.getElementById("defaultSlide").src=imageArray[7];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[7];		
 		}								
 		else if(video.currentTime < 2480)
 		{
-			document.getElementById("defaultSlide").src=imageArray[8];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[8];		
 		}
 		else
 		{
-			document.getElementById("defaultSlide").src=imageArray[14];		
+			parent.powerpoint.document.getElementById('slideImg').src=imageArray[14];		
 		}
 	}
 }
-
 
 function videoToPowerpointSync()
 
@@ -222,11 +292,21 @@ function videoToPowerpointSync()
     } 
 
      
+<<<<<<< HEAD
 	});
 	
 	
+=======
+
+>>>>>>> 6e4b02daf0071c00ee2f291088af5594086f4901
   }, 1000); 
+
+   
+
+<<<<<<< HEAD
+=======
 }
 
 
+>>>>>>> 6e4b02daf0071c00ee2f291088af5594086f4901
 

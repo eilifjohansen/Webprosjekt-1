@@ -1,130 +1,26 @@
-var teacherName = "teacher1";
-var teacherPass = "password_teacher1";
+function check(form) { /*function to check userid & password*/
+	 /*the following code checkes whether the entered userid and password are matching*/
+	 if(form.userid.value == "student" && form.pswrd.value == "111") {
+		window.open("studentpage.html", "_self")/*opens the target page while Id & password matches*/
+	  }
 
-var studentName = "student1";
-var studentPass = "password_student1";
+	else {
+	 
+		  if(form.userid.value == "admin" && form.pswrd.value == "222") {
+			window.open("adminpage.html", "_self")/*opens the target page while Id & password matches*/
+		  }
 
-var adminName = "admin1";
-var adminPass = "password_admin1";
+	  else {
+	 
+		  if(form.userid.value == "teacher" && form.pswrd.value == "333") {
+			window.open("teacherpage.html", "_self")/*opens the target page while Id & password matches*/
+		  }
 
-
-
-//name validation and feedback
-/*function validateName(){
-	var nameField = $("input[name=fname]").val(); 
-	console.log("dsad");
-	if(nameField == teacherName) {		
-		
-		return true;
-	}
-	if(nameField == studentName){
-		
-		return true;
-	}
-	
-	if(nameField == adminName){
-		
-		return true;
-	}
-	$("span#nameFeedback").text("Name doesn't exist.");
-	
-	var passwordField = $("input[name=lname]").val(); 
-	
-	if(passwordField == teacherPass) {		
-		
-		return true;
-	}
-	if(passwordField == studentPass){
-		
-		return true;
-	}
-	
-	if(passwordField == adminPass){
-		
-		return true;
-	}
-	$("span#passwordFeedback").text("Password doesn't exist.");
-
-	
-return false;
-} */
-
-/*function validateStudent(){
-var nameField = $("input[name=fname]").val(); 
-	if (nameField == student1) {
-	
-	
-	}
-	if()
-
-
-}
-*/
-
-
-
-//password validation and feedback
-//function validatePassword (){
-	
-//}
-
- //validate studentvalidate teacher admin1
- // reutnr alle disew
-  
-  function validateName() {
-    var nameField = $("input[name=fname]").val(); 
-	if(nameField != studentName || nameField != studentName || nameField != studentName){
-		$("span#nameFeedback").text("Name doesn't exist.");
-		return false;
-	}
-
-	return true;
-	}
-	
-validatePassword(){
-	var passwordField = $("input[name=lname]").val();
-	if(passwordField != studentPass || passwordField != adminPass || passwordField != teacherPass){
-		$("span#passwordFeedback").text("Password doesn't exist.");
-		return false;
-	}
-	return true;
-}
-  
-  
- 
-
-$("form").on("submit", function(e){
-	
-	if(!validateForm()) {	//if false
-		
-		e.preventDefault();		//enter page thats apropriate//stop default behaviour, which is submission	
-	
-	} 
-
-});
- 
- /*if(validateForm() == true) {	//if true
-		
-		e.preventDefault();		//enter page thats apropriate//stop default behaviour, which is submission	
-	
-	} */
-
-function validateForm(){ 
-	return validateName() && validatePassword(); /*&& validateAdmin(); */
+		 else {
+		   alert("Error wrong password or username")/*displays error message*/
+		 }
+	  }
+    }
 }
 
 
-//2 variables, hardcode them, feedback if it fails so we can show that during the demonstration aswell
-//change the method to POST, and text field to password field
-
-
-//second student to show how the page might look different for 2 students?
-
-
-//var enter = document.getElementById(submit knappen);
-//event handler
-
-
-/*javascript for logging in*/
-
-//make into an array?
