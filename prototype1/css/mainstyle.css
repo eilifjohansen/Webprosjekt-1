@@ -280,9 +280,9 @@ iframe {
 }
 
 .subject {
-	float: left;
 	margin-left: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 250px;
+	float: left;
 }
 
 .subject2 {
@@ -291,8 +291,14 @@ iframe {
 	margin-right: 200px;
 }
 
+.thumbnail {
+	width: 325px;
+	height: 250px;
+	
+}
+
 .caption {
-	width: 300px;
+	
 }
 
 .read_button {
