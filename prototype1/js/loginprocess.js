@@ -71,26 +71,27 @@ var nameField = $("input[name=fname]").val();
  //validate studentvalidate teacher admin1
  // reutnr alle disew
   
-  function validateStudent() {
+  function validateName() {
     var nameField = $("input[name=fname]").val(); 
-	if(nameField != studentName){
-		
+	if(nameField != studentName || nameField != studentName || nameField != studentName){
+		$("span#nameFeedback").text("Name doesn't exist.");
 		return false;
+	}
+
+	return true;
 	}
 	
+validatePassword(){
 	var passwordField = $("input[name=lname]").val();
-	if(passwordField != studentPass){
-		
+	if(passwordField != studentPass || passwordField != adminPass || passwordField != teacherPass){
+		$("span#passwordFeedback").text("Password doesn't exist.");
 		return false;
 	}
-  return true;
+	return true;
+}
   
-  }
   
-  //function validateTeacher(){}
-  //function validateAdmin(){}
-
-
+ 
 
 $("form").on("submit", function(e){
 	
@@ -109,7 +110,7 @@ $("form").on("submit", function(e){
 	} */
 
 function validateForm(){ 
-	return validateName(); /* && validateTeacher() && validateAdmin(); */
+	return validateName() && validatePassword(); /*&& validateAdmin(); */
 }
 
 
