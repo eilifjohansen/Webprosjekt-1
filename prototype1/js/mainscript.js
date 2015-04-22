@@ -53,6 +53,8 @@ xmlhttp.onreadystatechange=function()
 	
 //seek to particular location in video
 var video = document.getElementById("defaultVideo");
+var isSeeking = video.seeking; //checks if the user is currently seeking
+
 video.currentTime = seekValue;
 video.play();
 	
@@ -95,10 +97,6 @@ function next_event()
 	if(count < videoArray.length-1)
 	{
 		count+=1;
-	$(".subjectList li").on("click", function(){
-		var listToShow = $(this).attr("rel");
-		alert(listToShow);
-		
 		var video = parent.video.document.getElementById("defaultVideo");
  		video.currentTime = videoArray[count];
 	}
@@ -227,23 +225,8 @@ function videoToPowerpointSync()
 	});
 	
 	
-//.this to expand only the one clicked
-
   }, 1000); 
 }
 
 
-/*$(function(){
-
-
-	$(".subjectList li").on("click", function(){
-		var listToShow = $(this).attr("rel");
-		alert(listToShow);
-		
-		
-		
-	});
-	
-});*/	
-//.this to expand only the one clicked
 
