@@ -1,0 +1,5 @@
+Giles: Elsewhere in the conference I bumped into Shawn Henry of the Worldwide 
+Web Consortium, the guiding body of the Web. I called her after the conference 
+to ask about the new guidelines from the Web Accessibility Initiative, or WAI, 
+known as WCAG 2.0. I began by asking her why we needed an update
+when most people haven’t yet got to grips with the current guidelines.

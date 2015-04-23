@@ -185,6 +185,8 @@ a {
 	
 }
 
+
+
 #side_menu a { /*midlertidlig løsning*/
 	color: #fff;
 	
@@ -192,12 +194,12 @@ a {
 
 #side_menu li:hover {	/* funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle */
 	font-weight: bold;
-	background-color: orange;	
+	background-color: #B0403B;	
 }
 
 
 .subjectList {
-	margin: 10px;
+	margin-left: 20px;
 	padding: 0px;	
 }
 
@@ -268,12 +270,12 @@ float: left;
 
 #leftArrow {
 	float: left;
-	padding-top: 230px;
+	margin-top: 230px;
 }
 
 #rightArrow{
 	float: right;
-	padding-top: 230px;
+	margin-top: 230px;
 }
 
 video {
@@ -283,12 +285,33 @@ video {
 	margin-right: 20px;
 }
 
-iframe {
-	height: 500px;
+#transcript {
+	height: 100px;
 	width: 47%;
-	margin-top: 30px;
-
+	float: left;
+	background: whitesmoke;
+	overflow: scroll;
+	
 }
+
+iframe {
+	
+	float: left;
+	height: 500px;
+	width: 48%;
+	margin-top: 30px;
+	border: 2px solid gray;
+}
+
+
+
+#defaultWiki {
+	margin-left: 55px;
+	margin-right: 0px;
+	padding-right: 0px;
+	
+}
+
 
 .subject {
 	margin-left: 100px;

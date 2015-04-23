@@ -1,0 +1,23 @@
+Shawn: It is different from WCAG 1.0. We have already some additional materials 
+that will help in understanding and applying WCAG 2.0 and we plan to have even more. 
+For example right now we have the Quick Reference for WCAG 2.0. That lists the 
+guidelines and success criteria along with the techniquesthat are sufficient
+to meet those success criteria. So if you look at the guidelines with that view, 
+then seeing the techniques along with the success criteria helps the developer 
+understand the intent of the success criteria and how to develop to meet those success
+criteria. We also have a document called Understanding WCAG 2.0. 
+This is something that we didn’t have with WCAG 1.0. It provides answers 
+to a lot of the questions that people have with WCAG 1.0. It includes 
+sections like: what is the intent of this guideline and success criteria. 
+It will help people know what the Working Group meant,
+and what’s the reason for this guideline or success criteria. And it 
+has sections on what are the common failures so you can see, “Oh, this
+is how people usually mess up here”, and a section on how this helps 
+people with disabilities. 
+So already we have a lot of supporting information that will really help
+people use, understand, interpret, and implement WCAG 2.0. And we have planned 
+additional documentation especially aimed at people who are more new
+to accessibility and doingmore basic Web development. We’ll continue to 
+provide materials both for advance cutting edge things like AJAX accessibility 
+as well as more materials for people who are more basic and more new to it.
+

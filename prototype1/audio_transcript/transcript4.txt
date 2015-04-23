@@ -1,0 +1,3 @@
+Shawn: Absolutely. Those types of things are definitely considered both within WCAG 2.0
+as well as in some additional development going on in the W3C WAI. We have a group 
+focusing specifically on accessibility issues with dynamic Web applications.

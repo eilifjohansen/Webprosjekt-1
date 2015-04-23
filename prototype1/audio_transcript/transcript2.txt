@@ -1,0 +1,5 @@
+Shawn: WCAG 2.0 will be much more appropriate for current and future Web development.
+WCAG 1.0 was finalized in May of 1999 and it focused on HTML. Obviously a lot has 
+changed since then. WCAG 2.0 is focused on applying more broadly to different 
+technologies and is updated for the state of Web technology currently,as well as designed 
+so that it can apply more relevantly as technology develops in the future.
