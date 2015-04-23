@@ -192,26 +192,20 @@ a {
 	
 } 
 
-#side_menu li:hover {	/* funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle */
-	font-weight: bold;
-	background-color: #B0403B;	
-}
-
-
 .subjectList {
 	margin-left: 20px;
 	padding: 0px;	
 }
 
-.categoryList {
-	margin: 10px;
-	padding: 0px;	
+#side_menu ul li:hover {	/* funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle */
+	font-weight: bold;
+	background-color: #B0403B;	
 }
 
-.topicList {
-	margin: 10px;
-	padding: 0px;	
-}
+
+
+
+
 
 #add_lecture {
 	width: ;
@@ -265,10 +259,13 @@ float: left;
 	float: left;
 	width: 47%;
 	height: 500px;
-	margin-left: 20px;		
+	padding-left: 15px;
+	padding-right: 0px;
+	
 }
 
 #leftArrow {
+
 	float: left;
 	margin-top: 230px;
 }

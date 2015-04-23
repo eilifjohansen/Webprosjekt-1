@@ -20,7 +20,7 @@ VideoArray[0] = 0;
 VideoArray[1] = 8;
 VideoArray[2] = 23;
 VideoArray[3] = 33;
-VideoArray[4] = 40;
+VideoArray[4] = 58;
 
 //Wiki pages array
 wikiArray[0] = "https://no.wikipedia.org/wiki/JavaScript";
