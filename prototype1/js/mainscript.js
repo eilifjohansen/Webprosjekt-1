@@ -1,9 +1,9 @@
-
 var imageNum=0;
+var wikiNum=0;
 var count=0;
-var imageArray=new Array();
+var imageArray=new Array(); //bad and old method?
 var VideoArray=new Array();
-
+var wikiArray=new Array();
 
 //Image array
 
@@ -16,13 +16,18 @@ imageArray[4] = "img/slide5.PNG"
 
 
 //Video array
-VideoArray[0]= 0;
-VideoArray[1]= 5;
-VideoArray[2]= 16;
-VideoArray[3]= 33;
-VideoArray[4]= 40;
+VideoArray[0] = 0;
+VideoArray[1] = 5;
+VideoArray[2] = 16;
+VideoArray[3] = 33;
+VideoArray[4] = 40;
 
-
+//Wiki pages array
+wikiArray[0] = "https://no.wikipedia.org/wiki/JavaScript";
+wikiArray[1] = "http://en.wikipedia.org/wiki/Dataflow_programming";
+wikiArray[2] = "http://en.wikipedia.org/wiki/Regular_expression";
+wikiArray[3] = "http://en.wikipedia.org/wiki/Functional_programming";
+wikiArray[4] = "http://en.wikipedia.org/wiki/Event_%28computing%29";
 
 //Switches to the next image in the array
 function switchImage()
@@ -74,6 +79,31 @@ function prev_event()
 		
 	}
 }
+
+//Switches to the next wikipage in the array
+function switchWiki()
+{
+	if(wikiNum<wikiArray.length-1)
+	{
+		wikiNum=wikiNum+1;
+		if(wikiNum<wikiArray.length) 
+		document.getElementById('defaultWiki').src=wikiArray[wikiNum];
+		
+	}
+}
+
+
+//Switches to the previous wikipage in the array
+function prevWiki()
+{
+	if(wikiNum>0)
+	{
+		wikiNum=wikiNum-1;
+		if(wikiNum>=0)
+		document.getElementById('defaultWiki').src=wikiArray[wikiNum];
+	}
+}
+
 
 
 //NEED TO IMPROVE

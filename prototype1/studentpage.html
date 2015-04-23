@@ -93,15 +93,16 @@
 		
 		
 		<div class="element">
-			<a href="#" onClick="prevImage();prev_event();"><img class="arrow" id="leftArrow" src="img/arrow_left.png" width="25" height="25"/></a>
+			<a href="#" onClick="prevImage();prev_event();prevWiki();"><img class="arrow" id="leftArrow" src="img/arrow_left.png" width="25" height="25"/></a>
 			<img id="defaultSlide" src="img/slide1.PNG" />
-			<a href="#" onClick="switchImage();next_event();"><img class="arrow" id="rightArrow" src="img/arrow_right.png" width="25" height="25"/></a>
+			<a href="#" onClick="switchImage();next_event();switchWiki();"><img class="arrow" id="rightArrow" src="img/arrow_right.png" width="25" height="25"/></a>
 		</div>
 		
 		
-	<!--	<div class="element">
-			<iframe src="https://no.wikipedia.org/wiki/JavaScript"></iframe>
-		</div> -->
+		<div class="element">
+		<iframe id="defaultWiki" src="https://no.wikipedia.org/wiki/JavaScript"  name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>
+			 
+		</div> 
 		
 		<div class="element">
 		<!-- audio transcript -->
@@ -132,7 +133,7 @@
 </footer>
 
 	
-	<script src="js/mainscript.js"></script>
+	<script src="js/mainscript.js"></script> <!-- Why isnt it a problem that this is placed here? As opposed to the login page. Because den andre passer argument til funksjonen? -->
 	
 </body>
 </html>
