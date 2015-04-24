@@ -424,25 +424,25 @@ footer ul li {
 }
 
 .adminbox {
-border: 1px solid #333032;
-background-color: #fff;
-height: 200px;
-width: 350px;
-margin-bottom: 20px;
-display: inline-block;
-margin-right: 20px;
-float: left;
+	border: 1px solid #333032;
+	background-color: #fff;
+	height: 200px;
+	width: 350px;
+	margin-bottom: 20px;
+	display: inline-block;
+	margin-right: 20px;
+	float: left;
 }
 
 .headerbox {
-background-color: #4388CC;
-color: #fff;
-height: 20px;
-line-height: 20px;
-padding: 10px;
+	background-color: #333032;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	padding: 10px;
 }
 
 .containerbox {
-padding: 10px;
+	
 
 }
