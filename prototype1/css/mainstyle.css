@@ -197,15 +197,16 @@ a {
 	padding: 0px;	
 }
 
-#side_menu ul li:hover {	/* funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle */
+/*#side_menu ul li:hover {	 funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle
 	font-weight: bold;
 	background-color: #B0403B;	
+}*/
+
+.nav_divider {
+	margin: 12px 40px 0px 0px;
+	border-top: 1px solid gray;
+	height: 8px;
 }
-
-
-
-
-
 
 #add_lecture {
 	width: ;
@@ -259,7 +260,7 @@ float: left;
 	float: left;
 	width: 47%;
 	height: 500px;
-	padding-left: 15px;
+	padding-left: 13px;
 	padding-right: 0px;
 	
 }
@@ -280,7 +281,21 @@ video {
 	width: 47%;
 	height: 500px;
 	margin-right: 20px;
+	
 }
+
+
+
+iframe {
+	
+	float: left;
+	height: 500px;
+	width: 47%;
+	margin-top: 30px;
+	border: 2px solid gray;
+}
+
+
 
 #transcript {
 	height: 100px;
@@ -290,16 +305,6 @@ video {
 	overflow: scroll;
 	
 }
-
-iframe {
-	
-	float: left;
-	height: 500px;
-	width: 48%;
-	margin-top: 30px;
-	border: 2px solid gray;
-}
-
 
 
 #defaultWiki {

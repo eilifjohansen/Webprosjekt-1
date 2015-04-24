@@ -48,13 +48,20 @@
 			<ul class="lectureList">
 				<li class="lecture"><a href="#">Data types</a>
 					<ul class="topicList">
-						<li><a href="#">Integers</a></li>
-						<li><a href="#">Strings</a></li>
-						<li><a href="#">Arrays</a></li>
-						<li><a href="#">Objects</a></li>
+						<div class="nav_divider"> </div>
+						<li><a href="#" onClick="jumpToTopic('0', 0)">Javascript</a></li>
+						<div class="nav_divider"> </div>
+						<li><a href="#" onClick="jumpToTopic('1', 8)">Dataflow Programming</a></li>
+						<div class="nav_divider"> </div>
+						<li><a href="#" onClick="jumpToTopic('2', 23)">Regular Expression</a></li>
+						<div class="nav_divider"> </div>
+						<li><a href="#" onClick="jumpToTopic('3', 33)">Functional Programming</a></li>
+						<div class="nav_divider"> </div>
+						<li><a href="#" onClick="jumpToTopic('4', 58)">Event</a></li>
+						<div class="nav_divider"> </div>
 					</ul>
 				</li>
-					<li><a href="#" onClick="videoToPowerpointSync">Functions</a></li>
+					<li><a href="#">Functions</a></li>
 					<li><a href="#">DOM</a></li>
 					<li><a href="#">Event Handling</a></li>
 					<li><a href="#">Frameworks</a>
@@ -85,8 +92,9 @@
 		
 		<div class="element">
 		<video id="defaultVideo" controls> 
-				<source src="videos/video.webm" type=video/webm>
 				<source src="videos/video.mp4" type=video/mp4>	
+				<source src="videos/video.webm" type=video/webm>
+				<!-- One more .ogg file -->
 				Your Browser doesn't not support any of the file formats.
 		</video>
 		</div>
@@ -94,14 +102,14 @@
 		
 		<div class="element">
 			<a href="#" onClick="prevImage();prev_event();prevWiki();prevTranscript();"><img class="arrow" id="leftArrow" src="img/arrow_left.png" width="25" height="25"/></a>
-			<img id="defaultSlide" src="img/slide1.PNG" />
+			<img title="Click on the arrows to browse back and forth between topics." id="defaultSlide" src="img/slide1.PNG" />
 			<a href="#" onClick="switchImage();next_event();switchWiki();switchTranscript();"><img class="arrow" id="rightArrow" src="img/arrow_right.png" width="25" height="25"/></a>
 		</div>
 		
 		
 		
 		
-		<div id="element">
+		<div id="transcriptElement">
 			<!-- <p id="p1"> Giles: Elsewhere in the conference I bumped into Shawn Henry of the Worldwide 
 			Web Consortium, the guiding body of the Web. I called her after the conference 
 			to ask about the new guidelines from the Web Accessibility Initiative, or WAI, 
@@ -148,6 +156,10 @@
 
 			
 			 <iframe  id="transcript" src="audio_transcript/transcript1.txt" frameborder=0 ></iframe>  <!-- audio transcript -->
+			 
+				
+			 
+			 
 		</div>
 		
 		<div class="wikiElement">
@@ -180,7 +192,8 @@
 </footer>
 
 	
-	<script src="js/mainscript.js"></script> <!-- Why isnt it a problem that this is placed here? As opposed to the login page. Because den andre passer argument til funksjonen? -->
+	<script src="js/mainscript.js"></script> <!-- Why isnt it a problem that this is placed here? As opposed to the login page. Because den andre passer argument til funksjonen?, even the loadXMLdoc,
+	that has arguments... -->
 	
 </body>
 </html>
