@@ -1,7 +1,8 @@
 /* general/global */
 body {
 	margin: 0px;  /*removes white edges around the page */
-	padding: 0px;	
+	padding: 0px;
+
 }
 
 html {
@@ -317,6 +318,19 @@ iframe {
 	
 }
 
+
+#lectureMetaData {
+	clear: both;
+	margin-top: 20px;
+}
+
+input[name=upload_lecture] {
+	margin-top: 20px;
+	width: 120px;
+	height: 40px;
+	background: #4388CC;
+	color: #fff;
+}
 
 .subject {
 	margin-left: 100px;
