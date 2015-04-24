@@ -35,6 +35,9 @@ a {
 	background-color: #333032;
 	border-bottom: 2px solid #B0403B;
 }
+#logo_small {
+	float: left;
+}
 
 #home_button {
 	width: 115px;
@@ -396,6 +399,40 @@ iframe {
 	position: relative;
 	float: left;
 	margin-left: 100px;
+}
+
+/*login page section*/
+form[name=login] {
+	margin-left: 700px;
+	margin-top: 300px;
+
+}
+
+form[name=register] {
+	margin-left: 600px;
+	margin-top: 300px;
+}
+
+#logo {
+	margin-top: 100px;
+	margin-left: 150px;
+	float: left;
+
+}
+
+input[name=userid]{
+	width: 200px;
+
+}
+
+input[name=pswrd] {
+	width: 200px;
+
+}
+
+#errorFeedback{
+	color: red;
+
 }
 
 /*footer*/
