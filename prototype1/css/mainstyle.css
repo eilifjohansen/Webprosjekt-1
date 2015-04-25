@@ -73,12 +73,20 @@ a {
 	color: #fff;
 }
 
+
+
 #current_topic {
 	float: left;
 	font-size: 1.3em;
 	font-weight: bold;
 	margin-left: 30px;
 	margin-top: 20px;
+}
+
+input[type=search]{
+	float: right;
+	margin-top: 20px;
+
 }
 
 #menu_button {
@@ -89,6 +97,7 @@ a {
 	margin: auto;
 	padding: auto;
 }
+
 
 
 
@@ -164,6 +173,7 @@ a {
 
 #menu_button ul li ul li:hover {
 		background: #333032; 
+	
 }
 
 #menu_button ul li:hover ul {
@@ -172,6 +182,10 @@ a {
 	visibility: visible;
 }
 
+.other_buttons {  /*inherits home_button properties. overrides some properties. not really a good solution*/
+	float: right;
+	width: 50px;
+} 
 
 /*side menu*/
 #side_menu {
@@ -255,10 +269,6 @@ section {
 	box-shadow: inset 6px 6px 12px -2px rgba(136,136,136,1);
 }
 
-/*.slideElement {
-float: left;
-
-}*/
 
 #defaultSlide {
 	float: left;
@@ -324,11 +334,17 @@ iframe {
 	margin-top: 20px;
 }
 
+#lectureMetaData input[type=text]{
+	margin-right: 20px;
+
+}
+
 input[name=upload_lecture] {
 	margin-top: 20px;
 	width: 120px;
 	height: 40px;
-	background: #4388CC;
+	background: #333032;
+	border: #333032;
 	color: #fff;
 }
 
@@ -453,31 +469,40 @@ input[name=pswrd] {
 footer {
 	clear: both;
 	color: #fff;
-	height: 40px;
+	height: 200px;
 	overflow: hidden;	
-	background-color: #333032;
+	background-color: #141314;
+	
+
 }
 
-footer ul {
-	display: block;
-	padding: 0px;
-	margin: 0px;
+footer h3  {
+	margin-top: 30px;
+	margin-left: 42.24%;
 }
 
-footer ul li {
+footer a {
+	margin: 20px;
 	float: left;
-	width: 33.2%;
-	height: 20px;
-	margin: auto;
-	padding:auto;
-	display: block;
+	
+}
+
+#socialmedia {
+	clear: both;
+	margin-left: 47.5%;
+}
+
+footer h4 {
+	color: darkgray;
 	text-align: center;
 }
 
+
+/*admin page*/
 .adminbox {
 	border: 1px solid #333032;
 	background-color: #fff;
-	height: 200px;
+	height: 160px;
 	width: 350px;
 	margin-bottom: 20px;
 	display: inline-block;
@@ -489,11 +514,12 @@ footer ul li {
 	background-color: #333032;
 	color: #fff;
 	height: 20px;
-	line-height: 20px;
 	padding: 10px;
 }
 
 .containerbox {
-	
+	padding-left: 10px;
+	padding-top: 5px;
 
 }
+

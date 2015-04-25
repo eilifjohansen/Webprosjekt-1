@@ -144,9 +144,9 @@ function jumpToTopic(contentNo, seekValue){
 
   //seek to particular location in video
 	var video = document.getElementById("defaultVideo");
- 	//video.currentTime = seekValue;
+ 	
 	video.currentTime = seekValue;
-	//parent.video.document.getElementById("video1").play();
+	
 	video.play();
 	
  	//load particular slide
