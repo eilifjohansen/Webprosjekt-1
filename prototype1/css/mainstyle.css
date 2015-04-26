@@ -2,7 +2,7 @@
 body {
 	margin: 0px;  /*removes white edges around the page */
 	padding: 0px;
-
+	font: 15px helvetica;
 }
 
 html {
@@ -35,6 +35,7 @@ a {
 	padding: 0px;
 	background-color: #333032;
 	border-bottom: 2px solid #B0403B;
+	
 }
 #logo_small {
 	float: left;
@@ -104,6 +105,7 @@ input[type=search]{
 
 /*dropdown menu button*/
 #menu_button ul {
+	z-index: 200; /*because of comments bottom:;*/
 	  text-align: center;
 	  display: inline;
 	  margin: 0;	 
@@ -189,11 +191,10 @@ input[type=search]{
 
 /*side menu*/
 #side_menu {
-
+	
 	float: left;
 	width: 13%; 
 	height: 2000px;
-	overflow: hidden;
 	background-color: #333032;
 	color: #000;
 	box-sizing: border-box;
@@ -203,12 +204,51 @@ input[type=search]{
 	
 }
 
+#side_menu  ul li:hover {
+	
+}
 
+#side_menu  ul li ul li {
+	
+
+}
+
+#side_menu  ul li ul li ul li:hover {
+	
+	
+
+}
 
 #side_menu a { /*midlertidlig løsning*/
 	color: #fff;
 	
+	
 } 
+
+#rate {
+	clear: both;
+	margin: 20px;
+	padding: 20px;
+}
+ 
+#side_menu li a {
+	text-decoration: none;
+ 
+  
+  
+	padding-right: 5px;
+	display: block;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+#side_menu li a:hover {
+	  font-size: 25px;
+	  background: #B0403B;
+}
 
 .subjectList {
 	margin-left: 20px;
@@ -257,11 +297,14 @@ input[type=search]{
 /*section and content of section*/
 section {
 	
+	
+	
 	height: 2000px;
 	width: 87%;
 	float: left;
 	box-sizing: border-box;
 	padding: 25px;
+	position: relative;
 	
 	/*each line needed to accommodate several web browsers. inset instead of default outset, this way only needed on the section div*/
 	-webkit-box-shadow: inset 6px 6px 12px -2px rgba(136,136,136,1);
@@ -321,14 +364,60 @@ iframe {
 }
 
 
+
 #defaultWiki {
 	margin-left: 55px;
-	margin-right: 0px;
+	margin-right: 10px;
 	padding-right: 0px;
+	height: 511px;
 	
 }
 
+#commentsBox {
+	width: 45.9%;
+	height: 400px;
+	position: absolute;
+	bottom: 930px;
+	clear: both;
+	border: 2px solid gray;
+	background: whitesmoke;
+	
+	padding: 0px;
+	box-sizing: border-box;
+}
 
+#commentsBox #header {
+	width: 100%;
+	height: 30px;
+	padding-left: 5px;
+	padding-top: 0px;
+	box-sizing: border-box;
+	background: whitesmoke;
+}
+
+
+
+section #commentsBox .nav_divider {
+	margin: 12px 0px 0px 0px;
+	height: 0px;
+	clear: both;
+}
+#commentsBox textarea {
+	box-sizing: border-box;
+	border: 0px;
+	width: 100%;
+	height: 300px;
+	margin: 0x;
+	padding: 0px;
+} 
+
+#commentsBox input {
+	
+
+}
+
+
+/*teacher page*/
 #lectureMetaData {
 	clear: both;
 	margin-top: 20px;
@@ -363,6 +452,13 @@ input[name=upload_lecture] {
 .thumbnail {
 	width: 325px;
 	height: 250px;
+
+	
+}
+
+img.thumbnail {
+	
+	filter: grayscale(65%);
 	
 }
 
@@ -371,6 +467,7 @@ input[name=upload_lecture] {
 }
 
 .read_button {
+
 	width: 70px;
 	height: ;
 	border-radius: 7px; 
@@ -443,10 +540,13 @@ form[name=register] {
 	margin-top: 300px;
 }
 
+
+
 #logo {
 	margin-top: 100px;
 	margin-left: 150px;
 	float: left;
+	
 
 }
 
@@ -472,8 +572,6 @@ footer {
 	height: 200px;
 	overflow: hidden;	
 	background-color: #141314;
-	
-
 }
 
 footer h3  {
@@ -482,20 +580,26 @@ footer h3  {
 }
 
 footer a {
-	margin: 20px;
-	float: left;
 	
+	float: left;
+	margin: 20px;
+}
+
+#footerContentWrapper { /* this is useless in it's current state, but much better to use to centre content, improve. misaligned because of footer padding/margin? auto/0px? */
+	margin: auto;
+	padding: auto;
 }
 
 #socialmedia {
 	clear: both;
 	margin-left: 47.5%;
+	filter: grayscale(70%);
 }
 
 footer h4 {
 	color: darkgray;
 	text-align: center;
-}
+} 
 
 
 /*admin page*/
@@ -508,6 +612,7 @@ footer h4 {
 	display: inline-block;
 	margin-right: 20px;
 	float: left;
+	
 }
 
 .headerbox {
@@ -521,5 +626,28 @@ footer h4 {
 	padding-left: 10px;
 	padding-top: 5px;
 
+
 }
 
+.containerbox h4 {
+	margin-top: 2px;
+	padding-top: 2px;
+	
+}
+
+
+
+#teacherbox {
+	margin-top: 0px;
+	padding-top: 0px;
+	
+	height: 115px;
+	overflow-y: scroll;
+
+}
+
+.containerbox h4 p {
+	margin: 0px;
+	padding: 0px;
+
+}

@@ -32,7 +32,7 @@
 		</ul>
 	</div>	
 	
-	<input type="search" name="lecturesearch" value="Search for lectures"></input>
+	<input type="search" placeholder="Search for lecture" name="lecturesearch" value=""></input>
 </div>
 
 
@@ -111,71 +111,38 @@
 		</div>
 		
 		
-		
-		
 		<div id="transcriptElement">
-			<!-- <p id="p1"> Giles: Elsewhere in the conference I bumped into Shawn Henry of the Worldwide 
-			Web Consortium, the guiding body of the Web. I called her after the conference 
-			to ask about the new guidelines from the Web Accessibility Initiative, or WAI, 
-			known as WCAG 2.0. I began by asking her why we needed an update
-			when most people haven’t yet got to grips with the current guidelines.</p>
-
-			<p id="p2">Shawn: WCAG 2.0 will be much more appropriate for current and future Web development.
-			WCAG 1.0 was finalized in May of 1999 and it focused on HTML. Obviously a lot has 
-			changed since then. WCAG 2.0 is focused on applying more broadly to different 
-			technologies and is updated for the state of Web technology currently,as well as designed 
-			so that it can apply more relevantly as technology develops in the future.</p>
-
-			<p id="p3">Giles: Are you talking about AJAX?</p>
-
-			<p id="p4">Shawn: Absolutely. Those types of things are definitely considered both within WCAG 2.0
-			as well as in some additional development going on in the W3C WAI. We have a group 
-			focusing specifically on accessibility issues with dynamic Web applications.</p>
-
-			<p id="p5">Giles: Anyone who’s read the old guidelines will find themselves on unfamiliar
-			territory with this new draft. What’s your advice to them?</p>
-
-			<p id="p6">Shawn: It is different from WCAG 1.0. We have already some additional materials 
-			that will help in understanding and applying WCAG 2.0 and we plan to have even more. 
-			For example right now we have the Quick Reference for WCAG 2.0. That lists the 
-			guidelines and success criteria along with the techniques that are sufficient
-			to meet those success criteria. So if you look at the guidelines with that view, 
-			then seeing the techniques along with the success criteria helps the developer 
-			understand the intent of the success criteria and how to develop to meet those success
-			criteria. We also have a document called Understanding WCAG 2.0. 
-			This is something that we didn’t have with WCAG 1.0. It provides answers 
-			to a lot of the questions that people have with WCAG 1.0. It includes 
-			sections like: what is the intent of this guideline and success criteria. 
-			It will help people know what the Working Group meant,
-			and what’s the reason for this guideline or success criteria. And it 
-			has sections on what are the common failures so you can see, “Oh, this
-			is how people usually mess up here”, and a section on how this helps 
-			people with disabilities. 
-			So already we have a lot of supporting information that will really help
-			people use, understand, interpret, and implement WCAG 2.0. And we have planned 
-			additional documentation especially aimed at people who are more new
-			to accessibility and doingmore basic Web development. We’ll continue to 
-			provide materials both for advance cutting edge things like AJAX accessibility 
-			as well as more materials for people who are more basic and more new to it. </p> -->
-
-			
 			<iframe  id="transcript" src="audio_transcript/transcript1.txt" frameborder=0 ></iframe>  <!-- audio transcript -->
-			 
-				
-			 
-			 
 		</div>
+		
+		
 		
 		<div class="wikiElement">
-			<iframe id="defaultWiki" src="https://no.wikipedia.org/wiki/JavaScript"  name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>
-			 
+			<iframe id="defaultWiki" src="https://no.wikipedia.org/wiki/JavaScript"  name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe> 
 		</div> 
 		
-		<div class="element">
-		<!-- rating, comment(text area? what input field?) etc -->
-		</div>
-	
+		
+		
 	</div>
+	
+		
+		<div id="commentsBox">
+			<div id="header"><h2>Comment:</h2></div>
+			<div class="nav_divider"></div>
+			<textarea placeholder="Comment on this lecture"></textarea>
+			<input type="submit" Value="Comment"></input>
+		</div>
+		
+		<div id="rate">
+			<div class="nav_divider"></div>
+			Rate
+			<div class="nav_divider"></div>
+			Favorite
+			<div class="nav_divider"></div>
+		</div>
+		
+		
+	
 </section>
 
 
@@ -192,6 +159,6 @@
 	
 	<script src="js/mainscript.js"></script> <!-- Why isnt it a problem that this is placed here? As opposed to the login page. Because den andre passer argument til funksjonen?, even the loadXMLdoc,
 	that has arguments... -->
-	
+	<script src="js/nav.js"></script>
 </body>
 </html>

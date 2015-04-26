@@ -1,12 +1,11 @@
 
-	$(".subjectList li").on("click", function(){
-		var listToShow = $(this).attr("rel");
-		alert(listToShow);
+	$(".subjectlist").on("click", function(){
 		
 		
+		
+		 $("this ul").toggle();	
 		
 	});
-	
 	
 	
 	
