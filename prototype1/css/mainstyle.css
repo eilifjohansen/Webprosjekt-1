@@ -615,6 +615,18 @@ footer h4 {
 	
 }
 
+.adminboxBig {
+	border: 1px solid #333032;
+	background-color: #fff;
+	height: 320px;
+	width: 350px;
+	margin-bottom: 20px;
+	display: inline-block;
+	margin-right: 20px;
+	float: left;
+	
+}
+
 .headerbox {
 	background-color: #333032;
 	color: #fff;
