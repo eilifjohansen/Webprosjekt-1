@@ -37,6 +37,7 @@ a {
 	border-bottom: 2px solid #B0403B;
 	
 }
+
 #logo_small {
 	float: left;
 	margin-left: 60px;
@@ -248,7 +249,7 @@ input[type=search]{
  
 #side_menu li a:hover {
 	  font-size: 25px;
-	  background: #B0403B;
+	  background: #6E676B;
 }
 
 .subjectList {
@@ -299,7 +300,7 @@ input[type=search]{
 section {
 	
 	
-	
+
 	height: 2000px;
 	width: 87%;
 	float: left;
