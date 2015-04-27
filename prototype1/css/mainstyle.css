@@ -319,11 +319,13 @@ section {
 }
 
 #registerWrapper {
+	
+	width: 300px;
 	margin: auto;
 	padding: auto;
-	width: auto;
-	height: auto;
-
+	margin-top: 100px;
+	height: ;
+	
 }
 
 #defaultSlide {
@@ -548,10 +550,10 @@ form[name=login] {
 
 }
 
-form[name=register] {
+/*form[name=register] {
 	margin-left: 600px;
 	margin-top: 300px;
-}
+}*/
 
 
 
