@@ -24,7 +24,7 @@
 	
 	</div>
 	<div id="currentTopic" class="current_topic">
-		<a href="#"><span id="currentTopicPlace">Nothing</span> </a>
+		<a href="#"><span id="currentTopicPlace"></span> </a>
 	
 	
 	</div>
@@ -106,7 +106,7 @@
 
 <!-- all the media content inside here -->
 <section>
-	<div id="contentWrapper"> 
+	<div id="studentContentWrapper"> 
 		
 		<div class="element">
 		<video id="defaultVideo" controls> 
@@ -126,10 +126,21 @@
 		</div>
 		
 		
-		<div id="transcriptElement">
-			<iframe  id="transcript" src="audio_transcript/transcript1.txt" frameborder=0 ></iframe>  <!-- audio transcript -->
-		</div>
 		
+		
+		<div id="commentsboxWrapper">
+		<div id="row1">
+			<div id="transcriptElement">
+				<iframe  id="transcript" src="audio_transcript/transcript1.txt" frameborder=0 ></iframe>  <!-- audio transcript -->
+			</div>
+				
+			<div id="commentsBox">
+					<div id="header"><h2>Comment:</h2></div>
+					<div class="nav_divider"></div>
+					<textarea placeholder="Comment on this lecture"></textarea>
+					<input type="submit" Value="Comment"></input>
+			</div>
+		</div>
 		
 		
 		<div class="wikiElement">
@@ -138,15 +149,10 @@
 		
 		
 		
+		</div>
+		
 	</div>
 	
-		
-		<div id="commentsBox">
-			<div id="header"><h2>Comment:</h2></div>
-			<div class="nav_divider"></div>
-			<textarea placeholder="Comment on this lecture"></textarea>
-			<input type="submit" Value="Comment"></input>
-		</div>
 		
 		<div id="rate">
 			<div class="nav_divider"></div>
