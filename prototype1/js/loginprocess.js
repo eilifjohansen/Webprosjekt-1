@@ -21,7 +21,7 @@ if(form.userid.value == "student" && form.pswrd.value == "111") {
 			}
 
 			else {
-				$("span#errorFeedback").text("Password and user name combination does not exists.");
+				$("span#errorFeedback").text("Password and user name combination does not exist");
 			  
 			}
 		}
