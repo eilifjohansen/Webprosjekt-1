@@ -1,3 +1,4 @@
+var topicNum=0;
 var imageNum=0;
 var wikiNum=0;
 var transcriptNum=0;
@@ -6,6 +7,20 @@ var imageArray=new Array(); //bad and old method?
 var VideoArray=new Array();
 var wikiArray=new Array();
 var transcriptArray=new Array();
+
+
+var topicArray=new Array();
+
+topicArray[0] = "Javascript";
+topicArray[1] = "Dataflow Programming";
+topicArray[2] = "Regular Expression";
+topicArray[3] = "Functional Programming";
+topicArray[4] = "Event";
+
+ 
+ 
+
+
 
 
 //Image array
@@ -45,11 +60,13 @@ function switchImage()
 		imageNum=imageNum+1;
 		if(imageNum<imageArray.length) 
 		document.getElementById('defaultSlide').src=imageArray[imageNum];
-		
+	
 	}
 }
 
 
+
+		
 //Switches to the previous image in the array
 function prevImage()
 {
@@ -58,8 +75,35 @@ function prevImage()
 		imageNum=imageNum-1;
 		if(imageNum>=0)
 		document.getElementById('defaultSlide').src=imageArray[imageNum];
+		
 	}
 }
+
+//TOPIC
+function switchTopic()
+{
+	if(topicNum<topicArray.length-1)
+	{
+		topicNum=topicNum+1;
+		if(topicNum<topicArray.length) 
+		//document.getElementById("currentTopicPlace").text=topicArray[topicNum];
+	$("span#currentTopicPlace").text(topicArray[topicNum]);
+	}
+}
+
+	
+function prevTopic()
+{
+	if(topicNum>0)
+	{
+		topicNum=topicNum-1;
+		if(topicNum>=0)
+		//document.getElementById("currentTopicPlace").text=topicArray[topicNum];
+		$("span#currentTopicPlace").text(topicArray[topicNum]);
+	}
+}
+
+
 
 
 //Switches to the next video in the array
@@ -153,8 +197,8 @@ function jumpToTopic(contentNo, seekValue){
 	document.getElementById('defaultSlide').src= imageArray[contentNo];
 	document.getElementById('defaultWiki').src= wikiArray[contentNo];
 	document.getElementById('transcript').src= transcriptArray[contentNo];
-
-
+	document.getElementById('currentTopicPlace').text= topicArray[contentNo];
+	$("span#currentTopicPlace").text(topicArray[contentNo]);
 }
 
 
