@@ -460,7 +460,7 @@ input[name=upload_lecture] {
 
 img.thumbnail {
 	
-	filter: grayscale(65%);
+
 	
 }
 
@@ -595,7 +595,7 @@ footer a {
 #socialmedia {
 	clear: both;
 	margin-left: 47.5%;
-	filter: grayscale(70%);
+	
 }
 
 footer h4 {
