@@ -5,12 +5,13 @@
     <title>Admin Page</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="shortcut icon" href="img/imp_logo_small2.png" type="image/x-icon" />
 </head>
 <body background="lined_paper.png"> <!-- midlertidig løsning -->
 
 
 <div id="top_menu">
-	<a href="index.html"><img id="logo_small" src="img/imp_logo_small2.png" alt="Imp logo" width="" height="70px" /></a>
+	<a href="adminpage.html"><img id="logo_small" src="img/imp_logo_small2.png" alt="Imp logo" width="" height="70px" /></a>
 	
 	<div id="current_topic">
 		<a href="#">Adminpage</a>
@@ -21,8 +22,7 @@
 			<li class="top">
 				Menu
 				<ul>
-				  <a href="index.html"><li> Home </li></a>
-				  <a href="studentsettingpage.html"><li>Profile Settings</li></a>
+				  <a href="adminsettingpage.html"><li>Profile Settings</li></a>
 				  <a href="loginpage.html"><li>Sign out</li></a>
 				</ul>
 			</li>
@@ -32,6 +32,12 @@
 
 
 <nav id="side_menu">
+	<ul class="subjectList">
+		<li><a href="adminsettingpage.html">Profile settings</a></li>
+	</ul>
+
+
+	<!--
 	<ul class="subjectList">
 		<li rel="sub1" class="active"><a href="#">Subject 1</a></li>
 		<li rel="sub2"><a href="#">Subject 2</a>
@@ -58,6 +64,7 @@
 	<div id="add_lecture">
 		<a href="index.html">Add Lecture</a>	
 	</div>
+-->
 </nav>
 
 
@@ -93,7 +100,7 @@
 					<div class="headerbox">Delete user<br><br></div>
 
 					<div class="containerbox">
-					Find user:<br>
+					Username:<br>
 					<input type="text" name="firstname">
 					<br><br>
 
@@ -124,7 +131,14 @@
 
 					<div class="containerbox">
 					Choose subject:<br>
-					<input type="text" name="firstname">
+					<select>
+					  <option value="#">Media rights</option>
+					  <option value="#">Web design</option>
+					  <option value="#">Web programmering</option>
+					  <option value="#">Basic physics</option>
+					  <option value="#">Game development</option>
+					  <option value="#">Human resources</option>
+					</select>
 					<br><br>
 
 				    <input type="submit" value="Delete">
@@ -139,7 +153,13 @@
 
 					<div class="containerbox">
 					Choose lecture:<br>
-					<input type="text" name="firstname">
+					<select>
+					  <option value="#">javascript</option>
+					  <option value="#">Dataflow programming</option>
+					  <option value="#">Regular expression</option>
+					  <option value="#">functional programming</option>
+					  <option value="#">Event</option>
+					</select>
 					<br><br>
 
 				    <input type="submit" value="Delete">

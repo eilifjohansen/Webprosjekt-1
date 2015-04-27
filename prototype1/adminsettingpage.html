@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Admin Settings Page</title>
+	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="shortcut icon" href="img/imp_logo_small2.png" type="image/x-icon" />
+</head>
+<body background="lined_paper.png"> 
+
+<div id="top_menu">
+	<a href="adminpage.html"><img id="logo_small" src="img/imp_logo_small2.png" alt="Imp logo" width="" height="70px" /></a>
+	
+	<div id="current_topic">
+		<a href="#">Admin Profile Settings</a>
+	</div>
+	
+	<div id="menu_button">
+		<ul>
+			<li class="top">
+				Menu
+				<ul>
+				  <a href="adminpage.html"><li>Lecture page</li></a>
+				  <a href="loginpage.html"><li>Sign out</li></a>
+				</ul>
+			</li>
+		</ul>
+	</div>	
+</div>
+
+<!-- Sku gitt .class til ul isteden eller lage div for hver sub category/list? -->
+<nav id="side_menu">
+	<ul class="subjectList">
+		<li rel="sub1"><a href="adminpage.html">Back to admin page</a></li>
+		<!--
+		<br>
+		<li rel="sub1"><a href="">Subscribed Lectures</a></li>
+		<br>
+		<li rel="sub2"><a href="">Change Password</a></li>
+		<br>
+		<li rel="sub3"><a href="">Edit Profile</a></li>
+		<br>
+		<li rel="sub4"><a href="">Delete Account</a></li>
+	-->
+	</ul>
+</nav>
+<!-- all the media content inside here -->
+<section id="settingsection">
+	<!--<div id="contentWrapper">
+	<div class="element">
+		<h2>Subscribed Lectures</h2>
+		<div class="subject">
+			<h3>Media Rights</h3>
+				<p>&#10006; Unsubscribe</p>
+			<h3>Web Design</h3>
+				<p>&#10006; Unsubscribe</p>
+			<h3>Web Programming</h3>
+				<p>&#10006; Unsubscribe</p>
+			<h3>Basic Physics</h3>
+				<p>&#10006; Unsubscribe</p>
+			<h3>Concepts in Game Development</h3>
+				<p>&#10006; Unsubscribe</p>
+			<h3>Human Resources</h3>
+				<p>&#10006; Unsubscribe</p>
+		</div>
+	</div>-->
+	<div class="element">
+		<div class="adminbox">
+			<form>
+				<div class="headerbox">Change Password<br><br></div>
+
+				<div class="containerbox">
+				Old Password:<br>
+				<input type="password" name="firstname">
+				<br>
+					
+				New Password:<br>
+				<input type="password" name="firstname">
+				<br>
+
+				<input type="submit" value="Change Password">
+				</div>
+			</form>
+		</div>
+	</div>
+		<div class="element">
+			<div class="adminboxBig">
+				<form>
+					<div class="headerbox">Edit Profile<br><br></div>
+
+					<div class="containerbox">
+					First Name:<br>
+					<input type="password" name="firstname" placeholder="Ola">
+					<br>
+						
+					Last Name:<br>
+					<input type="password" name="lastname" placeholder="Nordmann">
+					<br>
+					
+					Address:<br>
+					<input type="password" name="address" placeholder="Funville 28">
+					<br>
+					
+					Postnumber:<br>
+					<input type="password" name="postnumber" placeholder="1234">
+					<br>
+					
+					Phonenumber:<br>
+					<input type="password" name="phonenumber" placeholder="12345678">
+					<br>
+					
+					E-mail:<br>
+					<input type="password" name="email" placeholder="test_123@mail.com">
+					<br>
+
+					<input type="submit" value="Save Changes">
+					</div>
+				</form>
+			</div>
+		</div>
+		<a href="index.html">
+		<div id="home_button">
+		Delete Account
+		</div></a>
+	</div>		
+			
+</section>
+
+
+<footer>
+	<h3> <a href="infopage.html">About</a> <a href="infopage.html">Feedback</a>  <a href="infopage.html">Contact</a> </h3>
+	<div id="socialmedia">
+		<img src="img/fb_logo.png" class="socialmedia" alt="..." width="30px" />
+		<img src="img/twitter_logo.png" class="socialmedia" alt="..." width="30px" />
+		<img src="img/google_logo.png" class="socialmedia" alt="..." width="30px" height="" />
+	</div>
+	<h4>&copy; 2015 ICP</h4>
+</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>

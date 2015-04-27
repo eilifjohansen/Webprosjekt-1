@@ -223,8 +223,8 @@ input[type="search"]::-webkit-search-results-decoration {
 #side_menu {
 	
 	float: left;
-	width: 13%; 
-	height: 2000px;
+	width: 15%; 
+	height: 2150px;
 	background-color: #333032;
 	color: #000;
 	box-sizing: border-box;
@@ -329,8 +329,8 @@ section {
 	
 	
 
-	height: 2000px;
-	width: 87%;
+	height: 2150px;
+	width: 85%;
 	float: left;
 	box-sizing: border-box;
 	padding: 25px;

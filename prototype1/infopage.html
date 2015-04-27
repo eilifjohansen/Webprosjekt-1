@@ -8,6 +8,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css"> <!-- main style -->
 	<link rel="stylesheet" href="css/infopagestyle.css"> <!-- overrides some of the css in the mainstyle -->
+	<link rel="shortcut icon" href="img/imp_logo_small2.png" type="image/x-icon" />
+
 </head>
 <body background="lined_paper.png"> <!-- midlertidig løsning -->
 
@@ -16,7 +18,7 @@
 	<a href="index.html"><img id="logo_small" src="img/imp_logo_small2.png" alt="Imp logo" width="" height="70px" /></a>
 	
 	<div id="current_topic">
-		<a href="#">Info</a>
+		<a href="#">Infopage: Interactive Multimedia Presenter</a>
 	</div>
 	
 	<div id="menu_button">
@@ -24,8 +26,7 @@
 			<li class="top">
 				Menu
 				<ul>
-				  <a href="index.html"><li>Home</li></a>
-				  <a href="studentsettingpage.html"><li>Profile Settings</li></a>
+				  <a href="index.html"><li>Home page</li></a>
 				</ul>
 			</li>
 		</ul>
@@ -33,7 +34,7 @@
 </div>
 
 <section>
-	<h1>About</h1> 
+	<h1 id="about">About us</h1> 
 		<p>
 		IMP is a learning platform owned by Interactive Communication Partners AS (ICP).
 		IMP (Interactive Multimedia Presenter) is a learning management system (LMS). The goal of the IMP is to 
@@ -63,21 +64,22 @@
 		elit sed lorem laoreet ultrices. Integer id dictum ex. Nunc sem ipsum, aliquet
 		vitae fringilla at, auctor vitae libero.
 		</p>
-
-	<h1>Feedback</h1>
+<br>
+	<h1 id="feedback">Give feedback</h1>
 		<form action="" method="POST"> 
-			<input type="text" value="Feedback topic"></input>
-			<input type="email" value="Email"></input>
-			<textarea name="feedback" form="" value="">Give feedback...</textarea>
-			<input type="submit" value="Submit">
+			<input type="email" placeholder="Email..." ></input>
+			<input type="text" placeholder="Feedback topic..."></input>
+			<textarea name="feedback" form="" placeholder="Give feedback..."></textarea>
+			<input type="submit" value="Submit feedback">
 		</form>
 	
-	<h1>Contact</h1>
+<br>
+	<h1 id="contact">Contact us</h1>
 		<form action="" method="POST"> 
-			<input type="text" value="Reason for contact"></input>
-			<input type="email" value="Email"></input>
-			<textarea name="contact" form="" value="">Contact Us...</textarea>
-			<input type="submit" value="Submit">
+			<input type="email" placeholder="Email..."></input>
+			<input type="text" placeholder="Email topic..."></input>
+			<textarea name="contact" form="" placeholder="Your message..."></textarea>
+			<input type="submit" value="Send request">
 		</form>
 </section>
 
