@@ -82,12 +82,17 @@ a {
 
 
 
-#current_topic {
+.current_topic {
 	float: left;
 	font-size: 1.3em;
 	font-weight: bold;
 	margin-left: 70px;
 	margin-top: 20px;
+}
+
+#currentTopic {
+	margin-left: 15px;
+
 }
 
 #menu_button {
