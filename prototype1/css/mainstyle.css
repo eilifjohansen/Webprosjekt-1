@@ -23,6 +23,10 @@ a {
 	display: block; /* make the entire div clickable. not quite the entire, why?.. ul, li, noe i det? fixed, <a> rundt li eller div etc */ 
 }
 
+.black-text {
+	color: #000;
+}
+
 
 
 /*top menu*/
