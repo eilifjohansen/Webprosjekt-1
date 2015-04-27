@@ -39,6 +39,7 @@ a {
 }
 #logo_small {
 	float: left;
+	margin-left: 60px;
 }
 
 #home_button {
@@ -80,7 +81,7 @@ a {
 	float: left;
 	font-size: 1.3em;
 	font-weight: bold;
-	margin-left: 30px;
+	margin-left: 70px;
 	margin-top: 20px;
 }
 
