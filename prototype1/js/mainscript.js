@@ -142,7 +142,7 @@ function prevTranscript()
 
 function jumpToTopic(contentNo, seekValue){
 
-  //seek to particular location in video
+	//seek to particular location in video
 	var video = document.getElementById("defaultVideo");
  	
 	video.currentTime = seekValue;
