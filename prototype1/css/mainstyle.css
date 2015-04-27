@@ -542,6 +542,7 @@ form[name=login] {
 }
 
 form[name=register] {
+	width: 400px; 
 }
 
 #registerWrapper {
