@@ -29,7 +29,7 @@ form {
 
 input {
 	width: 300px;
-	opacity: 0.6;
+	
 }
 
 
@@ -37,5 +37,5 @@ input {
 textarea {
 	width: 600px;
 	height: 200px;
-	opacity: 0.6;
+	
 }

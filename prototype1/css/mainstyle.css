@@ -2,7 +2,10 @@
 body {
 	margin: 0px;  /*removes white edges around the page */
 	padding: 0px;
-	font: 15px helvetica;
+	/*font: 15px helvetica;*/
+	background: url(../lined_paper.png);
+	font-family: 'Roboto', sans-serif;
+	
 }
 
 html {
@@ -12,7 +15,7 @@ html {
 
 li {
 	list-style: none;
-	font-size: 20px;	
+	
 	margin: 0px;
 	padding:0px;
 }
@@ -20,7 +23,7 @@ li {
 a {	
 	text-decoration: none;
 	color: #fff;
-	display: block; /* make the entire div clickable. not quite the entire, why?.. ul, li, noe i det? fixed, <a> rundt li eller div etc */ 
+	display: block; 
 }
 
 .black-text {
@@ -32,50 +35,67 @@ a {
 /*top menu*/
 #top_menu {
 	width: 100%;
-	height: 70px;
+	height: 60px;
 	color: #fff;
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-	background-color: #333032;
-	border-bottom: 2px solid #B0403B;
+	background: none repeat scroll 0% 0% #2C3E50;
+	background: url(../mochaGrunge.png);
+	background: #336699;
+background: rgba(25,51,77,1);
+background: -moz-linear-gradient(top, rgba(25,51,77,1) 0%, rgba(16,76,132,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(25,51,77,1)), color-stop(100%, rgba(16,76,132,1)));
+background: -webkit-linear-gradient(top, rgba(25,51,77,1) 0%, rgba(16,76,132,1) 100%);
+background: -o-linear-gradient(top, rgba(25,51,77,1) 0%, rgba(16,76,132,1) 100%);
+background: -ms-linear-gradient(top, rgba(25,51,77,1) 0%, rgba(16,76,132,1) 100%);
+background: linear-gradient(to bottom, rgba(25,51,77,1) 0%, rgba(16,76,132,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', endColorstr='#104c84', GradientType=0 );
+	background: rgb(184, 132, 209); /*browser compatibility*/
+	 background: rgba(184, 132, 209, 0.9);/* rgba for opacity*/
+	 background: #3A5795;
+	 border: 1px solid gray;
 	
 }
 
 #logo_small {
 	float: left;
-	margin-left: 60px;
+	margin-left: 20px;
+	height: 55px;	/*one pixel smaller because of the top menu border that's one pixel(and has border-box)*/
+	margin-top: 0px;
 }
 
-#home_button {
-	width: 115px;
+.home_button {
+	width: ;
 	height: ;
-	float: left;
+	float: right;
 	border-radius: 7px; 
     -moz-border-radius: 7px; 
 	-webkit-border-radius: 7px; 
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
 	text-align: center;
-	padding:;
+	
 	font: bold 12px/18px sans-serif;
 	display: inline-block;
-	margin-right: -4px;
-	position: relative;
+	
+	
 	padding: 15px 20px;
-	background: #B0403B;
+	background: #2F477A; /*23355B*/
 	cursor: pointer;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
-	margin-left: 10px;
-	margin-top: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-left: 0px;
+	
 }
 
-#home_button:hover {
+.home_button:hover, .sub_button:hover, .read_button:hover {
 	background: #333032;
 	color: #fff;
 }
@@ -84,48 +104,44 @@ a {
 
 #current_topic {
 	float: left;
-	font-size: 1.3em;
+	
 	font-weight: bold;
-	margin-left: 70px;
-	margin-top: 20px;
+	margin-left: 40px;
+	margin-top: 17px;
 }
 
 .currentTopic {
 	float: left;
-	font-size: 1.3em;
+	
 	font-weight: bold;
-	margin-top: 20px;
 	margin-left: 15px;
+	margin-top: 17px;
+	
 
 }
 
-#menu_button {
-
-	float: right;
-	box-sizing: border-box;
-	margin: auto;
-	padding: auto;
-}
 
 #searchboxdiv{
 	float: right;
+	margin-right: 35px;
+	
 }
 
 #searchbox {
 	position: relative;
-	top: 10px;
+	top: 5px;
 	border-radius: 7px;
 	border: none;
 	font: bold 12px sans-serif;
 	margin-right: -35px;
-	padding: 17px 20px;
+	padding: 16px 17px;
 }
 
 #searchicon {
 	position: relative;
 	right: 0px;
-	top: 12px;
-	width: 10px;
+	top: 9px;
+	width: 14px;
 }
 
 input[type=text]::-ms-clear {
@@ -143,12 +159,22 @@ input[type="search"]::-webkit-search-results-decoration {
 	}
 
 /*dropdown menu button*/
+#menu_button {
+	
+	float: right;
+	box-sizing: border-box;
+	margin: auto;
+	padding: auto;
+	
+}
+
 #menu_button ul {
-	z-index: 200; /*because of comments bottom:;*/
-	  text-align: center;
-	  display: inline;
-	  margin: 0;	 
-	  list-style: none; 
+	
+	text-align: center;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	list-style: none; 
 }
 
 #menu_button ul li {
@@ -158,7 +184,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	  margin-right: -4px;
 	  position: relative;
 	  padding: 15px 20px;
-	  background: #FF8136;
+	  background: #8C489F;
 	  cursor: pointer;
 	  -webkit-transition: all 0.2s;
 	  -moz-transition: all 0.2s;
@@ -169,20 +195,25 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 #menu_button ul li.top {
-    background-color: #B0403B;
+    background: #2F477A url(../img/menu_icon.png) no-repeat center;
+	background-size: 40px;
+
+	height: 18px;
+	width: 25px;
 	border-radius: 7px; 
     -moz-border-radius: 7px; 
 	-webkit-border-radius: 7px; 
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	margin-top: 10px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+	margin-top: 5px;
 	margin-right: 10px;
-	padding:;
+	margin-left: 0px;
+	
 }
 
 #menu_button ul li:hover {
-	  background: #333032;
+	  background: #2F477A;  /*#333032 backup gray colour*/
 	  color: #fff;
 }
 
@@ -206,7 +237,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 #menu_button ul li ul li { 
-	  background: #B0403B; 
+	  background: #2F477A; /*8C489F*/
 	  display: block; 
 	  color: #fff;
 	  
@@ -223,87 +254,118 @@ input[type="search"]::-webkit-search-results-decoration {
 	visibility: visible;
 }
 
-.other_buttons {  /*inherits home_button properties. overrides some properties. not really a good solution*/
-	float: right;
-	width: 50px;
-} 
+
+
 
 /*side menu*/
 #side_menu {
-	
+	box-sizing: border-box;
 	float: left;
 	width: 15%; 
 	height: 2150px;
-	background-color: #333032;
-	color: #000;
+	
+	background: url(../mochaGrunge.png);
+	background: whitesmoke;
+	border-right: solid 1px darkgray;
+	color: #fff;
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	
-}
-
-#side_menu  ul li:hover {
-	
-}
-
-#side_menu  ul li ul li {
-	
 
 }
 
-#side_menu  ul li ul li ul li:hover {
-	
-	
-
-}
-
-#side_menu a { /*midlertidlig løsning*/
-	color: #fff;
-	
-	
+#side_menu a { 
+	color: #000;	
+	box-sizing: border-box;
+	height: 40px;
 } 
 
-#rate {
-	clear: both;
-	margin: 20px;
-	padding: 20px;
-}
- 
+
 #side_menu li a {
+	
 	text-decoration: none;
- 
-  
-  
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-top: 8px;
+	padding-bottom: 35px;
+	
 	padding-right: 5px;
 	display: block;
-  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-  transition: font-size 0.3s ease, background-color 0.3s ease;
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;
 }
  
 #side_menu li a:hover {
-	  font-size: 25px;
-	  background: #6E676B;
+	background: rgb(152,152,152); /*browser compatibility*/
+	background: rgba(152,152,152, 0.3); /* rgba for opacity*/
+	cursor: pointer;
+	border-left: 5px solid #2F477A; /*#8C489F, backup purple colour*/
+	box-sizing: border-box;
+	text-decoration: none;
+	padding-left: 0px; /*with or without movement?*/
+	padding-right: 0px;
+}
+#side_menu li a:active {
+    background-color: yellow;
+}
+#side_menu  ul  {
+	margin: 0px;
+	padding-right: ;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	/*short hand expert...*/
 }
 
-.subjectList {
-	margin-left: 20px;
-	padding: 0px;	
+
+#side_menu .subjectList li {
+	
+	
+	color:;
+	
 }
 
-/*#side_menu ul li:hover {	 funker ikke uten javascript eller hvis man ikke har unik id for hver knapp og implimenterer #id:hover for alle
-	font-weight: bold;
-	background-color: #B0403B;	
-}*/
+#side_menu .lectureList li {
+	
+	padding: 0px;
+	
+	color:;	
+}
+
+
+#side_menu .topicList li a{
+	color: #3A5795;
+}
+
+#side_menu ul.topicList  {
+	padding-bottom: 200px;
+	
+}
+
+#side_menu #miscLinks a  { /*the bottom buttons on the studentpage */
+	color: #000;
+	
+	
+}
 
 .nav_divider {
 	margin: 12px 40px 0px 0px;
 	border-top: 1px solid gray;
 	height: 8px;
+	
 }
+
+#side_menu .nav_divider {
+	margin: 0px 0px 0px 0px;
+	border-top: 1px solid gray;
+	height: 0px;
+	
+}
+
 
 #add_lecture {
 	width: ;
@@ -337,7 +399,7 @@ input[type="search"]::-webkit-search-results-decoration {
 section {
 	
 	
-
+	
 	height: 2150px;
 	width: 85%;
 	float: left;
@@ -345,9 +407,9 @@ section {
 	padding: 25px;
 	
 	/*each line needed to accommodate several web browsers. inset instead of default outset, this way only needed on the section div*/
-	-webkit-box-shadow: inset 6px 6px 12px -2px rgba(136,136,136,1);
-	-moz-box-shadow: inset 6px 6px 12px -2px rgba(136,136,136,1);
-	box-shadow: inset 6px 6px 12px -2px rgba(136,136,136,1);
+	/*-webkit-box-shadow: inset 0px 6px 12px -2px rgba(136,136,136,1);
+	-moz-box-shadow: inset 0px 6px 12px -2px rgba(136,136,136,1);
+	box-shadow: inset 0px 6px 12px -2px rgba(136,136,136,1);*/
 }
 
 
@@ -391,12 +453,19 @@ iframe {
 }
 
 
-
+/*content wrappers for all pages*/
 #studentContentWrapper {
 	width: 1570px;
 	margin: auto;
 	
 }
+
+
+
+
+
+
+
 
 
 #commentsboxWrapper {
@@ -461,23 +530,40 @@ iframe {
 
 
 section #commentsBox .nav_divider {
-	margin: 12px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	height: 0px;
 	clear: both;
 }
+
 #commentsBox textarea {
+	border: 1px solid #ddd;
 	box-sizing: border-box;
-	border: 0px;
-	width: 100%;
-	height: 300px;
+	
+	width: 75%;
+	height: 50px;
 	margin: 0x;
 	padding: 0px;
+	resize: none;
 } 
 
-#commentsBox input {
+#commentsBox textarea[name=comments] {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	width: 100%;
+	height: 200px;
+	margin: 0x;
+	padding: 0px;
+	resize: none;
+	opacity: 0.3;
 	
-
 }
+
+#rate {
+	clear: both;
+	margin: 20px;
+	padding: 20px;
+}
+ 
 
 
 /*teacher page*/
@@ -491,7 +577,7 @@ section #commentsBox .nav_divider {
 
 }
 
-input[name=upload_lecture] {
+input[name=upload_lecture], input[name=newTopic] {
 	margin-top: 20px;
 	width: 120px;
 	height: 40px;
@@ -500,10 +586,31 @@ input[name=upload_lecture] {
 	color: #fff;
 }
 
+.timeStamps {
+	
+}
+
+
+
+
+
+#indexContentWrapper {
+	width: 1500px;
+	margin: auto;
+	height: auto;
+	box-sizing: border-box;
+
+	
+}
+
 .subject {
-	margin-left: 100px;
-	margin-bottom: 250px;
+	width: 25%;
+	
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 350px;
 	float: left;
+	box-sizing: border-box;
 }
 
 .subject2 {
@@ -513,82 +620,112 @@ input[name=upload_lecture] {
 }
 
 .thumbnail {
+	width: 100%;
+	height: 250px;
+	
+	box-sizing: border-box;
+	
+}
+.subject2 .thumbnail {
 	width: 325px;
 	height: 250px;
-
+	
+	box-sizing: border-box;
 	
 }
 
 img.thumbnail {
-	
+	border: 1px solid #2F477A;
 
 	
 }
+img.thumbnail:hover {
+	border: 2px solid #2F477A;
+
+}
 
 .caption {
-	
+	line-height: 1.3em;
+	margin-bottom: 50px;
+}
+
+.caption p {
+	line-height: 1.5em;
+	height: 100px;
+	margin-bottom: 50px;
 }
 
 .read_button {
 
-	width: 70px;
-	height: ;
+	
+
 	border-radius: 7px; 
     -moz-border-radius: 7px; 
 	-webkit-border-radius: 7px; 
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow:  0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow:  0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow:  0 0 5px rgba(0, 0, 0, 0.15);
 	text-align: center;
 	padding:;
 	font: bold 12px/18px sans-serif;
 	display: inline-block;
 	position: absolute;
 	padding: 15px 20px;
-	background: #B0403B;
+	background: #2F477A;
 	cursor: pointer;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
-	margin-left: 30px;
+	margin-left: 45px;
+	opacity: 0.9;
 }
 
 .sub_button {
-	width: 70px;
-	height: ;
+	
+	
 	border-radius: 7px; 
     -moz-border-radius: 7px; 
 	-webkit-border-radius: 7px; 
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow:  inset 0 0 5px rgba(0, 0, 0, 0.15);
 	text-align: center;
-	padding:;
+	
 	font: bold 12px/18px sans-serif;
 	display: inline-block;
 	position: absolute;
 	padding: 15px 20px;
-	background: #B0403B;
+	background: #2F477A;
+	
+	color: #fff;
 	cursor: pointer;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
-	margin-left: 160px;
+	margin-left: 175px;
+	opacity: 0.9;
+	
 }
 
 .subjectText {
 	width: 50%;
 }
 
+.contentWrapper p {
+	line-height: 1.3em;
+}
+
+/*subject page*/
 .contentWrapper {
 	width: 50%;
 	position: relative;
 	float: left;
 	margin-left: 100px;
+	
 }
 
 /*login page section*/
@@ -613,11 +750,10 @@ form[name=register] {
 
 
 #logo {
-	margin-top: 100px;
-	margin-left: 150px;
+	margin-top: 140px;
+	margin-left: 200px;
 	float: left;
-	
-
+	width: 300px;	
 }
 
 input[name=userid]{

@@ -308,15 +308,15 @@ function videoToPowerpointSync()
 
 
 
-/*
+
 //NEED TO IMPROVE
 //video to power point synchronization
 function process()
 {
 	var video = document.getElementById("defaultVideo");
-	//while(1)
+	
 	{
-		//var time = parent.video.document.getElementById("video1").currentTime;
+		
 		
 		if(video.currentTime < 2)
 		{
@@ -365,7 +365,7 @@ function videoToPowerpointSync()
 
 { 
 
-//  var result2 = document.getElementById('result2'); 
+
 
   var start = new Date().getTime(); 
 
@@ -383,12 +383,9 @@ function videoToPowerpointSync()
 
        
 
-//      result2.value =  'time=' +  
 
-  //      (new Date().getTime() - start) + ' [i=' + i + ']'; 
 
-       
-
+  
       process(); 
 
        
@@ -400,10 +397,6 @@ function videoToPowerpointSync()
         clearInterval(processor); 
 
  
-
-  //      result2.value = 'time=' +  
-
-//          (new Date().getTime() - start) + ' [done]'; 
 
       } 
 
@@ -417,4 +410,3 @@ function videoToPowerpointSync()
 
   }, 1000); 
 }
-*/

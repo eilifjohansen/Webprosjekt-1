@@ -5,9 +5,10 @@
     <title>Home Page</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="img/imp_logo_small2.png" type="image/x-icon" />
 </head>
-<body background="lined_paper.png"> <!-- midlertidig løsning -->
+<body> <!-- midlertidig løsning -->
 
 
 <div id="top_menu">
@@ -17,16 +18,12 @@
 		<a href="#">Interactive Multimedia Presenter</a>
 	</div>
 	
+	
+	
 	<div id="menu_button">
 		<ul>
+		
 			<li class="top">
-				<a href="registerpage.html">Register</a>
-			</li>
-				<li class="top">
-				<a href="loginpage.html">Sign in</a>
-			</li>
-			<li class="top">
-				Menu
 				<ul>
 					  <a href="infopage.html"> <li> About us </li> </a>
 					  <a href="infopage.html#contact"> <li> Contact us </li> </a>
@@ -35,26 +32,42 @@
 			</li>
 		</ul>
 	</div>
-        <div id="searchboxdiv">
-            <input type="search" id="searchbox" placeholder="Search for subject" value=""><img id="searchicon" src="img/searchicon.png" alt=""></input>
-        </div>
+	
+	<div id="searchboxdiv">
+		<input type="search" id="searchbox" placeholder="Search for subject" value=""><img id="searchicon" src="img/searchicon.png" alt=""></input>
+	</div>
+		
+		
+	<a href="registerpage.html"><div class="home_button">Register</div></a>
+	<a href="loginpage.html"><div class="home_button">Sign in</div></a>
+	
+		
+		
 </div>
+
 
 <nav id="side_menu">
 	<ul class="subjectList">
+	<div class="nav_divider"> </div>
 		<li rel="sub7"><a href="subject/media-rights.html">Media rights</a></li>
+		<div class="nav_divider"> </div>
 		<li rel="sub7"><a href="subject/web-design.html">Web design</a></li>
+		<div class="nav_divider"> </div>
 		<li rel="sub7"><a href="subject/web-programming.html">Web programming</a></li>
+		<div class="nav_divider"> </div>
 		<li rel="sub7"><a href="subject/basic-physics.html">Basic physics</a></li>
+		<div class="nav_divider"> </div>
 		<li rel="sub7"><a href="subject/game-development.html">Game development</a></li>
+		<div class="nav_divider"> </div>
 		<li rel="sub7"><a href="subject/human-resources.html">Human resources</a></li>
+		<div class="nav_divider"> </div>
 	</ul>
 </nav>
 
 <!-- all the media content inside here -->
 <section>
-	<div id="contentWrapper"> 
-		<div class="row">
+	<div id="indexContentWrapper"> 
+	
 			<div class="subject">
 				<a href="subject/media-rights.html" class="black-text">
 				<div class="thumbnail">
@@ -91,10 +104,14 @@
 						<a href="subject/web-programming.html"><div class="read_button">Read More</div></a><a href="loginpage.html"><div class="sub_button">Subscribe!</div></a>
 					</div>
 				</div>
+				</a>
 			</div>
-		</a>
-		</div>
-		<div class="row">
+		
+		
+		
+		
+		
+		
 			<div class="subject">
 				<a href="subject/basic-physics.html" class="black-text">
 				<div class="thumbnail">
@@ -108,6 +125,9 @@
 				</div>
 			</a>
 			</div>
+			
+			
+			
 			<div class="subject">
 				<a href="subject/game-development.html" class="black-text">
 				<div class="thumbnail">
@@ -134,7 +154,7 @@
 				</div>
 			</a>
 			</div>
-		</div>
+		
 	</div>
 </section>
 

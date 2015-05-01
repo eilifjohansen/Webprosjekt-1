@@ -6,10 +6,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css">
 	<link rel="stylesheet" href="css/adminpagestyle.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="img/imp_logo_small2.png" type="image/x-icon" />
 </head>
-<body background="lined_paper.png"> <!-- midlertidig løsning -->
-
+<body> 
 
 <div id="top_menu">
 	<a href="teacherpage.html"><img id="logo_small" src="img/imp_logo_small2.png" alt="Imp logo" width="" height="70px" /></a>
@@ -21,7 +21,7 @@
 	<div id="menu_button">
 		<ul>
 			<li class="top">
-				Menu
+			
 				<ul>
 				 <a href="teachersettingpage.html"> <li> Profile Settings </li> </a>
 				 <a href="loginpage.html"> <li> Sign out </li> </a>
@@ -108,7 +108,7 @@
 		<div class="element">
 
 			<div class="adminbox">
-				<form>
+			
 					<div class="headerbox">Create lecture<br><br></div>
 
 					<div class="containerbox">
@@ -119,11 +119,11 @@
 				    <input type="submit" value="Create">
 					</div>
 
-				</form>
+			
 			</div>
 
 			<div class="adminbox">
-				<form>
+			
 					<div class="headerbox">Upload video<br><br></div>
 
 					<div class="containerbox">
@@ -134,11 +134,11 @@
 				    <input type="submit" value="Upload">
 					</div>
 
-				</form>
+			
 			</div>
 			
 			<div class="adminbox">
-				<form>
+			
 					<div class="headerbox">Upload audio transcript<br><br></div>
 
 					<div class="containerbox">
@@ -149,11 +149,11 @@
 				    <input type="submit" value="Upload">
 					</div>
 
-				</form>
+				
 			</div>
 
 			<div class="adminbox">
-				<form>
+			
 					<div class="headerbox">Upload presentation<br><br></div>
 
 					<div class="containerbox">
@@ -164,11 +164,11 @@
 				    <input type="submit" value="Upload">
 					</div>
 
-				</form>
+				
 			</div>
 
 			<div class="adminbox">
-				<form>
+				
 					<div class="headerbox">Add WIKI page<br><br></div>
 
 					<div class="containerbox">
@@ -179,7 +179,7 @@
 				    <input type="submit" value="Add">
 					</div>
 
-				</form>
+				
 			</div>
 		</div>
 		
@@ -187,18 +187,20 @@
 			<h2>Topic Timestamps and Occurrences</h2>
 			<div class="nav_divider"></div>
 			
-			<h3>Topic 1</h3>
-			<span>Topic name:</span>
-			<input type="text" placeholder="" title="Time of occurrence in seconds" value=""> </input>
-			<span>Video time:</span>
-			<input type="text" placeholder="" title="Time of occurrence in seconds" value=""> </input>
-			<span>Slide nr: </span>
-			<input type="text"> </input>
-			<span>Transcript nr:</span>			
-			<input type="text"> </input>	
-			<span>Wikipage nr: </span>
-			<input type="text"> </input>
-			<div class="nav_divider"></div>
+			
+				<h3>Topic 1</h3>
+				<span>Topic name:</span>
+				<input type="text" placeholder="" title="Time of occurrence in seconds" value=""> </input>
+				<span>Video time:</span>
+				<input type="text" placeholder="" title="Time of occurrence in seconds" value=""> </input>
+				<span>Slide nr: </span>
+				<input type="text"> </input>
+				<span>Transcript nr:</span>			
+				<input type="text"> </input>	
+				<span>Wikipage nr: </span>
+				<input type="text"> </input>
+				<div class="nav_divider"></div>
+			
 			
 			<h3>Topic 2</h3>
 			<span>Topic name:</span>
@@ -237,21 +239,29 @@
 			<input type="text"> </input>	
 			<span>Wikipage nr: </span>
 			<input type="text"> </input>
-			<div class="nav_divider"></div>
 			
-			<h3>Topic 5</h3>
-			<span>Topic name:</span>
-			<input type="text" placeholder="" title="Time of occurrence in seconds" value=""> </input>
-			<span>Video time:</span>
-			<input type="text" placeholder=""  title="Time of occurrence in seconds" value=""> </input>
-			<span>Slide nr: </span>
-			<input type="text"> </input>
-			<span>Transcript nr:</span>			
-			<input type="text"> </input>	
-			<span>Wikipage nr: </span>
-			<input type="text"> </input>
+			
+			<div class="timeStamps">
+				<div class="nav_divider"></div>
+				<h3 class="headerField">Topic 5</h3>
+				<span class="topicField">Topic name:</span>
+				<input class="" type="text" placeholder="" title="Time of occurrence in seconds" value=""> </input>
+				<span>Video time:</span>
+				<input type="text" placeholder=""  title="Time of occurrence in seconds" value=""> </input>
+				<span>Slide nr: </span>
+				<input type="text"> </input>
+				<span>Transcript nr:</span>			
+				<input type="text"> </input>	
+				<span>Wikipage nr: </span>
+				<input type="text"> </input>
+			</div>
+			
+				<span class="moreFields"><span>
+			
 		</div>
-		<input type="submit" name="upload_lecture" value="Upload Lecture"> </input>
+		
+		<input type="button" name="newTopic" value="Add new topic"></input>
+		<input type="submit" name="upload_lecture" value="Upload Lecture"></input>
 	</div>
 </section>
 
@@ -268,7 +278,7 @@
 	</div>
 </footer>
 	
-	<script src="js/mainscript.js"></script>
+	<script src="js/addTopic.js"></script>
 	
 </body>
 </html>

@@ -7,31 +7,25 @@ var imageArray=new Array(); //bad and old method?
 var VideoArray=new Array();
 var wikiArray=new Array();
 var transcriptArray=new Array();
-
-
 var topicArray=new Array();
 
+//Topic array
 topicArray[0] = "Javascript";
 topicArray[1] = "Dataflow Programming";
 topicArray[2] = "Regular Expression";
 topicArray[3] = "Functional Programming";
 topicArray[4] = "Event";
-
  
- 
-
-
-
 
 //Image array
-imageArray[0] = "img/slide1.PNG"
-imageArray[1] = "img/slide2.PNG"
-imageArray[2] = "img/slide3.PNG"
-imageArray[3] = "img/slide4.PNG"
-imageArray[4] = "img/slide5.PNG"
+imageArray[0] = "img/slide1.png"
+imageArray[1] = "img/slide2.png"
+imageArray[2] = "img/slide3.png"
+imageArray[3] = "img/slide4.png"
+imageArray[4] = "img/slide5.png"
 
 //Video array
-VideoArray[0] = 0;
+VideoArray[0] = 3;
 VideoArray[1] = 8;
 VideoArray[2] = 23;
 VideoArray[3] = 33;
@@ -39,10 +33,10 @@ VideoArray[4] = 58;
 
 //Wiki pages array
 wikiArray[0] = "https://no.wikipedia.org/wiki/JavaScript";
-wikiArray[1] = "http://en.wikipedia.org/wiki/Dataflow_programming";
-wikiArray[2] = "http://en.wikipedia.org/wiki/Regular_expression";
-wikiArray[3] = "http://en.wikipedia.org/wiki/Functional_programming";
-wikiArray[4] = "http://en.wikipedia.org/wiki/Event_%28computing%29";
+wikiArray[1] = "https://en.wikipedia.org/wiki/Dataflow_programming";
+wikiArray[2] = "https://en.wikipedia.org/wiki/Regular_expression";
+wikiArray[3] = "https://en.wikipedia.org/wiki/Functional_programming";
+wikiArray[4] = "https://en.wikipedia.org/wiki/Event_%28computing%29";
 
 //Audio transcript array
 transcriptArray[0] = "audio_transcript/transcript1.txt";
@@ -183,7 +177,7 @@ function prevTranscript()
 
 
 
-
+//function for the menu, changes correctly based on input 
 function jumpToTopic(contentNo, seekValue){
 
 	//seek to particular location in video
@@ -200,5 +194,126 @@ function jumpToTopic(contentNo, seekValue){
 	document.getElementById('currentTopicPlace').text= topicArray[contentNo];
 	$("span#currentTopicPlace").text(topicArray[contentNo]);
 }
+/*
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    //document.getElementById("hipWIKI").innerHTML=xmlhttp.responseText;
+    }
+  }
+
+xmlhttp.send();
+}*/
+//NEED TO IMPROVE
+//video to power point synchronization
+function process()
+{
+	var video = document.getElementById("defaultVideo");
+	
+	{
+		
+		
+		if(video.currentTime < 3)
+		{
+			document.getElementById('defaultSlide').src=imageArray[0];
+			/*document.getElementById('defaultWiki').src= wikiArray[0];*/
+			document.getElementById('transcript').src= transcriptArray[0];
+			document.getElementById('currentTopicPlace').text= topicArray[0];
+			$("span#currentTopicPlace").text(topicArray[0]);
+			
+		}
+		else if(video.currentTime < 8)
+		{
+			document.getElementById('defaultSlide').src=imageArray[1];
+			/*document.getElementById('defaultWiki').src= wikiArray[1];*/
+			document.getElementById('transcript').src= transcriptArray[1];
+			document.getElementById('currentTopicPlace').text= topicArray[1];
+			$("span#currentTopicPlace").text(topicArray[1]);			
+		}
+		else if(video.currentTime < 23)
+		{
+			document.getElementById('defaultSlide').src=imageArray[2];	
+			/*document.getElementById('defaultWiki').src= wikiArray[2];*/
+			document.getElementById('transcript').src= transcriptArray[2];
+			document.getElementById('currentTopicPlace').text= topicArray[2];
+			$("span#currentTopicPlace").text(topicArray[2]);			
+		}
+		else if(video.currentTime < 33)
+		{
+			document.getElementById('defaultSlide').src=imageArray[3];
+			/*document.getElementById('defaultWiki').src= wikiArray[3];*/
+			document.getElementById('transcript').src= transcriptArray[3];
+			document.getElementById('currentTopicPlace').text= topicArray[3];
+			$("span#currentTopicPlace").text(topicArray[3]);			
+		}
+		else if(video.currentTime < 58)
+		{
+			document.getElementById('defaultSlide').src=imageArray[4];
+			/*document.getElementById('defaultWiki').src= wikiArray[4];*/
+			document.getElementById('transcript').src= transcriptArray[4];
+			document.getElementById('currentTopicPlace').text= topicArray[4];
+			$("span#currentTopicPlace").text(topicArray[4]);		 /* inner html instead? */	
+		}
+	
+	}
+}
+
+function videoToPowerpointSync()
+
+{ 
 
 
+
+  var start = new Date().getTime(); 
+
+  var i = 0, limit = 2000000, busy = false; 
+
+  var processor = setInterval(function() 
+
+  { 
+
+    if(!busy) 
+
+    { 
+
+      busy = true; 
+
+       
+
+
+
+  
+      process(); 
+
+       
+
+      if(++i == limit) 
+
+      { 
+
+        clearInterval(processor); 
+
+ 
+
+      } 
+
+       
+
+      busy = false; 
+
+    } 
+
+     
+
+  }, 1000); 
+}

@@ -3,18 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Lecture page</title>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/mainstyle.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="img/imp_logo_small2.png" type="image/x-icon" />
+	
 </head>
-<body background="lined_paper.png"> <!-- midlertidig løsning -->
+<body  onload="videoToPowerpointSync();">   <!-- midlertidig løsning. løst. fjern dette på alle sider -->
 
 
 <div id="top_menu">
-	<a href="studentpage.html"><img id="logo_small" src="img/imp_logo_small2.png" alt="Imp logo" width="" height="70px" /></a>
+	 <a href="studentpage.html"><img id="logo_small" src="img/imp_logo_small2.png" alt="Imp logo" width="" height="70px" /></a> 
 	
 	<div id="current_topic">
-
 		<a href="#">Web programming &nbsp;&nbsp;&frasl;</a>
 	</div>
 	
@@ -30,7 +32,7 @@
 	<div id="menu_button">
 		<ul>
 			<li class="top">
-				Menu
+				
 				<ul>
 				  <a href="find-subjects.html"><li>Find subjects</li></a>
 				  <a href="studentsettingpage.html"> <li> Profile Settings </li> </a>
@@ -39,6 +41,7 @@
 			</li>
 		</ul>
 	</div>
+
         <div id="searchboxdiv">
             <input type="search" id="searchbox" placeholder="Search for topic" value=""><img id="searchicon" src="img/searchicon.png" alt=""></input>
         </div>
@@ -48,26 +51,27 @@
 <nav id="side_menu">
 
 		<ul class="subjectList">
-
-		
-		<li rel="sub5"><a href="#"><b>Web programming</b></a>
-			<ul class="lectureList">
-				<br>
-				<li class="lecture"><a href="#">Data types</a>
-					<ul class="topicList">
-						<div class="nav_divider"> </div>
-						<li><a href="#" onClick="jumpToTopic('0', 0)">Javascript</a></li>
-						<div class="nav_divider"> </div>
-						<li><a href="#" onClick="jumpToTopic('1', 8)">Dataflow Programming</a></li>
-						<div class="nav_divider"> </div>
-						<li><a href="#" onClick="jumpToTopic('2', 23)">Regular Expression</a></li>
-						<div class="nav_divider"> </div>
-						<li><a href="#" onClick="jumpToTopic('3', 33)">Functional Programming</a></li>
-						<div class="nav_divider"> </div>
-						<li><a href="#" onClick="jumpToTopic('4', 58)">Event</a></li>
-						<div class="nav_divider"> </div>
-					</ul>
-				</li>
+			<li><a href="#">Web programming</a>
+		</ul>	
+			
+		<ul class="lectureList">
+			<li class="lecture"><a href="#">Data types</a></li>
+		</ul>
+				
+		<ul class="topicList">
+			<div class="nav_divider"> </div>
+			<li><a href="#" onClick="jumpToTopic('0', 3)">Javascript</a></li>
+			<div class="nav_divider"> </div>
+			<li><a href="#" onClick="jumpToTopic('1', 8)">Dataflow Programming</a></li>
+			<div class="nav_divider"> </div>
+			<li><a href="#" onClick="jumpToTopic('2', 23)">Regular Expression</a></li>
+			<div class="nav_divider"> </div>
+			<li><a href="#" onClick="jumpToTopic('3', 33)">Functional Programming</a></li>
+			<div class="nav_divider"> </div>
+			<li><a href="#" onClick="jumpToTopic('4', 58)">Event</a></li>
+			<div class="nav_divider"> </div>
+		</ul>
+				
 
 				<!--
 					<li><a href="#">Functions</a></li>
@@ -94,12 +98,12 @@
 		<li rel="sub7"><a href="#">Subject</a></li>
 		<li rel="sub8"><a href="#">Subject</a>
 		-->
-	</ul>
-<br>
-			<li><a href="studentsettingpage.html">Profile settings</a></li>
+	
+	<div id="miscLinks">
+		<li><a href="studentsettingpage.html">Profile settings</a></li>
 		<li><a href="find-subjects.html">Find subjects</a></li>
+	</div>
 
-<br><br>
 </nav>
 
 
@@ -120,7 +124,7 @@
 		
 		<div class="element">
 			<a href="#" onClick="prevImage();prevTopic();prev_event();prevWiki();prevTranscript();"><img class="arrow" id="leftArrow" src="img/arrow_left.png" width="25" height="25"/></a>
-			<img title="Click on the arrows to browse back and forth between topics." id="defaultSlide" src="img/slide1.PNG" />
+			<img title="Click on the arrows to browse back and forth between topics." id="defaultSlide" src="img/slide1.png" />
 			<a href="#" onClick="switchImage();switchTopic();next_event();switchWiki();switchTranscript();"><img class="arrow" id="rightArrow" src="img/arrow_right.png" width="25" height="25"/></a>
 		</div>
 		
@@ -128,26 +132,25 @@
 		
 		
 		<div id="commentsboxWrapper">
-		<div id="row1">
-			<div id="transcriptElement">
-				<iframe  id="transcript" src="audio_transcript/transcript1.txt" frameborder=0 ></iframe>  <!-- audio transcript -->
+			<div id="row1">
+				<div id="transcriptElement">
+					<iframe id="transcript" src="audio_transcript/transcript1.txt" frameborder=0 ></iframe>  <!-- audio transcript -->
+				</div>
+					
+				<div id="commentsBox">
+						<div id="header"><h2>Comment:</h2></div>
+						
+						<textarea placeholder="Comment on this lecture"></textarea>
+						
+						<input type="submit" Value="Comment"></input>
+						<textarea name="comments" placeholder="" readonly ></textarea>
+				</div>
 			</div>
-				
-			<div id="commentsBox">
-					<div id="header"><h2>Comment:</h2></div>
-					<div class="nav_divider"></div>
-					<textarea placeholder="Comment on this lecture"></textarea>
-					<input type="submit" Value="Comment"></input>
-			</div>
-		</div>
 		
 		
-		<div class="wikiElement">
-			<iframe id="defaultWiki" src="https://no.wikipedia.org/wiki/JavaScript"  name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe> 
-		</div> 
-		
-		
-		
+			<div class="wikiElement">
+				<iframe id="defaultWiki" src="https://no.wikipedia.org/wiki/JavaScript"  name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe> 
+			</div> 
 		</div>
 		
 	</div>
@@ -177,7 +180,7 @@
 </footer>
 
 	
-	<script src="js/mainscript.js"></script> <!-- Why isn't it a problem that this is placed here? As opposed to the login page. Because den andre passer argument til funksjonen?, even the loadXMLdoc,
+	 <script src="js/mainscript.js"></script><!-- Why isn't it a problem that this is placed here? As opposed to the login page. Because den andre passer argument til funksjonen?, even the loadXMLdoc,
 	that has arguments... is it because of -->
 	<script src="js/nav.js"></script>
 </body>
