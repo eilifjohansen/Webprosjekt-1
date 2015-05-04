@@ -627,7 +627,7 @@ input[name=upload_lecture], input[name=newTopic] { 		/*clear: both;*/
 	margin-top: 20px;
 	width: 120px;
 	height: 40px;
-	background: #333032;
+	background: #336699;
 	border: #333032;
 	color: #fff;
 }
@@ -882,7 +882,7 @@ footer h4 {
 }
 
 .headerbox {
-	background-color: #333032;
+	background-color: #336699;
 	color: #fff;
 	height: 20px;
 	padding: 10px;
