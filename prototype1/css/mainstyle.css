@@ -642,14 +642,14 @@ input[name=upload_lecture], input[name=newTopic] { 		/*clear: both;*/
 
 
 
-#indexContentWrapper {
+/*#indexContentWrapper {
 	width: 1500px;
 	margin: auto;
 	height: auto;
 	box-sizing: border-box;
 
 	
-}
+}*/
 
 .subject {
 	width: 25%;
