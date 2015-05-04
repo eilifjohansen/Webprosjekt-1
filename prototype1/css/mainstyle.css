@@ -361,7 +361,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 #side_menu ul.topicList  {
-	padding-bottom: 200px;
+	padding-bottom: 0px;
 	
 }
 
