@@ -305,16 +305,15 @@ input[type="search"]::-webkit-search-results-decoration {
 	text-decoration: none;
 	box-sizing: border-box;
 	padding-left: 5px;
-	padding-top: 8px;
-	padding-bottom: 35px;
-	
+	padding-top: 10px;
+	padding-bottom: 8px;	
 	padding-right: 5px;
 	display: block;
 	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
 	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
 	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
 	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-	transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;	
 }
  
 #side_menu li a:hover {
@@ -340,11 +339,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 
-#side_menu .subjectList li {
+#side_menu .subjectList li {	
+	color:;	
+}
+
+#side_menu .subjectList ul {
 	
-	
-	color:;
-	
+	margin-top: 0px;
 }
 
 #side_menu .lectureList li {
@@ -375,6 +376,11 @@ input[type="search"]::-webkit-search-results-decoration {
 	border-top: 1px solid gray;
 	height: 8px;
 	
+}
+
+#side_menu .nav_divider_top {
+	margin-top:  -11px;
+	height: 0px;
 }
 
 #side_menu .nav_divider {
