@@ -187,33 +187,16 @@ function jumpToTopic(contentNo, seekValue){
 	
 	video.play();
 	
- 	//load particular slide
+ 	//load particular content
 	document.getElementById('defaultSlide').src= imageArray[contentNo];
 	document.getElementById('defaultWiki').src= wikiArray[contentNo];
 	document.getElementById('transcript').src= transcriptArray[contentNo];
 	document.getElementById('currentTopicPlace').text= topicArray[contentNo];
 	$("span#currentTopicPlace").text(topicArray[contentNo]);
 }
-/*
-var xmlhttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    //document.getElementById("hipWIKI").innerHTML=xmlhttp.responseText;
-    }
-  }
 
-xmlhttp.send();
-}*/
+//--------------------------------------------------------
+
 //NEED TO IMPROVE
 //video to power point synchronization
 function process()
@@ -221,52 +204,69 @@ function process()
 	var video = document.getElementById("defaultVideo");
 	
 	{
+	
 		
 		
 		if(video.currentTime < 3)
 		{
 			document.getElementById('defaultSlide').src=imageArray[0];
 			/*document.getElementById('defaultWiki').src= wikiArray[0];*/
-			document.getElementById('transcript').src= transcriptArray[0];
-			document.getElementById('currentTopicPlace').text= topicArray[0];
+			//document.getElementById('transcript').src= transcriptArray[0];
+			//document.getElementById('currentTopicPlace').text= topicArray[0];
 			$("span#currentTopicPlace").text(topicArray[0]);
+			
 			
 		}
 		else if(video.currentTime < 8)
 		{
 			document.getElementById('defaultSlide').src=imageArray[1];
 			/*document.getElementById('defaultWiki').src= wikiArray[1];*/
-			document.getElementById('transcript').src= transcriptArray[1];
-			document.getElementById('currentTopicPlace').text= topicArray[1];
-			$("span#currentTopicPlace").text(topicArray[1]);			
+			//document.getElementById('transcript').src= transcriptArray[1];
+			//document.getElementById('currentTopicPlace').text= topicArray[1];
+			$("span#currentTopicPlace").text(topicArray[1]);	
+			
+						
 		}
 		else if(video.currentTime < 23)
 		{
 			document.getElementById('defaultSlide').src=imageArray[2];	
 			/*document.getElementById('defaultWiki').src= wikiArray[2];*/
-			document.getElementById('transcript').src= transcriptArray[2];
-			document.getElementById('currentTopicPlace').text= topicArray[2];
-			$("span#currentTopicPlace").text(topicArray[2]);			
-		}
+			//document.getElementById('transcript').src= transcriptArray[2];
+			//document.getElementById('currentTopicPlace').text= topicArray[2];
+			$("span#currentTopicPlace").text(topicArray[2]);
+			
+		}	
 		else if(video.currentTime < 33)
 		{
 			document.getElementById('defaultSlide').src=imageArray[3];
 			/*document.getElementById('defaultWiki').src= wikiArray[3];*/
-			document.getElementById('transcript').src= transcriptArray[3];
-			document.getElementById('currentTopicPlace').text= topicArray[3];
-			$("span#currentTopicPlace").text(topicArray[3]);			
+			//document.getElementById('transcript').src= transcriptArray[3];
+			//document.getElementById('currentTopicPlace').text= topicArray[3];
+			$("span#currentTopicPlace").text(topicArray[3]);	
+				
+					
 		}
 		else if(video.currentTime < 58)
-		{
+		{	
 			document.getElementById('defaultSlide').src=imageArray[4];
-			/*document.getElementById('defaultWiki').src= wikiArray[4];*/
-			document.getElementById('transcript').src= transcriptArray[4];
-			document.getElementById('currentTopicPlace').text= topicArray[4];
+			
+			//callback function?
+			//only if change. if refreshes the same constantly
+			//preload
+			/*document.getElementById('defaultWiki').src= wikiArray[4];*/ 	/* inner html instead? */	
+			//document.getElementById('transcript').src= transcriptArray[4];
+			//document.getElementById('currentTopicPlace').text= topicArray[4];
 			$("span#currentTopicPlace").text(topicArray[4]);		 /* inner html instead? */	
+				
+			
 		}
 	
+	 
 	}
 }
+
+
+//if change happened dont do it again til a new chnage happens
 
 function videoToPowerpointSync()
 
@@ -282,20 +282,21 @@ function videoToPowerpointSync()
 
   { 
 
-    if(!busy) 
+
+    if(!busy) //if video playing?
 
     { 
 
       busy = true; 
 
-       
-
-
-
+      
   
-      process(); 
-
-       
+      if(!process()) {
+		
+	  
+	  }
+		
+		
 
       if(++i == limit) 
 

@@ -6,8 +6,26 @@ body {
 	background: url(../lined_paper.png);
 	font-family: 'Roboto', sans-serif;
 	
+	
+}
+div {
+  display: block;
 }
 
+/*hard code jquery? css(); if this onTarget=colorthis()...  so.. color1(){$(element1)css(color: red)} color2() etc. this requires unique names. since the eventhandler is not 
+in the js but html, dont need function inside function, this etc. dont need to find the clicked element, since the right function(right operation/logic), is linked to the correct button onHover? 
+not onClick, or onFocus rather?. side note: what happens when clicked? permanent coloring, coloring sticks?*/
+
+.star:hover {
+	color: red;
+	cursor: pointer;
+}
+.star::before {/*content: "\e007";*/
+color: red;}
+.star::after {
+   /* content: "\e007";*/
+    color:#red;
+}
 html {
 	margin: 0px;
 	padding: 0px;
@@ -52,9 +70,9 @@ background: -ms-linear-gradient(top, rgba(25,51,77,1) 0%, rgba(16,76,132,1) 100%
 background: linear-gradient(to bottom, rgba(25,51,77,1) 0%, rgba(16,76,132,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', endColorstr='#104c84', GradientType=0 );
 	background: rgb(184, 132, 209); /*browser compatibility*/
-	 background: rgba(184, 132, 209, 0.9);/* rgba for opacity*/
-	 background: #3A5795;
-	 border: 1px solid gray;
+	background: rgba(184, 132, 209, 0.9);/* rgba for opacity*/
+	background: #3A5795;
+	border: 1px solid gray;
 	
 }
 
@@ -264,7 +282,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	width: 15%; 
 	height: 2150px;
 	
-	background: url(../mochaGrunge.png);
+	
 	background: whitesmoke;
 	border-right: solid 1px darkgray;
 	color: #fff;
@@ -303,7 +321,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	background: rgb(152,152,152); /*browser compatibility*/
 	background: rgba(152,152,152, 0.3); /* rgba for opacity*/
 	cursor: pointer;
-	border-left: 5px solid #2F477A; /*#8C489F, backup purple colour*/
+	border-left: 10px solid #3A5795; /*#8C489F, backup purple colour*/
 	box-sizing: border-box;
 	text-decoration: none;
 	padding-left: 0px; /*with or without movement?*/
@@ -438,6 +456,8 @@ video {
 	width: 47%;
 	height: 500px;
 	margin-right: 20px;
+	/*border: 7px solid red;*/
+	/*background: #3A5795;*/
 	
 }
 
@@ -461,9 +481,16 @@ iframe {
 }
 
 
+#topbarWrapper {
+	width: 1900px;
+	margin: auto;
 
+}
 
-
+#studentNavWrapper {
+	width: 300px;
+	margin: auto;
+}
 
 
 
@@ -509,7 +536,7 @@ iframe {
 	box-sizing: border-box;
 	border: 2px solid gray;
 	background: whitesmoke;
-	
+	/*overflow-y: scroll;  auto*/ 
 	padding-top: 0px;
 	box-sizing: border-box;
 }
@@ -519,10 +546,11 @@ iframe {
 
 
 #commentsBox #header {
-	width: 100%;
-	height: 30px;
-	padding-left: 5px;
-	padding-top: 0px;
+	width: auto;
+	height: auto;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-left: 33px;
 	box-sizing: border-box;
 	background: whitesmoke;
 }
@@ -536,32 +564,49 @@ section #commentsBox .nav_divider {
 }
 
 #commentsBox textarea {
-	border: 1px solid #ddd;
-	box-sizing: border-box;
+	border: 1px solid gray;
 	
-	width: 75%;
+	
+	box-sizing: border-box;
+	float: left;
+	width: 90%;
 	height: 50px;
 	margin: 0x;
 	padding: 0px;
 	resize: none;
+	
+	margin-left: 33px;
 } 
 
-#commentsBox textarea[name=comments] {
-	box-sizing: border-box;
-	border: 1px solid #ddd;
-	width: 100%;
-	height: 200px;
-	margin: 0x;
-	padding: 0px;
-	resize: none;
-	opacity: 0.3;
+
+
+#commentsBox #commentButton {
+	margin-left: 33px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	/*margin-left: 200px;*/
 	
+	
+	
+	
+
 }
 
-#rate {
+#comment { 		/*add class(with height, background etc), append not append after*/
+	min-height: 80px; /*allows for expanding? depending on the comment length. */					
+	width: 100%;
+	/*visibility: hidden;*/
+	box-sizing: border-box;
+	border: 1px solid #DDD;
+	padding: 0px;
 	clear: both;
-	margin: 20px;
-	padding: 20px;
+}
+
+
+#rate {    /*favourite etc*/
+	clear: both;
+	margin: 3px;
+	padding-top: 20px;
 }
  
 
@@ -572,12 +617,13 @@ section #commentsBox .nav_divider {
 	margin-top: 20px;
 }
 
-#lectureMetaData input[type=text]{
+.topicInput {
 	margin-right: 20px;
+	
 
 }
 
-input[name=upload_lecture], input[name=newTopic] {
+input[name=upload_lecture], input[name=newTopic] { 		/*clear: both;*/
 	margin-top: 20px;
 	width: 120px;
 	height: 40px;
@@ -590,7 +636,9 @@ input[name=upload_lecture], input[name=newTopic] {
 	
 }
 
-
+.nr {
+	/*float: left; for topic nr test*/ 
+}
 
 
 
