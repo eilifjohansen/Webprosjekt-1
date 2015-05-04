@@ -305,15 +305,16 @@ input[type="search"]::-webkit-search-results-decoration {
 	text-decoration: none;
 	box-sizing: border-box;
 	padding-left: 5px;
-	padding-top: 10px;
-	padding-bottom: 8px;	
+	padding-top: 8px;
+	padding-bottom: 35px;
+	
 	padding-right: 5px;
 	display: block;
 	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
 	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
 	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
 	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-	transition: font-size 0.3s ease, background-color 0.3s ease;	
+	transition: font-size 0.3s ease, background-color 0.3s ease;
 }
  
 #side_menu li a:hover {
@@ -339,13 +340,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 
-#side_menu .subjectList li {	
-	color:;	
-}
-
-#side_menu .subjectList ul {
+#side_menu .subjectList li {
 	
-	margin-top: 0px;
+	
+	color:;
+	
 }
 
 #side_menu .lectureList li {
@@ -375,16 +374,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	margin: 12px 40px 0px 0px;
 	border-top: 1px solid gray;
 	height: 8px;
-}
-
-#side_menu .nav_divider_top {
-	margin-top:  -11px;
-	height: 0px;
-}
-
-#side_menu .side_menu_bottom {
-	margin-top: 200px;
-	font-weight: bold;
+	
 }
 
 #side_menu .nav_divider {
@@ -637,8 +627,8 @@ input[name=upload_lecture], input[name=newTopic] { 		/*clear: both;*/
 	margin-top: 20px;
 	width: 120px;
 	height: 40px;
-	background: #336699;
-	border: #336699;
+	background: #333032;
+	border: #333032;
 	color: #fff;
 }
 
@@ -891,7 +881,7 @@ footer h4 {
 }
 
 .headerbox {
-	background-color: #336699;
+	background-color: #333032;
 	color: #fff;
 	height: 20px;
 	padding: 10px;

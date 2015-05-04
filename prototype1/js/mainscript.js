@@ -199,7 +199,7 @@ function jumpToTopic(contentNo, seekValue){
 
 //NEED TO IMPROVE
 //video to power point synchronization
-function process()
+/*function process()
 {
 	var video = document.getElementById("defaultVideo");
 	
@@ -210,7 +210,7 @@ function process()
 		if(video.currentTime < 3)
 		{
 			document.getElementById('defaultSlide').src=imageArray[0];
-			/*document.getElementById('defaultWiki').src= wikiArray[0];*/
+			//document.getElementById('defaultWiki').src= wikiArray[0];
 			//document.getElementById('transcript').src= transcriptArray[0];
 			//document.getElementById('currentTopicPlace').text= topicArray[0];
 			$("span#currentTopicPlace").text(topicArray[0]);
@@ -220,7 +220,7 @@ function process()
 		else if(video.currentTime < 8)
 		{
 			document.getElementById('defaultSlide').src=imageArray[1];
-			/*document.getElementById('defaultWiki').src= wikiArray[1];*/
+			//document.getElementById('defaultWiki').src= wikiArray[1];
 			//document.getElementById('transcript').src= transcriptArray[1];
 			//document.getElementById('currentTopicPlace').text= topicArray[1];
 			$("span#currentTopicPlace").text(topicArray[1]);	
@@ -230,7 +230,7 @@ function process()
 		else if(video.currentTime < 23)
 		{
 			document.getElementById('defaultSlide').src=imageArray[2];	
-			/*document.getElementById('defaultWiki').src= wikiArray[2];*/
+			//document.getElementById('defaultWiki').src= wikiArray[2];
 			//document.getElementById('transcript').src= transcriptArray[2];
 			//document.getElementById('currentTopicPlace').text= topicArray[2];
 			$("span#currentTopicPlace").text(topicArray[2]);
@@ -239,7 +239,7 @@ function process()
 		else if(video.currentTime < 33)
 		{
 			document.getElementById('defaultSlide').src=imageArray[3];
-			/*document.getElementById('defaultWiki').src= wikiArray[3];*/
+			//document.getElementById('defaultWiki').src= wikiArray[3];
 			//document.getElementById('transcript').src= transcriptArray[3];
 			//document.getElementById('currentTopicPlace').text= topicArray[3];
 			$("span#currentTopicPlace").text(topicArray[3]);	
@@ -253,10 +253,10 @@ function process()
 			//callback function?
 			//only if change. if refreshes the same constantly
 			//preload
-			/*document.getElementById('defaultWiki').src= wikiArray[4];*/ 	/* inner html instead? */	
+			//document.getElementById('defaultWiki').src= wikiArray[4]; inner html instead? 	
 			//document.getElementById('transcript').src= transcriptArray[4];
 			//document.getElementById('currentTopicPlace').text= topicArray[4];
-			$("span#currentTopicPlace").text(topicArray[4]);		 /* inner html instead? */	
+			$("span#currentTopicPlace").text(topicArray[4]);		 inner html instead? 
 				
 			
 		}
@@ -318,3 +318,4 @@ function videoToPowerpointSync()
 
   }, 1000); 
 }
+*/
