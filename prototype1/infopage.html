@@ -69,7 +69,7 @@
 			<input type="email" placeholder="Email..." ></input>
 			<input type="text" placeholder="Feedback topic..."></input>
 			<textarea name="feedback" form="" placeholder="Give feedback..."></textarea>
-			<input type="submit" value="Submit feedback">
+			<input type="submit" value="Submit feedback" onclick="myFunction()">
 		</form>
 		<br>
 
@@ -78,7 +78,7 @@
 			<input type="email" placeholder="Email..."></input>
 			<input type="text" placeholder="Email topic..."></input>
 			<textarea name="contact" form="" placeholder="Your message..."></textarea>
-			<input type="submit" value="Send request">
+			<input type="submit" value="Send request" onclick="myFunction2()">
 		</form>
 </section>
 
@@ -92,6 +92,14 @@
 	<h4>&copy; 2015 ICP</h4>
 </footer>
 	
+	<script>
+	function myFunction() {
+	    alert("Thanks for your feedback.");
+	}
+		function myFunction2() {
+	    alert("Thanks for your input. We will be in contact with you shortly.");
+	}
+	</script>
 	<script src="js/mainscript.js"></script>
 	
 </body>
