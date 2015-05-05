@@ -52,11 +52,10 @@ a {
 
 /*top menu*/
 #top_menu {
-	z-index:10;
+	
 	width: 100%;
-	position: absolute; !important;
 	min-height: 60px;
-	color: #fff;
+	
 	box-sizing: border-box;
 	margin-bottom: 0px;
 	padding: 0px;
@@ -126,7 +125,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 
 #current_topic {
 	float: left;
-	
 	font-weight: bold;
 	margin-left: 40px;
 	margin-top: 17px;
@@ -440,7 +438,6 @@ section {
 	padding-right: 25px;
 	padding-top: 25px;
 	padding-bottom: 0px;
-	margin-top: 150px;
 	/*each line needed to accommodate several web browsers. inset instead of default outset, this way only needed on the section div*/
 	/*-webkit-box-shadow: inset 0px 6px 12px -2px rgba(136,136,136,1);
 	-moz-box-shadow: inset 0px 6px 12px -2px rgba(136,136,136,1);
