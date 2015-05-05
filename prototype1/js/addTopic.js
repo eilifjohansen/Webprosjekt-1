@@ -13,7 +13,7 @@ function addTopic(topicNr) {
 		var field5 = $("<input></input>").addClass("topicInput");
 		var field6 = $("<span></span>").text("Transcript nr: ");
 		var field7 = $("<input></input>").addClass("topicInput");
-		var field8 = $("<span></span>").text("Wikipage nr: ");
+		var field8 = $("<span></span>").text("Wikipage link: ");
 		var field9 = $("<input></input>").addClass("topicInput");
 			
 			
