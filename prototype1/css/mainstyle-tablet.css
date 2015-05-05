@@ -18,7 +18,8 @@ not onClick, or onFocus rather?. side note: what happens when clicked? permanent
 
 .star:hover {
 	color: red;
-	cursor: pointer;
+	cursor
+	: pointer;
 }
 .star::before {/*content: "\e007";*/
 color: red;}
@@ -84,6 +85,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 }
 
 .home_button {
+	visibility: hidden;
 
 	width: ;
 	height: ;
