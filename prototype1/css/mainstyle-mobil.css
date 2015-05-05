@@ -135,7 +135,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 #mobileTitle {
 	background: #3A5795;
 	box-sizing: border-box;
-	border: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 	width: 100%;
 	float: left;
 	font-weight: bold;
