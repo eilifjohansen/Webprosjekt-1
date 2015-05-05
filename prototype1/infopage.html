@@ -6,7 +6,14 @@
     <meta charset="utf-8">
     <title>IMP</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/mainstyle.css"> <!-- main style -->
+		<link rel='stylesheet' media='screen and (max-width: 714px)' href='css/mainstyle-mobil.css' />
+
+	<link rel='stylesheet' media='screen and (min-width: 715px) and (max-width: 1000px)' href='css/mainstyle-tablet.css' />
+
+	<link rel='stylesheet' media='screen and (min-width: 1001px) and (max-width: 1400px)' href='css/mainstyle-laptop.css' />
+
+	<link rel='stylesheet' media='screen and (min-width: 1401px)' href='css/mainstyle.css' />
+
 	<link rel="stylesheet" href="css/infopagestyle.css"> <!-- overrides some of the css in the mainstyle -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="img/imp_logo_small2.png" type="image/x-icon" />
@@ -68,7 +75,7 @@
 		<form action="" method="POST"> 
 			<input type="email" placeholder="Email..." ></input>
 			<input type="text" placeholder="Feedback topic..."></input>
-			<textarea name="feedback" form="" placeholder="Give feedback..."></textarea>
+			<textarea name="feedback" form="" placeholder="Give feedback..."></textarea><br><br>
 			<input type="submit" value="Submit feedback" onclick="myFunction()">
 		</form>
 		<br>
@@ -77,10 +84,12 @@
 		<form action="" method="POST"> 
 			<input type="email" placeholder="Email..."></input>
 			<input type="text" placeholder="Email topic..."></input>
-			<textarea name="contact" form="" placeholder="Your message..."></textarea>
+			<textarea name="contact" form="" placeholder="Your message..."></textarea><br><br>
 			<input type="submit" value="Send request" onclick="myFunction2()">
 		</form>
+		<br><br>
 </section>
+
 
 <footer>
 	<h3> <a href="infopage.html">About</a> <a href="infopage.html">Feedback</a>  <a href="infopage.html">Contact</a> </h3>

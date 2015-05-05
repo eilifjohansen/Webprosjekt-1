@@ -6,9 +6,13 @@ h1 {
 section {
 
 	width: 100%;
-	height: 1100px;
-	padding-left: 300px;
-	padding-right: 300px;
+	padding-left: 20%;
+	padding-right: 20%;
+	height: auto;
+
+	text-align: center;
+
+	
 	
 	/* to override box-shadow property and remove box-shadow on the left side */
 	-webkit-box-shadow: inset 0px 6px 12px -2px rgba(136,136,136,1);
@@ -21,21 +25,21 @@ section {
 
 
 form {
-	width: 600px;
+	width: 100%;
 	margin: auto;
 	padding: auto;
 }
 
 
 input {
-	width: 300px;
+	width: calc(50% - 6px);
 	
 }
 
 
 
 textarea {
-	width: 600px;
+	width: 100%;
 	height: 200px;
 	
 }
