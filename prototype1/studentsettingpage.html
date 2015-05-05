@@ -81,7 +81,7 @@
 				<input type="password" name="firstname">
 				<br>
 
-				<input type="submit" value="Change Password">
+				<input type="submit" onclick="myFunction()" value="Change Password">
 				</div>
 			</form>
 		</div>
@@ -116,7 +116,7 @@
 					<input type="password" name="email" placeholder="test_123@mail.com">
 					<br>
 
-					<input type="submit" value="Save Changes">
+					<input type="submit" onclick="myFunction2()" value="Save Changes">
 					</div>
 				</form>
 			</div>
@@ -140,6 +140,14 @@
 	<h4>&copy; 2015 ICP</h4>
 </footer>
 
+	<script>
+	function myFunction() {
+	    alert("Password changed.");
+	}
+		function myFunction2() {
+	    alert("Profile updated.");
+	}
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 	
