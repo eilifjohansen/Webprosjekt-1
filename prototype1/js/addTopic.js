@@ -1,5 +1,5 @@
 var count = 6;
-
+/*$("#side_menu").height( $("section").height() );*/
 
 function addTopic(topicNr) {
 
@@ -27,7 +27,7 @@ $("input[name=newTopic]").on("click", function(e){
 		var c = count++;
 		addTopic(c);
 		updateLecture();
-	
+/*	$("#side_menu").height( $("section").height() ); */
 
 
 });
