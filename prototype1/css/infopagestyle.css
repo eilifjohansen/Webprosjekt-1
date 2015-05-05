@@ -11,8 +11,6 @@ section {
 	height: auto;
 
 	text-align: center;
-
-	
 	
 	/* to override box-shadow property and remove box-shadow on the left side */
 	-webkit-box-shadow: inset 0px 6px 12px -2px rgba(136,136,136,1);
