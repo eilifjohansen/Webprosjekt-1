@@ -48,7 +48,9 @@ a {
 	color: #000;
 }
 
-
+#mobileTitle {
+	display: none;
+}
 
 /*top menu*/
 #top_menu {
