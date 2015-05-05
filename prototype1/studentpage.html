@@ -44,7 +44,7 @@
 		</div>
 
 			<div id="searchboxdiv">
-				<input type="search" id="searchbox" placeholder="Search for topic" value=""><img id="searchicon" src="img/searchicon.png" alt=""></input>
+				<input type="search" id="searchbox" placeholder="Search for topic" value=""><img id="searchicon" src="img/searchicon.png" alt="" onclick="search()"></input>
 			</div>
 	</div>
 </div>
@@ -73,33 +73,6 @@
 			<li><a href="#" onClick="jumpToTopic('4', 58)">Event</a></li>
 			<div class="nav_divider"> </div>
 		</ul>
-				
-
-				<!--
-					<li><a href="#">Functions</a></li>
-					<li><a href="#">DOM</a></li>
-					<li><a href="#">Event Handling</a></li>
-					<li><a href="#">Frameworks</a>
-						<ul class="topicList">
-							<li><a href="#">Bootstrap</a></li>
-							<li><a href="#">Jquery</a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul>
-					</li>
-			</ul>
-		</li>
-	-->
-		<!--
-		<li rel="sub6"><a href="#">Subject</a>
-			<ul class="lectureList">
-				<li><a href="#">Lecture</a></li>
-				<li><a href="#">Lecture</a></li>
-			</ul>
-		</li>
-		<li rel="sub7"><a href="#">Subject</a></li>
-		<li rel="sub8"><a href="#">Subject</a>
-		-->
 	
 	<div class="side_menu_bottom">
 		<li><a href="studentsettingpage.html">Profile settings</a></li>
@@ -147,36 +120,28 @@
 						
 						<textarea placeholder="What did you think of this lecture?"></textarea>
 						
-						<input id="commentButton" type="submit" Value="Comment"></input>
+						<input id="commentButton" type="submit" Value="Comment"  onclick="comment()"></input>
 						<div id="comment"></div>
 				</div>
 			</div>
-		
 		
 			<div class="wikiElement">
 				<iframe id="defaultWiki" src="https://no.wikipedia.org/wiki/JavaScript"  name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe> 
 			</div> 
 		</div>
 		
-
-	
-		
 		<div id="rate">
 			<div class="nav_divider"></div>
-			Rate: <span class="star"> &#x2606 </span> <span class="star">&#x2606 </span> <span class="star">&#x2606 </span> <span class="star">&#x2606 </span> <span class="star">&#x2606 </span>
+			Rate: <span class="star" onclick="star()"> &#x2606 </span> <span class="star" onclick="star()">&#x2606 </span> <span class="star" onclick="star()">&#x2606 </span> <span class="star" onclick="star()">&#x2606 </span> <span class="star" onclick="star()">&#x2606 </span>
 			<div class="nav_divider"></div>
 			Favorite:
-			<input type="checkbox" name="fav" title="Check to set this lecture as a favorite" />
+			<input type="checkbox" name="fav" title="Check to set this lecture as a favorite" onclick="check()"/>
 			<div class="nav_divider"></div>
 			Share via email:
 			<input type="text" placeholder="email..." value="" />
-			<input type="button" name="" value="share" /> 
+			<input type="button" name="" value="share" onclick="sharemail()"/> 
 		</div>
-		
-		
-	
 </section>
-
 
 <footer>
 	<h3> <a href="infopage.html">About</a> <a href="infopage.html">Feedback</a>  <a href="infopage.html">Contact</a> </h3>
@@ -187,8 +152,31 @@
 	</div>
 	<h4>&copy; 2015 ICP</h4>
 </footer>
-
-	
+	<script>
+	function search() {
+	    alert("Search detected!\nSearch is a non-functional part in this prototype.");
+	}
+	</script>
+	<script>
+	function comment() {
+	    alert("Thank you for commenting");
+	}
+	</script>
+	<script>
+	function star() {
+	    alert("Thank you for rating this lecture");
+	}
+	</script>
+	<script>
+	function check() {
+	    alert("This lecture has now been added to your favorites");
+	}
+	</script>
+	<script>
+	function sharemail() {
+	    alert("Thank you for sharing the lecture");
+	}
+	</script>
 	 <script src="js/mainscript.js"></script><!-- Why isn't it a problem that this is placed here? As opposed to the login page. Because den andre passer argument til funksjonen?, even the loadXMLdoc,
 	that has arguments... is it because of -->
 	<script src="js/commenting.js"></script>
