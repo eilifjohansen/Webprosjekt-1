@@ -107,7 +107,7 @@
 					<input type="text" name="firstname">
 					<br><br>
 
-				    <input type="submit" value="Delete">
+				    <input type="submit" value="Delete" onclick="myFunction()">
 					</div>
 
 				</form>
@@ -122,7 +122,7 @@
 					<input type="text" name="firstname">
 					<br><br>
 
-				    <input type="submit" value="Add">
+				    <input type="submit" value="Add" onclick="myFunction2()">
 					</div>
 
 				</form>
@@ -144,7 +144,7 @@
 					</select>
 					<br><br>
 
-				    <input type="submit" value="Delete">
+				    <input type="submit" value="Delete" onclick="myFunction3()">
 					</div>
 
 				</form>
@@ -165,7 +165,7 @@
 					</select>
 					<br><br>
 
-				    <input type="submit" value="Delete">
+				    <input type="submit" value="Delete" onclick="myFunction4()">
 					</div>
 
 				</form>
@@ -189,7 +189,20 @@
 	<h4>&copy; 2015 ICP</h4>
 </footer>
 
-	
+	<script>
+		function myFunction() {
+	    alert("User deleted.");
+	}
+		function myFunction2() {
+	    alert("Subject added.");
+	}
+		function myFunction3() {
+	    alert("Subject deleted.");
+	}
+		function myFunction4() {
+	    alert("Lecture deleted.");
+	}
+	</script>	
 	<script src="js/mainscript.js"></script>
 	
 </body>
