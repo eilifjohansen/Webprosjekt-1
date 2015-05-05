@@ -55,8 +55,8 @@ a {
 	
 	width: 100%;
 	min-height: 60px;
-	height: 81px;
 	
+	clear: both;
 	box-sizing: border-box;
 	margin-bottom: 0px;
 	padding: 0px;
@@ -87,7 +87,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 
 .home_button {
 	visibility: hidden;
-	
+	display: none;
 	width: ;
 	height: ;
 	float: right;
@@ -137,13 +137,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 	box-sizing: border-box;
 	border-bottom: 1px solid #fff;
 	width: 100%;
-	float: left;
+	
 	font-weight: bold;
 	padding: 0px;
 	margin: 0px:;
 	color: #fff;
 	text-align: center;
-	font-size: 1.0em;
+	font-size: 1.5em;
 }
 
 .currentTopic {
