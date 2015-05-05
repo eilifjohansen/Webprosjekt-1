@@ -55,6 +55,7 @@ a {
 	
 	width: 100%;
 	min-height: 60px;
+	height: 81px;
 	
 	box-sizing: border-box;
 	margin-bottom: 0px;
@@ -126,8 +127,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 #current_topic {
 	float: left;
 	font-weight: bold;
-	margin-left: 40px;
+	margin-left: 10px;
 	margin-top: 17px;
+	display: none;
+}
+
+#mobileTitle {
+	background: #3A5795;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	width: 100%;
+	float: left;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px:;
+	color: #fff;
+	text-align: center;
+	font-size: 1.0em;
 }
 
 .currentTopic {
