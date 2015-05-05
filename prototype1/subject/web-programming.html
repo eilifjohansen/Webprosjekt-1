@@ -140,7 +140,7 @@
 						<h3>Web programming</h3>
 						<p>Through this course, the student should develop her overall 
 						competence in the areas of problem solving, analytic thinking and design of complex systems.</p>
-						<a href="../registerpage.html"><div class="sub_button">Subscribe!</div></a>
+						<a href="../registerpage.html" onclick="myFunction()"><div class="sub_button">Subscribe!</div></a>
 					</div>
 				</div>
 			</div>
@@ -157,7 +157,11 @@
 	<h4>&copy; 2015 ICP</h4>
 </footer>
 
-	
+	<script>
+	function myFunction() {
+	    alert("You have to register before subscribing to a lecture.");
+	}
+	</script>
 	<script src="js/mainscript.js"></script>
 	
 </body>
