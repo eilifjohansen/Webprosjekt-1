@@ -422,7 +422,7 @@ input[type="search"] {
 section {
 	
 	
-	
+	overflow-y: auto;
 	height: auto;
 	width: 85%;
 	float: left;
@@ -671,9 +671,10 @@ input[name=upload_lecture], input[name=newTopic] { 		/*clear: both;*/
 }
 
 .subject2 {
+	margin-left: 50px;
 	position: relative;
-	float: right;
-	margin-right: 200px;
+	float: left;
+	
 }
 
 .thumbnail {
@@ -767,6 +768,8 @@ img.thumbnail:hover {
 	opacity: 0.9;
 	
 }
+
+/*subject page?*/
 
 .subjectText {
 	width: 50%;
@@ -966,13 +969,75 @@ footer h4 {
 		width: 400px; 
 	}
 
-#registerWrapper {
-	width: 400px;
-	margin: auto;
-	padding: auto;
-	margin-top: 100px;
-	height: auto;
+	#registerWrapper {
+		width: 400px;
+		margin: auto;
+		padding: auto;
+		margin-top: 100px;
+		height: auto;
+		
+	}
+
 	
-}
+	.caption p {
+		padding-bottom: 40px;
+		
+	}
+	.subject {
+		margin-bottom: 80px;
+		width: 340px;
+	}
+
+		.sub_button {
+			margin-left: 110px;
+		}
+		.read_button {
+			margin: 0px;
+		}
+
+}/*end querie 1 */
+
+@media only screen and (max-width : 1269px) {
+
+	footer {
+		background-color: yellow;
+	
+	}
+	
+	.subject2 {
+		width: 50px;
+	}
+	
+.subject {
+	width: 25%;
+	
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 350px;
+	float: left;
+	box-sizing: border-box;
 }
 
+.caption p {
+		padding-bottom: 40px;
+		
+	}
+	.subject {
+		margin-bottom: 80px;
+		width: 340px;
+	}
+
+		.sub_button {
+			margin-left: 110px;
+		}
+		.read_button {
+			margin: 0px;
+		}
+
+
+	
+/*@media only screen and (max-width : 992px) and (min-width : 608px){*/
+
+
+
+}/*end querie 2*/
