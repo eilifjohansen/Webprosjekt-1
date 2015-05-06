@@ -56,7 +56,6 @@ a {
 	width: 100%;
 	min-height: 60px;
 	
-	clear: both;
 	box-sizing: border-box;
 	margin-bottom: 0px;
 	padding: 0px;
@@ -87,7 +86,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 
 .home_button {
 	visibility: hidden;
-	display: none;
+	
 	width: ;
 	height: ;
 	float: right;
@@ -127,23 +126,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 #current_topic {
 	float: left;
 	font-weight: bold;
-	margin-left: 10px;
+	margin-left: 40px;
 	margin-top: 17px;
-	display: none;
-}
-
-#mobileTitle {
-	background: #3A5795;
-	box-sizing: border-box;
-	border-bottom: 1px solid #fff;
-	width: 100%;
-	
-	font-weight: bold;
-	padding: 0px;
-	margin: 0px;
-	color: #fff;
-	text-align: center;
-	font-size: 1.5em;
 }
 
 .currentTopic {
@@ -305,7 +289,7 @@ input[type="search"] {
 	box-sizing: border-box;
 	float: left;
 	width: 0%; 
-	height: 2300px;
+	height: 2150px;
 	
 	background: whitesmoke;
 	border-right: solid 1px darkgray;
@@ -447,8 +431,7 @@ input[type="search"] {
 
 /*section and content of section*/
 section {
-	overflow-y: auto;
-	height: 2300px;
+	height: auto;
 	float: left;
 	box-sizing: border-box;
 	padding-left: 25px;
@@ -863,6 +846,7 @@ footer {
 	color: #fff;
 	height: 200px;
 	overflow: hidden;	
+	background-color: #141314;
 }
 
 footer h3  {

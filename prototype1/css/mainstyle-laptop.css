@@ -48,9 +48,7 @@ a {
 	color: #000;
 }
 
-#mobileTitle {
-	display: none;
-}
+
 
 /*top menu*/
 #top_menu {
@@ -289,7 +287,7 @@ input[type="search"] {
 	box-sizing: border-box;
 	float: left;
 	width: 15%; 
-	height: 2300px;
+	height: 2150px;
 	
 	background: whitesmoke;
 	border-right: solid 1px darkgray;
@@ -434,8 +432,8 @@ section {
 	
 	width: 85%;
 	
-	height: 2300px;
-	overflow-y: auto;
+	height: auto;
+
 	float: left;
 	box-sizing: border-box;
 	padding-left: 25px;
@@ -460,13 +458,12 @@ section {
 }
 
 #leftArrow {
-	width: 2%;
+	
 	float: left;
 	margin-top: 230px;
 }
 
 #rightArrow{
-	width: 2%;
 	float: left;
 	margin-top: 230px;
 }

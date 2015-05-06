@@ -48,9 +48,7 @@ a {
 	color: #000;
 }
 
-#mobileTitle {
-	display: none;
-}
+
 
 /*top menu*/
 #top_menu {
@@ -286,7 +284,7 @@ input[type="search"] {
 	box-sizing: border-box;
 	float: left;
 	width: 15%; 
-	height: 2300px;
+	height: 2150px;
 	
 	
 	background: whitesmoke;
@@ -340,7 +338,7 @@ input[type="search"] {
 #side_menu  ul  {
 	margin: 0px;
 	padding-right: ;
-	padding-top: 0px;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 0px;
 	/*short hand expert...*/
@@ -425,7 +423,7 @@ section {
 	
 	
 	overflow-y: auto;
-	height: 2300px;
+	height: auto;
 	width: 85%;
 	float: left;
 	box-sizing: border-box;
@@ -445,14 +443,13 @@ section {
 	float: left;
 	width: 45%;
 	height: 500px;
-	padding-left: 0px;
+	padding-left: 13px;
 	padding-right: 0px;
 	
 }
 
 #leftArrow {
-	margin: 0px;
-	padding-left: 0px;
+	
 	float: left;
 	margin-top: 230px;
 }
@@ -461,7 +458,6 @@ section {
 	float: left;
 	margin-top: 230px;
 }
-
 
 video {
 	float: left;
@@ -531,8 +527,8 @@ iframe {
 
 
 #defaultWiki {
-	margin-left: 45px;
-	margin-right: 0px;
+	margin-left: 55px;
+	margin-right: 10px;
 	padding-right: 0px;
 	width: 45%;
 	height: 530px;
@@ -631,7 +627,7 @@ section #commentsBox .nav_divider {
 
 .topicInput {
 	margin-right: 20px;
-	/*margin-bottom: 10px;*/
+	
 
 }
 
@@ -639,7 +635,7 @@ input[name=upload_lecture], input[name=newTopic] { 		/*clear: both;*/
 	margin-top: 20px;
 	width: 120px;
 	height: 40px;
-	background: #3A5795;
+	background: #336699;
 	border: #333032;
 	color: #fff;
 }
@@ -709,7 +705,6 @@ img.thumbnail:hover {
 .caption {
 	line-height: 1.3em;
 	margin-bottom: 50px;
-	
 }
 
 .caption p {
@@ -899,7 +894,7 @@ footer h4 {
 }
 
 .headerbox {
-	background-color: #3A5795;
+	background-color: #336699;
 	color: #fff;
 	height: 20px;
 	padding: 10px;
@@ -936,8 +931,6 @@ footer h4 {
 }
 
 
-
-
 /*infopage*/
 
 
@@ -945,7 +938,10 @@ footer h4 {
 /*media queries-------------------------------------------------*/
 @media  only screen and (max-width : 1441px) {
 
-
+	footer {
+		background-color: red;
+	
+	}
 	
 	section {
 		height: 2300px;
@@ -1003,6 +999,10 @@ footer h4 {
 
 @media only screen and (max-width : 1269px) {
 
+	footer {
+		background-color: yellow;
+	
+	}
 	
 	.subject2 {
 		width: 50px;
