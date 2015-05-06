@@ -352,8 +352,8 @@ input[type="search"] {
 
 	margin: 0px;
 	padding-right: ;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 0px;
+	padding-bottom: 20px;
 	padding-left: 0px;
 	/*short hand expert...*/
 }

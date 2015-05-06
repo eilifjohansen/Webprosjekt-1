@@ -18,8 +18,7 @@ not onClick, or onFocus rather?. side note: what happens when clicked? permanent
 
 .star:hover {
 	color: red;
-	cursor
-	: pointer;
+	cursor: pointer;
 }
 .star::before {/*content: "\e007";*/
 color: red;}
@@ -348,8 +347,8 @@ input[type="search"] {
 	display: none;
 	margin: 0px;
 	padding-right: ;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 0px;
+	padding-bottom: 20px;
 	padding-left: 0px;
 	/*short hand expert...*/
 }
