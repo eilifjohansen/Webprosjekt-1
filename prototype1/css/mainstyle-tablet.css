@@ -433,7 +433,7 @@ input[type="search"] {
 section {
 	
 	
-	
+	min-height: calc(100vh - 60px);
 	height: auto;
 
 	float: left;

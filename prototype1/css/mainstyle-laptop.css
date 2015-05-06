@@ -285,8 +285,6 @@ input[type="search"] {
 	box-sizing: border-box;
 	float: left;
 	width: 15%; 
-
-	
 	background: whitesmoke;
 	
 	color: #fff;
@@ -431,7 +429,7 @@ section {
 	width: 85%;
 	border-left: solid 1px darkgray;
 	height: auto;
-
+	min-height: calc(100vh - 60px);
 	float: left;
 	box-sizing: border-box;
 	padding-left: 25px;
