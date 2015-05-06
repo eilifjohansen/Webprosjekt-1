@@ -3,7 +3,7 @@ body {
 	margin: 0px;  /*removes white edges around the page */
 	padding: 0px;
 	/*font: 15px helvetica;*/
-	background: url(../lined_paper.png);
+	background: whitesmoke;
 	font-family: 'Roboto', sans-serif;
 	
 	
@@ -47,8 +47,6 @@ a {
 .black-text {
 	color: #000;
 }
-
-
 
 /*top menu*/
 #top_menu {
@@ -290,7 +288,7 @@ input[type="search"] {
 	height: 2150px;
 	
 	background: whitesmoke;
-	border-right: solid 1px darkgray;
+	
 	color: #fff;
 	box-sizing: border-box;
 	margin: 0px;
@@ -429,9 +427,9 @@ input[type="search"] {
 
 /*section and content of section*/
 section {
-	
+	background: url(../lined_paper.png);
 	width: 85%;
-	
+	border-left: solid 1px darkgray;
 	height: auto;
 
 	float: left;
@@ -479,8 +477,6 @@ video {
 	/*background: #3A5795;*/
 	
 }
-
-
 
 iframe {
 	

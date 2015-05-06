@@ -3,7 +3,7 @@ body {
 	margin: 0px;  /*removes white edges around the page */
 	padding: 0px;
 	/*font: 15px helvetica;*/
-	background: url(../lined_paper.png);
+	background: whitesmoke;
 	font-family: 'Roboto', sans-serif;
 	
 	
@@ -288,7 +288,7 @@ input[type="search"] {
 	
 	
 	background: whitesmoke;
-	border-right: solid 1px darkgray;
+	
 	color: #fff;
 	box-sizing: border-box;
 	margin: 0px;
@@ -420,11 +420,12 @@ input[type="search"] {
 
 /*section and content of section*/
 section {
-	
-	
+	background: url(../lined_paper.png);
 	overflow-y: auto;
+	border-left: solid 1px darkgray;
 	height: auto;
 	width: 85%;
+	height: auto;
 	float: left;
 	box-sizing: border-box;
 	padding-left: 25px;
