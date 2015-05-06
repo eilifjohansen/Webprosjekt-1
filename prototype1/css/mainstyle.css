@@ -606,6 +606,11 @@ section #commentsBox .nav_divider {
 
 }
 
+
+.cursor {
+			cursor: pointer;
+	}
+
 #comment { 		/*add class(with height, background etc), append not append after*/
 	min-height: 80px; /*allows for expanding? depending on the comment length. */					
 	width: 100%;
