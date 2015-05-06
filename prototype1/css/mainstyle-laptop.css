@@ -460,12 +460,13 @@ section {
 }
 
 #leftArrow {
-	
+	width: 2%;
 	float: left;
 	margin-top: 230px;
 }
 
 #rightArrow{
+	width: 2%;
 	float: left;
 	margin-top: 230px;
 }

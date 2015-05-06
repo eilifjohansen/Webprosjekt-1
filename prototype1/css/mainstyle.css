@@ -48,7 +48,9 @@ a {
 	color: #000;
 }
 
-
+#mobileTitle {
+	display: none;
+}
 
 /*top menu*/
 #top_menu {
@@ -284,7 +286,7 @@ input[type="search"] {
 	box-sizing: border-box;
 	float: left;
 	width: 15%; 
-	height: 2150px;
+	height: 2300px;
 	
 	
 	background: whitesmoke;
@@ -338,7 +340,7 @@ input[type="search"] {
 #side_menu  ul  {
 	margin: 0px;
 	padding-right: ;
-	padding-top: 10px;
+	padding-top: 0px;
 	padding-bottom: 10px;
 	padding-left: 0px;
 	/*short hand expert...*/
@@ -423,7 +425,7 @@ section {
 	
 	
 	overflow-y: auto;
-	height: auto;
+	height: 2300px;
 	width: 85%;
 	float: left;
 	box-sizing: border-box;
@@ -443,13 +445,14 @@ section {
 	float: left;
 	width: 45%;
 	height: 500px;
-	padding-left: 13px;
+	padding-left: 0px;
 	padding-right: 0px;
 	
 }
 
 #leftArrow {
-	
+	margin: 0px;
+	padding-left: 0px;
 	float: left;
 	margin-top: 230px;
 }
@@ -458,6 +461,7 @@ section {
 	float: left;
 	margin-top: 230px;
 }
+
 
 video {
 	float: left;
@@ -527,8 +531,8 @@ iframe {
 
 
 #defaultWiki {
-	margin-left: 55px;
-	margin-right: 10px;
+	margin-left: 45px;
+	margin-right: 0px;
 	padding-right: 0px;
 	width: 45%;
 	height: 530px;
@@ -627,7 +631,7 @@ section #commentsBox .nav_divider {
 
 .topicInput {
 	margin-right: 20px;
-	
+	/*margin-bottom: 10px;*/
 
 }
 
@@ -635,7 +639,7 @@ input[name=upload_lecture], input[name=newTopic] { 		/*clear: both;*/
 	margin-top: 20px;
 	width: 120px;
 	height: 40px;
-	background: #336699;
+	background: #3A5795;
 	border: #333032;
 	color: #fff;
 }
@@ -705,6 +709,7 @@ img.thumbnail:hover {
 .caption {
 	line-height: 1.3em;
 	margin-bottom: 50px;
+	
 }
 
 .caption p {
@@ -894,7 +899,7 @@ footer h4 {
 }
 
 .headerbox {
-	background-color: #336699;
+	background-color: #3A5795;
 	color: #fff;
 	height: 20px;
 	padding: 10px;
@@ -929,6 +934,8 @@ footer h4 {
 	padding: 0px;
 
 }
+
+
 
 
 /*infopage*/
