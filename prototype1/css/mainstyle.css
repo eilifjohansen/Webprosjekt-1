@@ -12,6 +12,10 @@ div {
   display: block;
 }
 
+#MobileMenue {
+	display: none;
+}
+
 /*hard code jquery? css(); if this onTarget=colorthis()...  so.. color1(){$(element1)css(color: red)} color2() etc. this requires unique names. since the eventhandler is not 
 in the js but html, dont need function inside function, this etc. dont need to find the clicked element, since the right function(right operation/logic), is linked to the correct button onHover? 
 not onClick, or onFocus rather?. side note: what happens when clicked? permanent coloring, coloring sticks?*/
