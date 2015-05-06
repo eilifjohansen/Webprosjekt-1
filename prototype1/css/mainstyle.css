@@ -616,6 +616,7 @@ section #commentsBox .nav_divider {
 	clear: both;
 	margin: 3px;
 	padding-top: 20px;
+	padding-bottom: 50px;
 }
  
 
@@ -639,6 +640,7 @@ input[name=upload_lecture], input[name=newTopic] { 		/*clear: both;*/
 	background: #336699;
 	border: #333032;
 	color: #fff;
+	margin-bottom: 50px; 
 }
 
 .timeStamps {
