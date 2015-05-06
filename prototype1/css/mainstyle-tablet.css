@@ -449,31 +449,31 @@ section {
 	box-shadow: inset 0px 6px 12px -2px rgba(136,136,136,1);*/
 }
 
-
 #defaultSlide {
 	float: left;
 	width: 45%;
-	height: 500px;
-	padding-left: 13px;
+	height: 300px;
+	
 	padding-right: 0px;
 	
 }
 
 #leftArrow {
-	
+	width: 2%;
 	float: left;
-	margin-top: 230px;
+	margin-top: 150px;
 }
 
 #rightArrow{
+	width: 2%;
 	float: left;
-	margin-top: 230px;
+	margin-top: 150px;
 }
 
 video {
 	float: left;
 	width: 45%;
-	height: 500px;
+	height: 300px;
 	margin-right: 20px;
 	/*border: 7px solid red;*/
 	/*background: #3A5795;*/
@@ -485,7 +485,7 @@ video {
 iframe {
 	
 	float: left;
-	height: 500px;
+	height: 200px;
 	width: 45%;
 	margin-top: 30px;
 	border: 2px solid gray;
@@ -523,7 +523,7 @@ iframe {
 #transcript {
 	height: 110px;
 	width: 100%;
-	float: left;
+	clear: both;
 	background: whitesmoke;
 	overflow: scroll;
 	box-sizing: border-box;
@@ -532,18 +532,19 @@ iframe {
 
 
 #row1 {
-	float: left;
-	width: 45%;
+	clear: both;
+	width: 95%;
+	
 }
 
 
 #defaultWiki {
-	margin-left: 55px;
-	margin-right: 10px;
+	
+	
 	padding-right: 0px;
-	width: 45%;
+	width: 95%;
 	height: 530px;
-	float: left;
+	clear: both;
 	box-sizing: border-box;
 }
 
@@ -592,11 +593,11 @@ section #commentsBox .nav_divider {
 	float: left;
 	width: 90%;
 	height: 50px;
-	margin: 0x;
+	margin: 0px;
 	padding: 0px;
 	resize: none;
 	
-	margin-left: 33px;
+	margin-left: 20px;
 } 
 
 
