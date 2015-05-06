@@ -938,18 +938,14 @@ footer h4 {
 /*media queries-------------------------------------------------*/
 @media  only screen and (max-width : 1441px) {
 
-	footer {
-		background-color: red;
-	
-	}
 	
 	section {
-		height: 2300px;
+		/*height: 2300px;*/
 	
 	}
 	
 	#side_menu {
-	height: 2300px;	
+	/*height: 2300px;	*/
 	
 	}
 	
@@ -999,11 +995,7 @@ footer h4 {
 
 @media only screen and (max-width : 1269px) {
 
-	footer {
-		background-color: yellow;
-	
-	}
-	
+
 	.subject2 {
 		width: 50px;
 	}
