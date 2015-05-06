@@ -796,7 +796,7 @@ img.thumbnail:hover {
 /*login page section*/
 form[name=login] {
 	margin-left: 450px;
-	margin-top: 300px;
+	margin-top: 200px;
 
 }
 
@@ -815,7 +815,7 @@ form[name=register] {
 
 
 #logo {
-	margin-top: 140px;
+	margin-top: 55px;
 	margin-left: 50px;
 	float: left;
 	width: 300px;	
