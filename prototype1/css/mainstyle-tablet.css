@@ -6,7 +6,6 @@ body {
 	background: url(../lined_paper.png);
 	font-family: 'Roboto', sans-serif;
 	
-	
 }
 div {
   display: block;
@@ -87,7 +86,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 
 .home_button {
 	visibility: hidden;
-
+    z-index: 1000;
 	width: ;
 	height: ;
 	float: right;
@@ -195,7 +194,7 @@ input[type="search"] {
 }
 
 #menu_button ul {
-	
+	z-index: 1000;
 	text-align: center;
 	display: inline;
 	margin: 0px;
@@ -239,8 +238,7 @@ input[type="search"] {
 }
 
 #menu_button ul li:hover {
-	  background: #2F477A;  /*#333032 backup gray colour*/
-	  color: #fff;
+	 
 }
 
 #menu_button ul li ul {
@@ -252,7 +250,7 @@ input[type="search"] {
 	  -webkit-box-shadow: none;
 	  -moz-box-shadow: none;
 	  box-shadow: none;
-	  display: none;
+	  displasy: none;
 	  opacity: 0;
 	  display: none;
 	  -webkit-transiton: opacity 0.2s;
