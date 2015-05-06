@@ -88,6 +88,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19334d', end
 }
 
 .home_button {
+	z-index: 1000;
 	width: ;
 	height: ;
 	float: right;
@@ -195,7 +196,7 @@ input[type="search"] {
 }
 
 #menu_button ul {
-	
+	z-index: 1000;
 	text-align: center;
 	display: inline;
 	margin: 0px;
@@ -223,7 +224,6 @@ input[type="search"] {
 #menu_button ul li.top {
     background: #2F477A url(../img/menu_icon.png) no-repeat center;
 	background-size: 40px;
-
 	height: 18px;
 	width: 25px;
 	border-radius: 7px; 
@@ -239,8 +239,7 @@ input[type="search"] {
 }
 
 #menu_button ul li:hover {
-	  background: #2F477A;  /*#333032 backup gray colour*/
-	  color: #fff;
+	
 }
 
 #menu_button ul li ul {
