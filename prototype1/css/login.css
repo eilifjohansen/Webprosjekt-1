@@ -30,6 +30,7 @@ a {
 input {
 	height: 20px;
 	width: 250px;
+	cursor: pointer;
 }
 
 

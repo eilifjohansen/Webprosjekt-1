@@ -59,34 +59,7 @@
 					<li rel="sub7"><a href="teacherpage.html">Add Lecture</a></li>
 					<li><a href="teachersettingpage.html">Profile settings</a></li>
 				</div>
-<!--
-	<ul class="subjectList">
-		<li rel="sub1" class="active"><a href="#">Subject 1</a></li>
-		<li rel="sub2"><a href="#">Subject 2</a>
-			<ul class="lectureList">
-				<li><a href="#">Lecture 1</a></li>
-					<ul class="topicList">
-						<li><a href="#">Topic 1.1</a></li>
-						<li><a href="#">Topic 1.2</a></li>
-						<li><a href="#">Topic 1.3</a></li>
-						<li><a href="#">Topic 1.4</a></li>
-						<li><a href="#">Topic 1.5</a></li>
-						<li><a href="#">Topic 1.6</a></li>
-					</ul>
-				<li><a href="#">Lecture 2</a></li>
-				<li><a href="#">Lecture 3</a></li>
-				<li><a href="#">Lecture 4</a></li>
-				<li><a href="#">Lecture 5</a></li>
-			</ul>
-		</li>
-		<li rel="sub3"><a href="#">Subject 3</a></li>
-		<li rel="sub4"><a href="#">Subject 4</a></li>
-		<li rel="sub5"><a href="#">Subject 5</a></li>
-	</ul>
-	<div id="add_lecture">
-		<a href="index.html">Add Lecture</a>	
-	</div>
--->
+
 </nav>
 
 
@@ -106,7 +79,7 @@
 					<input type="text" name="firstname" class="lectureName" >
 					<br><br>
 
-				    <input type="submit" value="Create">
+				    <input type="submit" value="Create" onclick="lecture()">
 					</div>	
 			</div>
 
@@ -119,7 +92,7 @@
 					<input type="text" name="firstname">
 					<br><br>
 
-				    <input type="submit" value="Upload">
+				    <input type="submit" onclick="video()" value="Upload">
 					</div>
 			</div>
 			
@@ -132,7 +105,7 @@
 					<input type="text" name="firstname">
 					<br><br>
 
-				    <input type="submit" value="Upload">
+				    <input type="submit" onclick="audio()" value="Upload">
 					</div>
 
 				
@@ -147,7 +120,7 @@
 					<input type="text" name="firstname">
 					<br><br>
 
-				    <input type="submit" value="Upload">
+				    <input type="submit" onclick="presentation()" value="Upload">
 					</div>
 
 				
@@ -162,7 +135,7 @@
 					<input type="text" name="firstname">
 					<br><br>
 
-				    <input type="submit" value="Add">
+				    <input type="submit" onclick="wiki()" value="Add">
 					</div>
 
 				
@@ -246,8 +219,8 @@
 			
 		</div>
 						
-		<input type="button" name="newTopic" value="Add new topic"></input>
-		<input type="submit" name="upload_lecture" value="Upload Lecture"></input>
+		<input class="cursor" type="button" name="newTopic" value="Add new topic"></input>
+		<input classs="cursor" type="submit" name="upload_lecture" value="Upload Lecture" onclick="uploaded()"></input>
 	</div>
 </section>
 
@@ -264,6 +237,30 @@
 </footer>
 	
 	<script src="js/addTopic.js"></script>
-	
+	<script>
+		function lecture() {
+	    alert("Lecture name successfully created");
+	}
+
+	function video() {
+	    alert("Video successfully uploaded");
+	}
+
+	function audio() {
+	    alert("Audio transcript successfully uploaded");
+	}
+
+	function presentation() {
+	    alert("Presentation successfully uploaded");
+	}
+
+	function wiki() {
+	    alert("Wiki page successfully added");
+	}
+
+	function uploaded() {
+	    alert("Lecture successfully uploaded");
+	}
+	</script>
 </body>
 </html>
