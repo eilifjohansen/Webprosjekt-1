@@ -26,11 +26,11 @@ imageArray[2] = "img/slide3.png"
 imageArray[3] = "img/slide4.png"
 imageArray[4] = "img/slide5.png"
 
-//Video array
-VideoArray[0] = 3;
+//Video array - these numbers are the starting point for the topic
+VideoArray[0] = 0;
 VideoArray[1] = 8;
 VideoArray[2] = 23;
-VideoArray[3] = 33;
+VideoArray[3] = 40;
 VideoArray[4] = 58;
 
 //Wiki pages array
@@ -199,9 +199,10 @@ function jumpToTopic(contentNo, seekValue){
 
 //--------------------------------------------------------
 
-//NEED TO IMPROVE
-//video to power point synchronization
-/*function process()
+//because of else if, it will only do the first that matches, that's why it works
+//video to power point synchronization - these numbers are the end point for the topics 
+//its really stupid to not just make variables of the html elements
+function process()
 {
 	var video = document.getElementById("defaultVideo");
 	
@@ -209,41 +210,76 @@ function jumpToTopic(contentNo, seekValue){
 	
 		
 		
-		if(video.currentTime < 3)
+		if(video.currentTime < 10)
 		{
-			document.getElementById('defaultSlide').src=imageArray[0];
-			//document.getElementById('defaultWiki').src= wikiArray[0];
-			//document.getElementById('transcript').src= transcriptArray[0];
-			//document.getElementById('currentTopicPlace').text= topicArray[0];
+			document.getElementById('defaultSlide').src=imageArray[0];			//many ways to do this, you can put all of them inside the same if, and the condition is that the ppt matches. then it wont replace all the others either 
+		
+			if(document.getElementById('defaultWiki').src != wikiArray[0]){		//replaces only if the src is not already the same
+				
+				document.getElementById('defaultWiki').src= wikiArray[0];
+					
+					if(document.getElementById('transcript').src != transcriptArray[0]){
+						document.getElementById('transcript').src= transcriptArray[0];
+					}
+			}
+			
+			document.getElementById('currentTopicPlace').text= topicArray[0];
 			$("span#currentTopicPlace").text(topicArray[0]);
 			
 			
 		}
-		else if(video.currentTime < 8)
+		else if(video.currentTime < 20)
 		{
 			document.getElementById('defaultSlide').src=imageArray[1];
-			//document.getElementById('defaultWiki').src= wikiArray[1];
-			//document.getElementById('transcript').src= transcriptArray[1];
-			//document.getElementById('currentTopicPlace').text= topicArray[1];
+			
+			if(document.getElementById('defaultWiki').src != wikiArray[1]){ 
+				
+				document.getElementById('defaultWiki').src= wikiArray[1];
+					
+					if(document.getElementById('transcript').src != transcriptArray[1]){
+						document.getElementById('transcript').src= transcriptArray[1]; //does it actually switch transcript if the if is outside?
+					}
+			}
+			
+			document.getElementById('currentTopicPlace').text= topicArray[1];
 			$("span#currentTopicPlace").text(topicArray[1]);	
 			
 						
 		}
-		else if(video.currentTime < 23)
+		else if(video.currentTime < 30)
 		{
 			document.getElementById('defaultSlide').src=imageArray[2];	
-			//document.getElementById('defaultWiki').src= wikiArray[2];
-			//document.getElementById('transcript').src= transcriptArray[2];
-			//document.getElementById('currentTopicPlace').text= topicArray[2];
+			
+			if(document.getElementById('defaultWiki').src != wikiArray[2]){
+				
+				document.getElementById('defaultWiki').src= wikiArray[2];
+					
+					if(document.getElementById('transcript').src != transcriptArray[2]){
+						document.getElementById('transcript').src= transcriptArray[2];
+					}
+			}
+			
+			
+			
+			document.getElementById('currentTopicPlace').text= topicArray[2];
 			$("span#currentTopicPlace").text(topicArray[2]);
 			
 		}	
-		else if(video.currentTime < 33)
+		else if(video.currentTime < 50)
 		{
 			document.getElementById('defaultSlide').src=imageArray[3];
-			//document.getElementById('defaultWiki').src= wikiArray[3];
-			//document.getElementById('transcript').src= transcriptArray[3];
-			//document.getElementById('currentTopicPlace').text= topicArray[3];
+			
+			if(document.getElementById('defaultWiki').src != wikiArray[3]){
+				
+				document.getElementById('defaultWiki').src= wikiArray[3];
+					
+					if(document.getElementById('transcript').src != transcriptArray[3]){
+						document.getElementById('transcript').src= transcriptArray[3];
+					}
+			}
+			
+			
+			document.getElementById('currentTopicPlace').text= topicArray[3];
 			$("span#currentTopicPlace").text(topicArray[3]);	
 				
 					
@@ -252,13 +288,18 @@ function jumpToTopic(contentNo, seekValue){
 		{	
 			document.getElementById('defaultSlide').src=imageArray[4];
 			
-			//callback function?
-			//only if change. if refreshes the same constantly
-			//preload
-			//document.getElementById('defaultWiki').src= wikiArray[4]; inner html instead? 	
-			//document.getElementById('transcript').src= transcriptArray[4];
-			//document.getElementById('currentTopicPlace').text= topicArray[4];
-			$("span#currentTopicPlace").text(topicArray[4]);		 inner html instead? 
+			if(document.getElementById('defaultWiki').src != wikiArray[4]){
+				
+				document.getElementById('defaultWiki').src= wikiArray[4];
+					
+					if(document.getElementById('transcript').src != transcriptArray[4]){
+						document.getElementById('transcript').src= transcriptArray[4];
+					}
+			} 
+			
+			
+			document.getElementById('currentTopicPlace').text= topicArray[4];
+			$("span#currentTopicPlace").text(topicArray[4]);		// inner html instead? 
 				
 			
 		}
@@ -267,8 +308,6 @@ function jumpToTopic(contentNo, seekValue){
 	}
 }
 
-
-//if change happened dont do it again til a new chnage happens
 
 function videoToPowerpointSync()
 
@@ -293,10 +332,7 @@ function videoToPowerpointSync()
 
       
   
-      if(!process()) {
-		
-	  
-	  }
+      process();
 		
 		
 
@@ -320,4 +356,3 @@ function videoToPowerpointSync()
 
   }, 1000); 
 }
-*/
